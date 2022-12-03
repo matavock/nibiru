@@ -1,0 +1,92 @@
+﻿INC = {
+	submarine = {
+		prefix = "SINS "	
+		generic = { "Challwa" }
+		unique = {
+			"Cerianthus" "Anthias" "Lipophrys" "Marmoreus" "Parablennius" "Chimaera" 
+			"Chaunax" "Taurulus" "Delfin" "Argonautis" "Triaina" "Amfitriti" "Xifias" 
+			"Poseidon" "Okeanos" 
+		}
+	}
+	destroyer = {
+		prefix = "SINS "	
+		generic = { "Challwa" }
+		unique = {
+		    "Achik" "Asiri" "Chuki" "Inkasisa" "Kayara" 
+		    "Koya" "Kusi" "Mamak" "Pacha" "Paqari" "Quri" "Quir" 
+		    "Rimak" "Sami" "Sisa" "Taki" "Wayta" "Amaru" "Antay"
+		    "Asto" "Atik" "Hakan" "Inti" "Kumya" "Kunak" "Manco"
+		    "Puma" "Raymi" "Samin" "Sumaq" "Uchu" "Urqu" "Urpi"
+		    "Coyllur" "Quispe" "Palla" "Ñusta" "Nina" "Quilla" "Cayara"
+		    "Waman" "Uturunka" "Ullanta" "Roca" "Capac" "Mallco" "Kuntur"
+		}
+	}
+	light_cruiser = {
+		prefix = "SINS "
+		generic = { "Challwa" }
+		unique = {
+		    "Achik" "Asiri" "Chuki" "Inkasisa" "Kayara" 
+		    "Koya" "Kusi" "Mamak" "Pacha" "Paqari" "Quri" "Quir" 
+		    "Rimak" "Sami" "Sisa" "Taki" "Wayta" "Amaru" "Antay"
+		    "Asto" "Atik" "Hakan" "Inti" "Kumya" "Kunak" "Manco"
+		    "Puma" "Raymi" "Samin" "Sumaq" "Uchu" "Urqu" "Urpi"
+		    "Coyllur" "Quispe" "Palla" "Ñusta" "Nina" "Quilla" "Cayara"
+		    "Waman" "Uturunka" "Ullanta" "Roca" "Capac" "Mallco" "Kuntur"
+		}
+	}
+	heavy_cruiser = {
+		prefix = "SINS "
+		generic = { "Challwa" }
+		unique = {
+		    "Achik" "Asiri" "Chuki" "Inkasisa" "Kayara" 
+		    "Koya" "Kusi" "Mamak" "Pacha" "Paqari" "Quri" "Quir" 
+		    "Rimak" "Sami" "Sisa" "Taki" "Wayta" "Amaru" "Antay"
+		    "Asto" "Atik" "Hakan" "Inti" "Kumya" "Kunak" "Manco"
+		    "Puma" "Raymi" "Samin" "Sumaq" "Uchu" "Urqu" "Urpi"
+		    "Coyllur" "Quispe" "Palla" "Ñusta" "Nina" "Quilla" "Cayara"
+		    "Waman" "Uturunka" "Ullanta" "Roca" "Capac" "Mallco" "Kuntur"
+		}
+	}
+	battle_cruiser = {
+		prefix = "SINS "
+		generic = { "Challwa" }
+		unique = {
+		    "Tahuantinsuyu" "Atahualpa" "Apu Mayta" "Auqui Túpac Huallpa" "Cápac Yupanqui" "Ccapac Huari" 
+		    "Chalcuchimac" "Coya Asarpay" "Cusi Chimbo" "Cusi Hilpay" "Cusi Huarcay" "Cura Ocllo"
+		    "Don Diego de Castro" "Francisca Coya" "Huáscar" "Huayna Capac" "Huaman Taysi Inca" 
+		    "Inca Roca" "Inca Paucar" "Lloque Yupanqui" "Manco Cápac" "Manco Inca Yupanqui"  
+		    "Mayta Cápac" "Mama Cura" "Mama Cora Ocllo Coya" "Mama Michay" "Mama Runtu" "Mama Anahuarque" 
+		    "Pachacuti" "Paccha Duchicela" "Paullu Inca" "Quya Anawarkhi" "Quispe Yupanqui" "Quisquis" 
+		    "Rumiñawi" "Sayri Túpac" "Sinchi Roca" "Tupac Amaru" "Túpac Palla" "Túpac Inca Yupanqui" 
+		    "Titu Cusi Yupanqui" "Tocto Ocllo Coca" "Viracocha Inca" "Vicaquirau Inca" "Yawar Waqaq" "Yáhuar Huácac"
+		}
+	}
+	battleship = {
+		prefix = "SINS "	
+		generic = { "Challwa" }
+		unique = {
+		    "Tahuantinsuyu" "Atahualpa" "Apu Mayta" "Auqui Túpac Huallpa" "Cápac Yupanqui" "Ccapac Huari" 
+		    "Chalcuchimac" "Coya Asarpay" "Cusi Chimbo" "Cusi Hilpay" "Cusi Huarcay" "Cura Ocllo"
+		    "Don Diego de Castro" "Francisca Coya" "Huáscar" "Huayna Capac" "Huaman Taysi Inca" 
+		    "Inca Roca" "Inca Paucar" "Lloque Yupanqui" "Manco Cápac" "Manco Inca Yupanqui"  
+		    "Mayta Cápac" "Mama Cura" "Mama Cora Ocllo Coya" "Mama Michay" "Mama Runtu" "Mama Anahuarque" 
+		    "Pachacuti" "Paccha Duchicela" "Paullu Inca" "Quya Anawarkhi" "Quispe Yupanqui" "Quisquis" 
+		    "Rumiñawi" "Sayri Túpac" "Sinchi Roca" "Tupac Amaru" "Túpac Palla" "Túpac Inca Yupanqui" 
+		    "Titu Cusi Yupanqui" "Tocto Ocllo Coca" "Viracocha Inca" "Vicaquirau Inca" "Yawar Waqaq" "Yáhuar Huácac"
+		}
+	}
+	carrier = {
+		prefix = "SINS "
+		generic = { "Challwa" }
+		unique = {
+		    "Tahuantinsuyu" "Atahualpa" "Apu Mayta" "Auqui Túpac Huallpa" "Cápac Yupanqui" "Ccapac Huari" 
+		    "Chalcuchimac" "Coya Asarpay" "Cusi Chimbo" "Cusi Hilpay" "Cusi Huarcay" "Cura Ocllo"
+		    "Don Diego de Castro" "Francisca Coya" "Huáscar" "Huayna Capac" "Huaman Taysi Inca" 
+		    "Inca Roca" "Inca Paucar" "Lloque Yupanqui" "Manco Cápac" "Manco Inca Yupanqui"  
+		    "Mayta Cápac" "Mama Cura" "Mama Cora Ocllo Coya" "Mama Michay" "Mama Runtu" "Mama Anahuarque" 
+		    "Pachacuti" "Paccha Duchicela" "Paullu Inca" "Quya Anawarkhi" "Quispe Yupanqui" "Quisquis" 
+		    "Rumiñawi" "Sayri Túpac" "Sinchi Roca" "Tupac Amaru" "Túpac Palla" "Túpac Inca Yupanqui" 
+		    "Titu Cusi Yupanqui" "Tocto Ocllo Coca" "Viracocha Inca" "Vicaquirau Inca" "Yawar Waqaq" "Yáhuar Huácac"
+		}
+	}
+}

@@ -1,0 +1,31 @@
+state={
+	id=662
+	name="STATE_662"
+	manpower = 13213
+	resources={
+		oil=6
+	}
+	state_category = rural
+	
+	
+	history={
+		1935.10.25 = {	
+			
+			ITA = {
+				set_province_controller = 4200
+				set_province_controller = 7076
+				
+			} 			
+		}
+		owner = LBA
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = LBA
+		add_claim_by = ITA
+	}
+	
+	provinces={
+		4200 7076 7136 8069 13073 
+	}
+}

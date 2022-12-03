@@ -1,0 +1,15 @@
+characters={
+	SOV_pavel_grudinin={
+		name=SOV_pavel_grudinin
+		portraits={
+			civilian={
+				large="gfx/leaders/SOV/Pavel_Grudinin.dds"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,7 @@
+tmodern_category = {
+	icon = GFX_decision_category_gre_faction_management
+	picture = GFX_decision_cat_picture_SWI_federal_council
+	allowed = {
+		always = yes
+	}
+}

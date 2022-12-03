@@ -1,0 +1,108 @@
+﻿capital = 116
+
+oob = "MLT_1936"
+give_military_access = ENG
+# Starting tech
+add_ideas = {
+limited_conscription
+}
+
+set_technology = {
+	electronic_mechanical_engineering = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+}
+116 = {
+		add_extra_state_shared_building_slots = 4
+		add_building_construction = {
+			type = dockyard
+			level = 1
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+		}
+		add_building_construction = {
+			type = industrial_complex
+			level = 2
+		}
+	}
+
+
+set_convoys = 15
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 50
+	fascism = 8
+	communism = 15
+	neutrality = 27
+}
+create_country_leader = {
+	name = "Gerald Strickland"
+	desc = "POLITICS_GERALD_STRICKLAND_DESC"
+	picture = "gfx/leaders/MLT/Portrait_gerald_strickland.dds"
+	expire = "1965.1.1"
+	ideology = conservatism 
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "George Borg Olivier"
+	desc = "POLITICS_GEORGE_BORG_OLIVIER_DESC"
+	picture = "gfx/leaders/MLT/Portrait_george_borg_olivier.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Paul Boffa"
+	desc = "POLITICS_PAUL_BOFFA_DESC"
+	picture = "gfx/leaders/MLT/Portrait_paul_boffa.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Jorgi Preca"
+	desc = "POLITICS_JORGI_PRECA_DESC"
+	picture = "gfx/leaders/MLT/Portrait_Jorgi_Preca.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		
+	}
+}
+
+create_corps_commander = {
+				name = "Wojtek"
+				portrait_path = "gfx/leaders/POL/Portrait_POL_Voytek.dds"
+				traits = { bearer_of_artillery }
+				skill = 1
+			}
+
+
+
+
+
+

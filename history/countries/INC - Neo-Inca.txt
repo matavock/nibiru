@@ -1,0 +1,62 @@
+﻿capital = 305
+
+oob = "INC_1936"
+
+add_ideas = {
+	service_by_requirement
+    closed_economy
+	INC_sapa
+	INC_det_legacy
+    INC_panaca_shocked_state_5
+    INC_years_of_armageddon_5
+	INC_weak_nobility
+	INC_agrarian_powerhouse_5
+}
+
+set_technology = {
+	tech_mountaineers = 1
+	tech_support = 1
+	tech_engineers = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = { bicycle_infantry = 1 }
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 55
+	fascism = 45
+}
+
+recruit_character = INC_tupac_3
+recruit_character = INC_mamaq_ch
+recruit_character = INC_ussun_cuy
+recruit_character = INC_justo_apu
+recruit_character = INC_asiri_chalco
+recruit_character = INC_yurak_passci
+recruit_character = INC_ttika_pinto
+recruit_character = INC_palla_ccora
+recruit_character = INC_chriss_saenz
+recruit_character = INC_carina_sandoval
+recruit_character = INC_george_barrueco
+recruit_character = INC_zhu_yi
+recruit_character = INC_hector
+recruit_character = INC_nayarak_chakana
+recruit_character = INC_wayra_condori
+recruit_character = INC_kumya_ccahua
+recruit_character = INC_shaya_manco
+recruit_character = INC_awak_gua
+recruit_character = INC_coyllur_axi
+recruit_character = INC_ylin_rawa
+recruit_character = INC_thani_manco
+recruit_character = INC_koya_chanca

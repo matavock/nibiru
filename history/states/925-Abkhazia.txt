@@ -1,0 +1,35 @@
+state={
+	id=925
+	name="Abkhazia"
+	provinces={
+		11599 11617 11647
+	}
+	
+	history={
+		owner = SOV
+		victory_points = {
+			11617 1
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			11617 = {
+				naval_base = 1
+				coastal_bunker = 1
+
+			}
+
+		}
+		
+		add_core_of = SOV
+		add_core_of = GEO
+		add_core_of = ABK
+		
+
+	}
+	manpower=420000
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

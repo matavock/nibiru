@@ -1,0 +1,157 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Strelkovaya Diviziya"			# Rifle Division
+	division_names_group = SOV_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+}
+
+division_template = {
+	name = "Gornostrelkovaya Diviziya"		# Mountain Division
+	division_names_group = SOV_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }	
+		mountaineers = { x = 2 y = 1 }	
+		mountaineers = { x = 2 y = 2 }	
+		mountaineers = { x = 3 y = 0 }	
+		mountaineers = { x = 3 y = 1 }	
+		mountaineers = { x = 3 y = 2 }	
+	}
+	
+}
+
+division_template = {
+	name = "Kavaleriyskaya Diviziya" 	# Cavalry Division
+	division_names_group = SOV_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "NKVD Pogranichnaya Diviziya"			# NKVD Border Guard Division - Garrison units (older experience, older equipment)
+	division_names_group = SOV_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+
+
+units = {
+	
+	division= {	# "2ya 'Belorusskaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1459
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}	
+	division= {	# "11ya Kavaleriyskaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 1459
+		division_template = "Kavaleriyskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+division= {	# "11ya Kavaleriyskaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 10205
+		division_template = "Kavaleriyskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+# 16ya Strelkoviy Korpus		
+	division= {	# "4ya 'Smolenskaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 1614
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}	
+	division= {	# "4ya 'Smolenskaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 1554
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}			
+	division= {	# "4ya 'Smolenskaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 1573
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}			
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}
+
+
+

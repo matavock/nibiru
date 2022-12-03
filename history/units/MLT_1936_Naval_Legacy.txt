@@ -1,0 +1,14 @@
+units = {
+	### MEDITERRANIAN FLEET ###			
+	fleet = {
+		name = "Mediterranean Command"
+		naval_base = 12003 # Malta
+		task_force = {
+			name = "Mediterranean Fleet"
+			location = 12003 # Malta
+			ship = { name = "AFM Sinking Wolf" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MLT } } }			
+			ship = { name = "AFM Melita I" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MLT } } }
+			ship = { name = "AFM Melita II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MLT } } }
+		}							
+	}
+}	

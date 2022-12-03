@@ -1,0 +1,26 @@
+state={
+	id=922
+	name="Ikaria"
+	provinces={
+		13236 
+	}
+	history={
+		owner = GRE
+		buildings = {
+			infrastructure = 1
+			13236 = {
+				naval_base = 1
+
+			}
+
+		}
+		victory_points = {
+			13236 1 
+		}
+		add_core_of = GRE
+
+	}
+	manpower=12000
+	state_category = small_island
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,30 @@
+state={
+	id=820
+	name="Istria"
+	provinces={
+		11735 3609 13292
+	}
+	history={
+		victory_points = {
+			11735 1 
+		}
+		victory_points = {
+			3609 3
+		}
+		owner = CRO
+		add_core_of = CRO
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 3
+			3609 = {
+				naval_base = 4
+
+			}
+
+		}
+
+	}
+	manpower=580000
+	state_category = town
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=851
+	name="Bosanska Krajina"
+	resources={
+		steel=4.000
+	}
+
+	history={
+		owner = BOS
+		
+		victory_points = {
+			6614 1 
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = BOS
+
+	}
+
+	provinces={
+		3985 6614 9586 
+	}
+	manpower=373000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

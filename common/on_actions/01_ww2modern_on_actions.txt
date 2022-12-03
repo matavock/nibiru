@@ -1,0 +1,544 @@
+on_actions = {
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		effect = {
+		###ISTANBUL##
+			if = {
+				limit = {
+					FROM.FROM = { state = 797 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = BUL} }
+					797 = {
+						set_state_name = "Tsarigrad"
+					}
+					set_province_name = {
+						id = 9833
+						name = "Tsarigrad"
+					}
+					
+				}
+			
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 797 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = GRE } }
+					797 = {
+						set_state_name = "Constantinopolis"
+					}
+					set_province_name = {
+						id = 9833
+						name = "Constantinopolis"
+					}
+					
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 797 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = TUR } }
+					797 = {
+						reset_state_name = yes
+					}
+					reset_province_name = 9833
+					
+				}
+			}			
+			
+			###EDIRNE###
+				if = {
+				limit = {
+					FROM.FROM = { state = 341 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = BUL} }
+					341 = {
+						set_state_name = "East Thrace"
+					}
+					set_province_name = {
+						id = 11842
+						name = "Odrin"
+					}
+					
+				}
+			
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 341 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = GRE} }
+					341 = {
+						set_state_name = "East Thrace"
+					}
+					set_province_name = {
+						id = 11842
+						name = "Adrianople"
+					}
+					
+				}
+			
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 341 }
+				}
+				if = {
+					limit = { ROOT = { original_tag = TUR } }
+					341 = {
+						reset_state_name = yes
+					}
+					reset_province_name = 11842
+					
+				}
+			
+			}
+			
+			###THRACE###
+				if = {
+				limit = {
+					FROM.FROM = { state = 939 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = BUL} }
+					939 = {
+						set_state_name = "Thrace"
+					}
+					set_province_name = {
+						id = 13248
+						name = "Dimoteka"
+					}
+					set_province_name = {
+						id = 11774
+						name = "Gyumyurdjina"
+					}
+					set_province_name = {
+						id = 11905
+						name = "Dedeagaç"
+					}
+					
+				}
+			
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 939 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = GRE} }
+					939 = {
+						reset_state_name = yes
+					}
+					reset_province_name = 13248
+					reset_province_name = 11774
+					reset_province_name = 11905
+					
+				}
+			
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 939 }
+				}
+				if = {
+					limit = { ROOT = { original_tag = TUR} }
+					939 = {
+						set_state_name = "Trakya"
+					}
+					set_province_name = {
+						id = 13248
+						name = "Dimetoka"
+					}
+					set_province_name = {
+						id = 11774
+						name = "Gümülcine"
+					}
+					set_province_name = {
+						id = 11905
+						name = "Dedeağaç"
+					}
+					
+				}
+			
+			}
+			
+			
+			##GERMANY##
+			if = {
+				limit = {
+					FROM.FROM = { state = 63 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = GER} }
+					63 = {
+						set_state_name = "Hinterpommern"
+					}
+					set_province_name = {
+						id = 6282
+						name = "Stettin"
+					}
+					set_province_name = {
+						id = 11372
+						name = "Köslin"
+					}
+					
+				}
+			
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 63 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = POL} }
+					63 = {
+						reset_state_name = yes
+					}
+					reset_province_name = 6282
+					reset_province_name = 11372
+					
+				}
+			
+			}
+			
+			###########
+			if = {
+				limit = {
+					FROM.FROM = { state = 68 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = GER} }
+					68 = {
+						set_state_name = "Ostmark"
+					}
+					set_province_name = {
+						id = 3473
+						name = "Dammvorstadt"
+					}
+					set_province_name = {
+						id = 6236
+						name = "Landsberg an der Warthe"
+					}
+					
+				}
+			
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 68 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = POL} }
+					68 = {
+						reset_state_name = yes
+					}
+					reset_province_name = 3473
+					reset_province_name = 6236
+					
+				}
+			
+			}
+			###########
+			if = {
+				limit = {
+					FROM.FROM = { state = 66 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = GER} }
+					66 = {
+						set_state_name = "Niederschlesien"
+					}
+					set_province_name = {
+						id = 552
+						name = "Liegnitz"
+					}
+					set_province_name = {
+						id = 9570
+						name = "Breslau"
+					}
+					set_province_name = {
+						id = 3545
+						name = "Waldenburg"
+					}
+					
+				}
+			
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 66 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = POL} }
+					66 = {
+						reset_state_name = yes
+					}
+					reset_province_name = 552
+					reset_province_name = 9570
+					reset_province_name = 3545
+					
+				}
+			
+			}
+			###########
+			if = {
+				limit = {
+					FROM.FROM = { state = 67 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = GER} }
+					67 = {
+						set_state_name = "Oberschlesien"
+					}
+					set_province_name = {
+						id = 9511
+						name = "Oppeln"
+					}
+					set_province_name = {
+						id = 11467
+						name = "Gleiwitz"
+					}
+					
+				}
+			
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 67 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = POL} }
+					67 = {
+						reset_state_name = yes
+					}
+					reset_province_name = 9511
+					reset_province_name = 11467
+					
+				}
+			
+			}
+			###########
+			if = {
+				limit = {
+					FROM.FROM = { state = 762 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = GER} }
+					762 = {
+						set_state_name = "Kattowitz"
+					}
+					set_province_name = {
+						id = 6464
+						name = "Kattowitz"
+					}
+					
+				}
+			
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 762 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = POL} }
+					762 = {
+						reset_state_name = yes
+					}
+					reset_province_name = 6464
+
+					
+				}
+			
+			}
+			###########
+			if = {
+				limit = {
+					FROM.FROM = { state = 5 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = GER} }
+					5 = {
+						set_state_name = "Ermland-Masuren"
+					}
+					set_province_name = {
+						id = 6375
+						name = "Allenstein"
+					}
+					set_province_name = {
+						id = 11386
+						name = "Lyck"
+					}
+					
+				}
+			
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 5 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = POL} }
+					5 = {
+						reset_state_name = yes
+					}
+					reset_province_name = 6375
+					reset_province_name = 11386
+					
+				}
+			
+			}
+			###########
+			if = {
+				limit = {
+					FROM.FROM = { state = 86 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = GER} }
+					86 = {
+						set_state_name = "Posen"
+					}
+					set_province_name = {
+						id = 6558
+						name = "Posen"
+					}
+					
+				}
+			
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 86 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = POL} }
+					86 = {
+						reset_state_name = yes
+					}
+					reset_province_name = 6558
+
+					
+				}
+			
+			}
+			###########
+			if = {
+				limit = {
+					FROM.FROM = { state = 807 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = GER} }
+					807 = {
+						set_state_name = "Gdingen"
+					}
+					set_province_name = {
+						id = 9263
+						name = "Gdingen"
+					}
+					set_province_name = {
+						id = 279
+						name = "Bromberg"
+					}
+					set_province_name = {
+						id = 3295
+						name = "Thorn"
+					}
+					
+				}
+			
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 807 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = POL} }
+					807 = {
+						reset_state_name = yes
+					}
+					reset_province_name = 9263
+					reset_province_name = 279
+					reset_province_name = 3295
+				}
+			
+			}
+			###########
+			if = {
+				limit = {
+					FROM.FROM = { state = 763 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = GER} }
+					763 = {
+						set_state_name = "Königsberg"
+					}
+					set_province_name = {
+						id = 6332
+						name = "Königsberg"
+					}
+					set_province_name = {
+						id = 11265
+						name = "Rauschen"
+					}
+				}
+			
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 763 }
+				}
+
+				if = {
+					limit = { ROOT = { original_tag = POL} }
+					763 = {
+						reset_state_name = yes
+					}
+					reset_province_name = 6332
+					reset_province_name = 11265
+					
+				}
+			
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		}
+	}
+}	

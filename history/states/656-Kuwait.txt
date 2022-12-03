@@ -1,0 +1,36 @@
+
+state={
+	id=656
+	name="STATE_656"
+	resources={
+		oil=9.000
+	}
+
+	history={
+		add_core_of = KUW
+		owner = KUW
+		add_claim_by = IRQ
+		victory_points = {
+			8085 1 
+		}
+		buildings = {
+			industrial_complex = 1
+			arms_factory = 1
+			infrastructure = 2
+			8085 = {
+				naval_base = 4
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		8085 13288 13289 13290 
+	}
+	manpower=80000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

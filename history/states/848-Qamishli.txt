@@ -1,0 +1,39 @@
+
+state={
+	id=848
+	name="Al-Hasakah"
+	resources={
+		oil=3
+	}
+	history={
+		1935.10.25 = {		
+			KUR = {
+				set_province_controller = 1549
+				set_province_controller = 1578
+			} 			
+		}
+		owner = OSY
+		victory_points = {
+			1549 3 
+		}
+		buildings = {
+			infrastructure = 1
+			
+			
+
+		}
+		add_core_of = KUR
+		add_core_of = OSY
+		add_core_of = SYR
+		add_claim_by = SYR
+		add_claim_by = OSY
+
+	}
+
+	provinces={
+		1549 1578 10882 
+	}
+	manpower=356000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

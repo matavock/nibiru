@@ -1,0 +1,36 @@
+
+state={
+	id=860
+	name="Kerkuk"
+	resources={
+		oil=6.000
+	}
+
+	history={
+		victory_points = {
+			3916 3 
+		}
+		victory_points = {
+			6826 1 
+		}
+		owner = KUR
+		buildings = {
+			industrial_complex = 1
+			arms_factory = 1
+			infrastructure = 2
+
+		}
+		add_core_of = KUR
+		add_claim_by = IRQ
+		add_core_of = IRQ
+
+	}
+
+	provinces={
+		3916 5014 6826 10811 
+	}
+	manpower=776000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

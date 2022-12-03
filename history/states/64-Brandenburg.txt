@@ -1,0 +1,35 @@
+
+state={
+	id=64
+	name="STATE_64"
+
+	history={
+		owner = EGR
+		victory_points = {
+			11219 1 
+		}
+		victory_points = {
+			9496 1 
+		}
+		victory_points = {
+			3499 5 
+		}
+		buildings = {
+			infrastructure = 4
+			
+			industrial_complex = 1
+			air_base = 2
+
+		}
+		add_core_of = EGR
+
+	}
+
+	provinces={
+		375 478 3367 3499 9428 9456 9496 11219 11415 11444 13344 
+	}
+	manpower=1538445
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

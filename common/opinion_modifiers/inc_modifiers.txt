@@ -1,0 +1,17 @@
+#####################
+# OPINION MODIFIERS #
+#####################
+	
+opinion_modifiers = {	
+	
+	INC_chili_politician_accept_opinion = { value = 15 }
+
+	INC_chili_politician_decline_opinion = { value = -60 }
+	
+	INC_guerilla_games = { value = -75 }
+	
+	INC_world_in_red = { value = 75 }
+
+	INC_our_place_in_the_sun = { value = 20 }
+
+}

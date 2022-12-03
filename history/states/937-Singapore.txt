@@ -1,0 +1,41 @@
+state={
+	id=937
+	name="Singapore"
+	provinces={
+		12299 
+	}
+	resources={
+		rubber=3
+		steel=2
+		tungsten=1
+		aluminium=1
+	}
+	history={
+		owner = SIN
+		victory_points = {
+			12299 10 
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 1
+			air_base = 6
+			
+			12299 = {
+				naval_base = 8
+				coastal_bunker = 3
+
+			}
+
+
+		}
+		add_core_of = SIN
+
+	}
+	manpower=1160000
+	state_category = city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

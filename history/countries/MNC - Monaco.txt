@@ -1,0 +1,50 @@
+﻿capital = 1
+
+
+
+#TECH/OOBS
+oob = "MNC_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	
+}
+
+
+set_convoys = 15
+
+add_ideas = {
+	closed_economy
+	disarmed_nation
+	neutrality_idea
+}
+
+
+
+	set_popularities = { 
+		democratic = 5
+		communism = 5
+		fascism = 0
+		neutrality = 90
+		
+	}
+
+	set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+	create_country_leader = {
+		name = "Louis II"
+		desc = "POLITICS_JOHN_XXIII_DESC"
+		picture = "gfx/leaders/FRA/Portrait_France_Generic_land_1.dds"
+		ideology = despotism
+	}
+
+

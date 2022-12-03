@@ -1,0 +1,37 @@
+
+state={
+	id=108
+	name="STATE_108"
+	resources={
+		steel=8.000
+		aluminium=6.000
+	}
+
+	history={
+		victory_points = {
+			11887 5 
+		}
+		victory_points = {
+			9906 3 
+		}
+		victory_points = {
+			6970 1 
+		}
+		owner = YUG
+		buildings = {
+			industrial_complex = 2
+			infrastructure = 2
+
+		}
+		add_core_of = YUG
+
+	}
+
+	provinces={
+		630 6634 6970 6998 9602 9756 9906 11887 13291 
+	}
+	manpower=1277800
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=5.000
+}

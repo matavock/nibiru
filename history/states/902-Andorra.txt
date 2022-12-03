@@ -1,0 +1,25 @@
+state = {
+	id = 902
+	name = "Andorra"
+	history = {
+		owner = ADO
+		add_core_of = ADO
+		add_core_of = SPR
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+
+		victory_points = {
+			13316 1
+		}
+	}
+	provinces = {
+		13316
+	}
+	manpower = 35390
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=885
+	name="Novi Pazar"
+
+	history={
+		victory_points = {
+			13293 1 
+		}
+		owner = YUG
+		add_core_of = YUG
+		buildings = {
+			arms_factory = 1
+			industrial_complex = 1
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		3922 13293
+	}
+	manpower=279121
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

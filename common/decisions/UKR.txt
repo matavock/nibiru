@@ -1,0 +1,120 @@
+UKR_defeat_soviet_category = {
+
+	UKR_defeat_soviet = {
+
+		allowed = { tag = UKR  has_war_with = SOV }
+
+		icon = GFX_decision_category_SOV_civil_war
+
+		available = {
+			has_full_control_of_state = 227
+			has_full_control_of_state = 228
+			has_full_control_of_state = 221
+			has_full_control_of_state = 202
+			has_war_with = SOV
+			UKR = { is_in_faction = no }
+		}
+		fire_only_once = yes
+
+
+
+		visible = {
+			has_war_with = SOV
+			NOT = { has_global_flag = ukraine_wins }
+		}
+		
+	
+		
+		complete_effect = {
+		
+		
+			SOV = { country_event = ukraine.1 }
+			custom_effect_tooltip = if_they_accept_tt
+			effect_tooltip = {
+				UKR = {
+			transfer_state = 137
+			white_peace = SOV
+		}
+			}
+		}
+
+	
+
+		ai_will_do = {
+			factor = 20000 #Ethiopia should be very into this idea
+		}
+	}
+	UKR_surrender = {
+
+		allowed = { tag = UKR  has_war_with = SOV }
+
+		icon = GFX_decision_hol_war_on_pacifism
+
+		available = {
+		
+			has_full_control_of_state = 202
+			has_war_with = SOV
+			UKR = { is_in_faction = no }
+			NOT = { UKR = { surrender_progress >	 0.35 } }
+		}
+		fire_only_once = yes
+
+
+
+		visible = {
+			has_war_with = SOV
+			NOT = { has_global_flag = ukraine_wins }
+		}
+		
+	
+		
+		complete_effect = {
+		
+		
+			add_stability = -0.1
+			add_war_support = -0.2
+			
+				SOV = {
+			transfer_state = 228 transfer_state = 227 transfer_state = 200 transfer_state = 196
+			white_peace = UKR
+		}
+			
+		}
+
+	
+
+		ai_will_do = {
+   				factor = 0
+
+				modifier = {
+					# Ignore if high on manpower
+					factor = 0.5
+					manpower_per_military_factory > 3000
+				}
+
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory <  800
+				}
+
+
+				# china relies a lot on throwing bodies at the enemy
+				modifier = {
+					factor = 3
+
+					original_tag = UKR
+					has_manpower < 300000
+				}
+				modifier = {
+					factor = 111
+
+					original_tag = UKR
+						casualties > 100000
+				}
+			
+	
+
+			}
+	}
+}

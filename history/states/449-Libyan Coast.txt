@@ -1,0 +1,41 @@
+
+state={
+	id=449
+	name="STATE_449" # El Agheila
+	manpower = 40431
+	
+	state_category = rural
+
+	history={
+		1935.10.25 = {	
+					
+			
+			ITA = {
+				set_province_controller = 1041
+				set_province_controller = 4057
+				set_province_controller = 1198
+				
+			} 			
+		}
+		owner = LBA
+victory_points = {
+			1041 5
+		}
+	victory_points = {
+			1198 3
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+			1041 = {
+				naval_base = 2
+}
+		}
+		add_core_of = LBA
+		add_claim_by = ITA
+	}
+
+	provinces={
+		1041 1198 4047 4057 10046 10117 12088 
+	}
+}

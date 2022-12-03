@@ -1,0 +1,27 @@
+
+state={
+	id=911
+	name="Berlin"
+
+	history={
+		owner = GER
+		victory_points = {
+			6521  50 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 4
+			industrial_complex = 2
+			air_base = 6
+		}
+		add_core_of = GER
+
+	}
+
+	provinces={
+		6521 
+	}
+	manpower=3026584
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

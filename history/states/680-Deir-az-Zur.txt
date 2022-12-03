@@ -1,0 +1,36 @@
+
+state={
+	id=680
+	name="STATE_680"
+	resources={
+		oil=11.000
+	}
+
+	history={
+		owner = SYR
+		victory_points = {
+			2013 1 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SYR
+		add_core_of = OSY
+		add_claim_by = KUR
+		1935.10.25 = {		
+			OSY = {
+				set_province_controller = 901
+				
+			} 			
+		}
+	}
+
+	provinces={
+		901 2013 
+	}
+	manpower=324110
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

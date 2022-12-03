@@ -1,0 +1,36 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	### Northern Fleet -- Murmansk
+	fleet = {
+		name = "Shavi Zghvis Plot’i"
+		naval_base = 3653 # Murmansk
+		task_force = {				
+			name = "Severnyy Flot"
+			location = 3653 # Murmansk
+			# 1ya Flotiliya Esmintsev
+			ship = { name = "Dzerzhinskiy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GEO version_name = "Fidonisi Class" } } }
+			ship = { name = "Nezamozhnik" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GEO version_name = "Fidonisi Class" } } }
+			ship = { name = "Petrovskiy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GEO version_name = "Fidonisi Class" } } }
+		}	
+
+	}
+	
+	
+
+	
+} 
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	
+	
+}
+
+#####################

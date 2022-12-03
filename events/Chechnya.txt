@@ -1,0 +1,69 @@
+﻿###########################
+# Chechen Events
+###########################
+
+add_namespace = chechnya
+
+# Chechnya asks Soviet for peace
+country_event = {
+	id = chechnya.1
+	title = chechnya.1.t
+	desc = chechnya.1.d
+	picture = GFX_report_event_stalin_02
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chechnya.1.a
+		ai_chance = {
+			base = 10
+		}
+		set_global_flag = chechenya_wins
+		CIN = {
+			transfer_state = 874
+			transfer_state = 875
+			transfer_state = 873
+			transfer_state = 232
+			white_peace = SOV
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.25
+		}
+		add_stability = -0.1
+		hidden_effect = {
+			news_event = {
+				id = news.633
+				days = 1
+			}
+		}
+	}
+	
+	option = {
+		name = chechnya.1.b
+		ai_chance = {
+			base = 0
+		}
+		CIN = {
+			country_event = { id = chechnya.101 days = 1 }
+		}
+	}
+}
+
+# Italy says no
+country_event = {
+	id = chechnya.101
+	title = chechnya.101.t
+	desc = chechnya.101.d
+	picture = GFX_report_event_stalin_02
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chechnya.101.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+

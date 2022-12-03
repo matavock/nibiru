@@ -1,0 +1,39 @@
+
+state={
+	id=745
+	name="STATE_745"
+
+	history={
+		owner = PRC
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PRC
+		victory_points = {
+			1150 1 
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+			industrial_complex = 1
+			dockyard = 1
+			1150 = {
+				naval_base = 5
+				coastal_bunker = 1
+
+			}
+			964 = {
+				naval_base = 3
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		964 1150 3783 3970 6851 6860 6918 6981 9835 9854 11764 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

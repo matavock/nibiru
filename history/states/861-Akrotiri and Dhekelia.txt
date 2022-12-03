@@ -1,0 +1,36 @@
+state={
+	id=861
+	name="Akrotiri and Dhekelia"
+	provinces={
+		13249 13251 
+	}
+	history={
+		owner = ENG
+		add_core_of = CYP
+		add_core_of = GRE
+		
+		victory_points = {
+			13249 1 
+		}
+		victory_points = {
+			13251 1 
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			13249 = {
+				naval_base = 2
+
+			}
+			13251 = {
+				naval_base = 2
+
+			}
+
+		}
+
+	}
+	manpower=7761
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+}

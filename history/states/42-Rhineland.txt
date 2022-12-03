@@ -1,0 +1,33 @@
+
+state={
+	id=42
+	name="Rheinland-Pfalz"
+	resources={
+		steel=59.000
+		aluminium=14.000
+	}
+
+	history={
+		owner = GER
+		
+		victory_points = {
+			3423 3 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+
+		}
+		add_core_of = GER
+		#set_demilitarized_zone = yes
+
+	}
+
+	provinces={
+		563 3423 3558 11547 11560 
+	}
+	manpower=2015739
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

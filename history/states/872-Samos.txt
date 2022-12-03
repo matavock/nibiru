@@ -1,0 +1,26 @@
+state={
+	id=872
+	name="Samos"
+	provinces={
+		13237 
+	}
+		history={
+		owner = GRE
+		buildings = {
+			infrastructure = 1
+			13237 = {
+				naval_base = 1
+
+			}
+
+		}
+		victory_points = {
+			13237 1 
+		}
+		add_core_of = GRE
+
+	}
+	manpower=32000
+	state_category = small_island
+	buildings_max_level_factor=1.000
+}

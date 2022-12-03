@@ -1,0 +1,33 @@
+
+state={
+	id=892
+	name="Bursa"
+	resources={
+		chromium=54.000
+	}
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			947 10 
+		}
+		victory_points = {
+			11778 5 
+		}
+		add_core_of = TUR
+
+	}
+
+	provinces={
+		785 856 947 981 3786 11778 11831 11898 
+	}
+	manpower=527000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

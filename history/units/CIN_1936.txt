@@ -1,0 +1,130 @@
+﻿division_template = {
+	name = "Infantry Division"		
+	division_names_group = BRENGL_INF_01
+	# 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		
+	}
+	support = {
+		
+	}
+}
+division_template = {
+	name = "Chechen Militant"		
+	# 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		
+		
+	}
+}
+
+
+units = { 
+
+division = { # "
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3672
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+division = { # "
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 666
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+
+	}
+	
+	division = { # "
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 670
+		division_template = "Chechen Militant"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+
+	}
+		division = { # "
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6689
+		division_template = "Chechen Militant"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+		
+		division = { # "
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6689
+		division_template = "Chechen Militant"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	
+	
+		division = { # "
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1455
+		division_template = "Chechen Militant"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3667
+		division_template = "Chechen Militant"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "CIN"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 100
+	}
+}

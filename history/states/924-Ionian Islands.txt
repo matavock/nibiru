@@ -1,0 +1,33 @@
+state={
+	id=924
+	name="Ionian Islands"
+	provinces={
+		1106 10203 
+	}
+		history={
+		owner = GRE
+		buildings = {
+			infrastructure = 1
+			1106 = {
+				naval_base = 1
+
+			}
+			10203 = {
+				naval_base = 1
+
+			}
+
+		}
+		victory_points = {
+			1106 1 
+		}
+		victory_points = {
+			10203 3 
+		}
+		add_core_of = GRE
+
+	}
+	manpower=170000
+	state_category = small_island
+	buildings_max_level_factor=1.000
+}

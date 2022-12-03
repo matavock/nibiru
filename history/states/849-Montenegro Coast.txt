@@ -1,0 +1,29 @@
+state={
+	id=849
+	name="Kotor"
+	provinces={
+		13245 13246 
+	}
+	history={
+	
+		victory_points = {
+			13245 2 
+		}
+		owner = MNT
+		add_core_of = MNT
+		buildings = {
+			infrastructure = 2
+			dockyard = 2
+			13246 = {
+				naval_base = 3
+
+			}
+
+		}
+		
+
+	}
+	manpower=120000
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

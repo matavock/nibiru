@@ -1,0 +1,38 @@
+﻿
+
+
+##### OOB #####
+units = {
+### IJN ###
+	
+
+	# Naval District Forces #
+	fleet = {
+		name = "Kaigun Yobikantai"
+		naval_base = 4056  #Ominato
+		#Ominato
+		task_force = {
+			name = "Ominato Keibi Sentai"
+			location = 4056  #Ominato
+			#Dai 1 Kuchikutai
+			ship = { name = "Kamikaze" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "Mutsuki Class"} } }
+			ship = { name = "Nokaze" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "Mutsuki Class"} } }
+			ship = { name = "Namikaze" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "Mutsuki Class"} } }
+			ship = { name = "Numakaze" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "Mutsuki Class"} } }	
+		}
+		#Pusan
+		task_force = {
+			name = "Bogojunyokan Kantai"
+			location = 7125 # Pusan
+			#Mutsuki-class destroyers
+			ship = { name = "Iwate" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = {amount = 1 owner = KOR version_name = "Izumo Class"} } }
+			ship = { name = "Hirado" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = KOR version_name = "Chikuma Class"} } }
+			ship = { name = "Yahagi" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = KOR version_name = "Chikuma Class"} } }	
+		}
+	}
+	
+}
+
+
+
+

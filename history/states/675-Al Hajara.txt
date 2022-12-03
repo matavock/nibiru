@@ -1,0 +1,37 @@
+
+state={
+	id=675
+	name="Al Muthanna"
+
+	history={
+		owner = IRQ
+
+		victory_points = {
+			8001 3 
+		}
+		victory_points = {
+			2089 5 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			air_base = 1
+			dockyard = 1
+			2089 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = IRQ
+
+	}
+
+	provinces={
+		2089 8001 12879 
+	}
+	manpower=973600
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

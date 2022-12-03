@@ -1,0 +1,26 @@
+state={
+	id=933
+	name="Tifariti"
+	provinces={
+		7979 13318 13319 13320 13321 
+	}
+	history={
+		owner = WES
+		add_core_of = MOR	
+		add_claim_by = MOR
+		add_core_of = WES
+		buildings = {
+			infrastructure = 1
+
+
+		}
+		victory_points = {
+			7979 1 
+		}
+
+	}
+	manpower=9870
+	state_category = wasteland
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

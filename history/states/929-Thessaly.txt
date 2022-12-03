@@ -1,0 +1,32 @@
+
+state={
+	id=929
+	name="Thessaly"
+
+	history={
+		victory_points = {
+			863 3 
+		}
+		victory_points = {
+			3864 3 
+		}
+		
+		owner = GRE
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+
+		}
+		add_core_of = GRE
+
+	}
+
+	provinces={
+		863 3864 3973 6930 
+	}
+	manpower=512500
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

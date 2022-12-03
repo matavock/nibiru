@@ -1,0 +1,26 @@
+state={
+	id=863
+	name="Transnistria"
+	provinces={
+		13257 13258 13259 
+	}
+        history={
+		add_core_of = SOV
+		add_core_of = MOL
+		owner = SOV
+		#owner = MOL
+		victory_points = {
+			13257 1 
+		}
+		buildings = {
+			
+			infrastructure = 2
+		}
+
+		add_core_of = ROM
+
+	}
+	manpower=334523
+		state_category = rural
+	buildings_max_level_factor=1.000
+}

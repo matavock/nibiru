@@ -1,0 +1,33 @@
+
+state={
+	id=817
+	name="Eastern Armenia"
+
+	history={
+		owner = SOV
+		victory_points = {
+			12450 1 
+		}
+		victory_points = {
+			4660 1 
+		}
+		victory_points = {
+			11708 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SOV
+		add_core_of = ARM
+
+	}
+
+	provinces={
+		4660 6642 11708 12450 
+	}
+	manpower=560000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,748 @@
+YUG_peasant_uprisings = {
+	
+	# Bulgaria
+
+	YUG_instigate_in_bulgaria = {
+
+		icon = decision_generic_nationalism
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		available = {
+			NOT = {
+				any_country = {
+					original_tag = BUL
+					OR = {
+						has_government = communism
+						has_idea = agitated_peasants
+					}
+				}
+				event_target:YUG_communist_coup_target = { exists = yes }
+			}
+		}
+		
+		visible = {
+			original_tag = YUG
+			NOT = {
+				event_target:YUG_communist_coup_target = {
+					OR = {
+						exists = yes
+						has_government = communism
+					}
+				}
+			}
+			any_country = {
+				original_tag = BUL
+				exists = yes
+			}
+			NOT = {
+				any_country = {
+					original_tag = BUL
+					OR = {
+						has_government = communism
+						has_country_flag = banned_communism_flag
+					}
+				}
+			}
+		}
+
+		cost = 25
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+		}
+
+		complete_effect = {
+			every_country = {
+				limit = {
+					original_tag = BUL
+				}
+				save_global_event_target_as = YUG_communist_coup_target
+				country_event = { id = DOD_yugoslavia.181 }
+			}
+			hidden_effect = {
+				set_country_flag = instigating_a_coup
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+	}
+	
+	# Albania
+
+	YUG_instigate_in_albania = {
+
+		icon = decision_generic_nationalism
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		available = {
+			NOT = {
+				any_country = {
+					original_tag = ALB
+					OR = {
+						has_government = communism
+						has_idea = agitated_peasants
+					}
+				}
+				event_target:YUG_communist_coup_target = { exists = yes }
+			}
+		}
+		
+		visible = {
+			original_tag = YUG
+			NOT = {
+				event_target:YUG_communist_coup_target = {
+					OR = {
+						exists = yes
+						has_government = communism
+					}
+				}
+			}
+			any_country = {
+				original_tag = ALB
+				exists = yes
+			}
+			NOT = {
+				any_country = {
+					original_tag = ALB
+					OR = {
+						has_government = communism
+						has_country_flag = banned_communism_flag
+					}
+				}
+			}
+		}
+
+		cost = 25
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+		}
+
+		complete_effect = {
+			every_country = {
+				limit = {
+					original_tag = ALB
+				}
+				save_global_event_target_as = YUG_communist_coup_target
+				country_event = { id = DOD_yugoslavia.181 }
+			}
+			hidden_effect = {
+				set_country_flag = instigating_a_coup
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+	}
+	
+	# Greece
+
+	YUG_instigate_in_greece = {
+
+		icon = decision_generic_nationalism
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		available = {
+			NOT = {
+				any_country = {
+					original_tag = GRE
+					OR = {
+						has_government = communism
+						has_idea = agitated_peasants
+					}
+				}
+				event_target:YUG_communist_coup_target = { exists = yes }
+			}
+		}
+		
+		visible = {
+			original_tag = YUG
+			NOT = {
+				event_target:YUG_communist_coup_target = {
+					OR = {
+						exists = yes
+						has_government = communism
+					}
+				}
+			}
+			any_country = {
+				original_tag = GRE
+				exists = yes
+			}
+			NOT = {
+				any_country = {
+					original_tag = GRE
+					OR = {
+						has_government = communism
+						has_country_flag = banned_communism_flag
+					}
+				}
+			}
+			has_completed_focus = YUG_pan_balkan_workers_congress
+		}
+
+		cost = 25
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+		}
+
+		complete_effect = {
+			every_country = {
+				limit = {
+					original_tag = GRE
+				}
+				save_global_event_target_as = YUG_communist_coup_target
+				country_event = { id = DOD_yugoslavia.181 }
+			}
+			hidden_effect = {
+				set_country_flag = instigating_a_coup
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+	}
+	
+	# Romania
+
+	YUG_instigate_in_romania = {
+
+		icon = decision_generic_nationalism
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		available = {
+			NOT = {
+				any_country = {
+					original_tag = ROM
+					OR = {
+						has_government = communism
+						has_idea = agitated_peasants
+					}
+				}
+				event_target:YUG_communist_coup_target = { exists = yes }
+			}
+		}
+		
+		visible = {
+			original_tag = YUG
+			NOT = {
+				event_target:YUG_communist_coup_target = {
+					OR = {
+						exists = yes
+						has_government = communism
+					}
+				}
+			}
+			any_country = {
+				original_tag = ROM
+				exists = yes
+			}
+			NOT = {
+				any_country = {
+					original_tag = ROM
+					OR = {
+						has_government = communism
+						has_country_flag = banned_communism_flag
+					}
+				}
+			}
+			has_completed_focus = YUG_pan_balkan_workers_congress
+		}
+
+		cost = 25
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+		}
+
+		complete_effect = {
+			every_country = {
+				limit = {
+					original_tag = ROM
+				}
+				save_global_event_target_as = YUG_communist_coup_target
+				country_event = { id = DOD_yugoslavia.181 }
+			}
+			hidden_effect = {
+				set_country_flag = instigating_a_coup
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+	}
+	
+	# Hungary
+
+	YUG_instigate_in_hungary = {
+
+		icon = decision_generic_nationalism
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		available = {
+			NOT = {
+				any_country = {
+					original_tag = HUN
+					OR = {
+						has_government = communism
+						has_idea = agitated_peasants
+					}
+				}
+				event_target:YUG_communist_coup_target = { exists = yes }
+			}
+		}
+		
+		visible = {
+			original_tag = YUG
+			NOT = {
+				event_target:YUG_communist_coup_target = {
+					OR = {
+						exists = yes
+						has_government = communism
+					}
+				}
+			}
+			any_country = {
+				original_tag = HUN
+				exists = yes
+			}
+			NOT = {
+				any_country = {
+					original_tag = HUN
+					OR = {
+						has_government = communism
+						has_country_flag = banned_communism_flag
+					}
+				}
+			}
+			has_completed_focus = YUG_pan_balkan_workers_congress
+		}
+
+		cost = 25
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+		}
+
+		complete_effect = {
+			every_country = {
+				limit = {
+					original_tag = HUN
+				}
+				save_global_event_target_as = YUG_communist_coup_target
+				country_event = { id = DOD_yugoslavia.181 }
+			}
+			hidden_effect = {
+				set_country_flag = instigating_a_coup
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+	}
+	
+	# Turkey
+
+	YUG_instigate_in_turkey = {
+
+		icon = decision_generic_nationalism
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		available = {
+			NOT = {
+				any_country = {
+					original_tag = TUR
+					OR = {
+						has_government = communism
+						has_idea = agitated_peasants
+					}
+				}
+				event_target:YUG_communist_coup_target = { exists = yes }
+			}
+		}
+		
+		visible = {
+			original_tag = YUG
+			NOT = {
+				event_target:YUG_communist_coup_target = {
+					OR = {
+						exists = yes
+						has_government = communism
+					}
+				}
+			}
+			any_country = {
+				original_tag = TUR
+				exists = yes
+			}
+			NOT = {
+				any_country = {
+					original_tag = TUR
+					OR = {
+						has_government = communism
+						has_country_flag = banned_communism_flag
+					}
+				}
+			}
+			has_completed_focus = YUG_invite_greece
+			has_completed_focus = YUG_invite_hungary
+			has_completed_focus = YUG_invite_romania
+		}
+
+		cost = 25
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+		}
+
+		complete_effect = {
+			every_country = {
+				limit = {
+					original_tag = TUR
+				}
+				save_global_event_target_as = YUG_communist_coup_target
+				country_event = { id = DOD_yugoslavia.181 }
+			}
+			hidden_effect = {
+				set_country_flag = instigating_a_coup
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+	}
+
+	YUG_propaganda_in_target = {
+
+		icon = decision_generic_nationalism
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		available = {
+			NOT = {
+				event_target:YUG_communist_coup_target = {
+					OR = {
+						has_government = communism
+						has_idea = pan_slavic_propaganda
+					}
+				}
+			}
+		}
+		
+		visible = {
+			original_tag = YUG
+			event_target:YUG_communist_coup_target = {
+				exists = yes
+				NOT = {
+					OR = {
+						has_government = communism
+						has_country_flag = banned_communism_flag
+					}
+				}
+			}
+		}
+		
+		cancel_trigger = {
+			NOT = {
+				has_country_flag = instigating_a_coup
+			}
+		}
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.05
+		}
+		days_remove = 70
+		
+		remove_effect = {
+			
+		}
+
+		complete_effect = {
+			effect_tooltip = {
+				event_target:YUG_communist_coup_target = {
+					add_timed_idea = {
+						idea = pan_slavic_propaganda
+						days = 70
+					}
+				}
+			}
+			hidden_effect = {
+				event_target:YUG_communist_coup_target = {
+					country_event = { id = DOD_yugoslavia.182 }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+	}
+
+	YUG_arm_communist_militants = {
+
+		icon = decision_generic_nationalism
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		available = {
+			NOT = {
+				event_target:YUG_communist_coup_target = {
+					OR = {
+						has_government = communism
+						has_idea = armed_communist_militants
+					}
+				}
+			}
+			has_equipment = { infantry_equipment > 499 }
+		}
+		
+		visible = {
+			original_tag = YUG
+			event_target:YUG_communist_coup_target = {
+				exists = yes
+				NOT = {
+					OR = {
+						has_government = communism
+						has_country_flag = banned_communism_flag
+					}
+				}
+			}
+		}
+		
+		cancel_trigger = {
+			NOT = {
+				has_country_flag = instigating_a_coup
+			}
+		}
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+		days_remove = 70
+		
+		remove_effect = {
+			
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+			effect_tooltip = {
+				event_target:YUG_communist_coup_target = {
+					add_timed_idea = {
+						idea = armed_communist_militants
+						days = 180
+					}
+				}
+			}
+			hidden_effect = {
+				event_target:YUG_communist_coup_target = {
+					country_event = { id = DOD_yugoslavia.183 }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+	}
+
+	YUG_communist_coup = {
+
+		icon = decision_generic_nationalism
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		available = {
+			NOT = {
+				event_target:YUG_communist_coup_target = {
+					has_government = communism
+				}
+			}
+			event_target:YUG_communist_coup_target = {
+				communism > 0.2
+			}
+		}
+		
+		visible = {
+			original_tag = YUG
+			event_target:YUG_communist_coup_target = {
+				exists = yes
+				OR = {
+					has_idea = armed_communist_militants
+					communism > 0.5
+				}
+				NOT = {
+					OR = {
+						has_government = communism
+						has_country_flag = banned_communism_flag
+					}
+				}
+			}
+			
+		}
+
+		cost = 50
+
+		complete_effect = {
+			effect_tooltip = {
+				event_target:YUG_communist_coup_target = {
+					start_civil_war = {
+						ideology = communism
+						size = yug_total_com_size
+					}
+				}
+			}
+			custom_effect_tooltip = YUG_uprising_strength_tt
+			
+			hidden_effect = {
+				remove_decision_on_cooldown = YUG_propaganda_in_target
+				remove_decision_on_cooldown = YUG_arm_communist_militants
+				
+				event_target:YUG_communist_coup_target = {
+					country_event = { id = DOD_yugoslavia.184 }
+				}
+				clr_country_flag = instigating_a_coup
+				clear_global_event_target = YUG_communist_coup_target
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				event_target:YUG_communist_coup_target = {
+					communism < 0.4
+				}
+				factor = 0
+			}
+		}
+
+	}
+
+	YUG_abandon_communist_effort = {
+
+		icon = decision_generic_nationalism
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		available = {
+			event_target:YUG_communist_coup_target = {
+				OR = {
+					has_government = communism
+					exists = no
+					has_war_with = ROOT
+					is_puppet_of = ROOT
+					communism < 0.1
+				}
+			}
+		}
+		
+		visible = {
+			original_tag = YUG
+			event_target:YUG_communist_coup_target = {
+				OR = {
+					has_government = communism
+					has_country_flag = banned_communism_flag
+					AND  = {
+						communism < 0.1
+						NOT = {
+							OR = {
+								has_idea = agitated_peasants 
+								has_idea = pan_slavic_propaganda
+								has_idea = armed_communist_militants
+							}
+						}
+					}
+				}
+			}
+			
+		}
+
+		cost = 0
+
+		complete_effect = {
+			hidden_effect = {
+				event_target:YUG_communist_coup_target = {
+					set_country_flag = had_yugo_civil_war_flag
+				}
+				clear_global_event_target = YUG_communist_coup_target
+				clr_country_flag = instigating_a_coup
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				NOT = {
+					event_target:YUG_communist_coup_target = {
+						OR = {
+							has_country_flag = banned_communism_flag
+							has_government = communism
+						}
+					}
+				}
+				factor = 0
+			}
+		}
+
+	}
+}
+
+
+
+
+

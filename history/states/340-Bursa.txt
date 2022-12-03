@@ -1,0 +1,46 @@
+
+state={
+	id=340
+	name="Çanakkale"
+	
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+
+		}
+		victory_points = {
+			6864 5 
+		}
+		victory_points = {
+			6912 3 
+		}
+		victory_points = {
+			3851 3 
+		}
+		add_core_of = TUR
+		#if = {
+		#	limit = {
+		#		has_dlc = "Battle for the Bosporus"
+#
+			#}
+			#set_demilitarized_zone = yes
+#
+		#}
+		1936.11.9 = {
+			set_demilitarized_zone = no
+
+		}
+
+	}
+
+	provinces={
+		3851 6864 6912 9799 9887 11867 
+	}
+	manpower=450000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

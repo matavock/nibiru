@@ -1,0 +1,26 @@
+
+state={
+	id=891
+	name="Al Shahaniya"
+
+	history={
+		owner = QAT
+		
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = QAT
+
+	}
+
+	provinces={
+		13281 13283 13285 
+	}
+	manpower=8100
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

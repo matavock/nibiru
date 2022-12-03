@@ -1,0 +1,67 @@
+CIN_defeat_soviet_category = {
+
+	CIN_defeat_soviet = {
+
+		allowed = { tag = CIN }
+
+		icon = GFX_decision_category_SOV_civil_war
+
+		available = {
+			has_full_control_of_state = 874
+			has_full_control_of_state = 875
+			has_full_control_of_state = 873
+			has_full_control_of_state = 232
+			SOV = { surrender_progress > 0.025 }
+			has_war_with = SOV
+			CIN = { is_in_faction = no }
+		}
+		is_good = yes
+		fire_only_once = yes
+
+		cancel_trigger = {
+			hidden_trigger = {
+				
+					
+					NOT = { has_war_with = SOV }
+				
+			}
+		}
+
+		visible = {
+			has_war_with = SOV
+		}
+		
+		cancel_effect = {
+		
+		}
+		
+		complete_effect = {
+		
+			hidden_effect = {
+				874 = { add_compliance = 50 }
+				875 = { add_compliance = 50 }
+				873 = { add_compliance = 50 }
+				232 = { add_compliance = 50 }
+			}
+			SOV = { country_event = chechnya.1 }
+			custom_effect_tooltip = if_they_accept_tt
+			effect_tooltip = {
+				CIN = {
+			transfer_state = 874
+			transfer_state = 875
+			transfer_state = 873
+			transfer_state = 232
+			white_peace = SOV
+		}
+			}
+		}
+
+		timeout_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 20000 #Ethiopia should be very into this idea
+		}
+	}
+}

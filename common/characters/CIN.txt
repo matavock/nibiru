@@ -1,0 +1,86 @@
+characters = {
+	CIN_hasan_israilov = {
+		name = "Hasan Israilov" 
+		portraits = {
+			civilian = {
+				large = "gfx/israilov.jpg"
+			}
+			army = {
+				large = "gfx/israilov.jpg"
+			}
+		}
+		country_leader = {
+		traits = {  freedom_fighter}
+			ideology = despotism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+		field_marshal={
+			traits = { trickster trait_mountaineer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	CIN_mairbek = {
+		name = "Mairbek Sheripov" 
+		portraits = {
+			civilian = {
+				large = "gfx/mairbek.jpg"
+			}
+			army = {
+				large = "gfx/mairbek.jpg"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+		corps_commander={
+			traits = { trait_mountaineer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 4
+			
+		}
+	}
+	
+	CIN_abukhadzhi = {
+		name = "Abukhadzhi Idrisov" 
+		portraits = {
+			army = {
+				large = "gfx/abukhadzi.png"
+			}
+		}
+
+		corps_commander={
+			traits = { infantry_leader }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	
+	CIN_yusup_tambiev = {
+		name = "Yusup Tambiev" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Yusup_Tambiev
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+}
+	

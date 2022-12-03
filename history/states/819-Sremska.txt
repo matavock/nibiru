@@ -1,0 +1,28 @@
+
+state={
+	id=819
+	name="Srem"
+
+	history={
+		victory_points = {
+			13306 1 
+		}
+		owner = YUG
+		add_core_of = YUG
+		add_core_of = SER
+		add_claim_by = CRO
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		11580 13304 13306 
+	}
+	manpower=150000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

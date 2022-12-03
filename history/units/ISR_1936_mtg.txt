@@ -1,0 +1,30 @@
+units = {
+	##### NAVAL UNITS -- Kreigsmarine (CO: Raeder) #####
+	fleet = {
+		name = "Israel Naval Forces"			
+		naval_base = 4206  # Wilhemshaven
+		task_force = {
+			name = "Independence Force"
+			location = 4206  # Konigsberg
+			ship = { name = "Jerusalem" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ISR version_name = "Deutschland Class" } } }
+			ship = { name = "Tel-Aviv" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ISR version_name = "Deutschland Class" } } }			
+			# 2. Torpedobootflottille
+			ship = { name = "Squadron" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ISR version_name = "Type 24 Class" } } }
+			ship = { name = "Albatros" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ISR version_name = "Type 24 Class" } } }
+			ship = { name = "Jew" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ISR version_name = "Type 24 Class" } } }
+			ship = { name = "Hunter" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ISR version_name = "Type 24 Class" } } }
+			# 3. Torpedobootflottille
+			ship = { name = "Tiger" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ISR version_name = "Type 24 Class" } } }
+			ship = { name = "Elephant" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ISR version_name = "Type 24 Class" } } }
+			ship = { name = "Wolf" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ISR version_name = "Type 24 Class" } } }
+			ship = { name = "Force" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ISR version_name = "Type 24 Class" } } }
+		}
+		task_force = {
+			name = "Red Sea Squadron"
+			location = 1015 	# Kiel
+			ship = { name = "Boomer" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ISR version_name = "Bremse Class" } } }			
+			ship = { name = "Independence" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ISR version_name = "Bremse Class" } } }
+			ship = { name = "Freedom" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ISR version_name = "Type 24 Class" } } }
+		}
+		}
+		}

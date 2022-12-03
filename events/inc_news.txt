@@ -1,0 +1,252 @@
+# INCA NEWS
+
+add_namespace = incnews
+
+# Welcome to Vilcabamba
+news_event = {
+	id = incnews.0
+	title = incnews.0.t
+	desc = incnews.0.d
+
+	picture = GFX_news_event_in00
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = inc_mod_intro
+	}
+	
+	option = {
+		name = incnews.0.a
+		trigger = {
+			TAG = INC
+		}
+	}
+	option = {
+		name = incnews.0.b
+		trigger = {
+			NOT = {
+				TAG = INC
+			}
+		}
+	}
+}
+
+# Inca Grand Temple
+news_event = {
+	id = incnews.1
+	title = incnews.1.t
+	desc = incnews.1.d
+
+	picture = GFX_news_event_in01
+	
+	major = yes
+	
+	trigger = {
+		date > 1937.2.1
+		807 = { is_owned_and_controlled_by = INC }
+		NOT = { has_global_flag = inc_new_temple }
+	}
+	
+	immediate = {
+		set_global_flag = inc_new_temple
+		hidden_effect = {
+			PRU = {
+				add_opinion_modifier = { target = INC modifier = INC_our_place_in_the_sun }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 34
+	}	
+	
+	option = {
+		name = incnews.1.a
+		trigger = {
+			TAG = INC
+		}
+	}
+	option = {
+		name = incnews.1.b
+		trigger = {
+			NOT = { 
+			    TAG = INC 
+			}
+		}
+	}
+}
+
+# Billinghurst declines invite
+news_event = {
+	id = incnews.2
+	title = incnews.2.t
+	desc = incnews.2.desc
+	picture = GFX_news_event_the_megali_idea_fails
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = incnews.2.a
+		trigger = {
+			original_tag = INC
+		}
+	}
+	option = {
+		name = incnews.2.b
+		trigger = { 
+			NOT = { original_tag = INC }
+			NOT = { original_tag = CHL }
+		}
+	}
+	option = {
+		name = wtt_news.2.c
+		trigger = { 
+			original_tag = CHL
+		}
+	}
+}
+
+# Billinghurst accepted inca invitation
+news_event = {
+	id = incnews.3
+	title = incnews.3.t
+	desc = incnews.3.desc
+	picture = GFX_news_event_banovina_croatia
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = incnews.3.a
+		trigger = {
+			original_tag = INC
+		}
+	}
+	option = {
+		name = incnews.3.b
+		trigger = { 
+			NOT = { original_tag = INC }
+			NOT = { original_tag = CHL }
+			NOT = { original_tag = PRU }
+			NOT = { original_tag = SPA }
+		}
+	}
+	option = {
+		name = incnews.3.c
+		trigger = { 
+			original_tag = CHL
+		}
+	}
+	option = {
+		name = incnews.3.d
+		trigger = {
+			OR = {
+				original_tag = PRU
+				original_tag = SPA
+			}
+		}
+	}
+}
+
+# Peru intervenes on illegal border crossing
+news_event = {
+	id = incnews.4
+	title = incnews.4.t
+	desc = incnews.4.desc
+	picture = GFX_news_event_german_inspect_troops
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = incnews.4.a
+		trigger = {
+			original_tag = INC
+		}
+	}
+	option = {
+		name = incnews.4.b
+		trigger = {
+			original_tag = CHL
+		}
+	}
+	option = {
+		name = incnews.4.c
+		trigger = {
+			original_tag = PRU
+		}
+	}
+	option = {
+		name = incnews.4.d
+		trigger = { 
+			NOT = { 
+				original_tag = INC
+				original_tag = CHL
+				original_tag = PRU
+			}
+		}
+	}
+}
+
+# Territorial Claims Not Pressed
+news_event = {
+	id = incnews.5
+	title = incnews.5.t
+	desc = incnews.5.d
+
+	picture = GFX_news_event_008
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = incnews.5.a
+		trigger = {
+			TAG = INC
+		}
+	}
+	option = {
+		name = incnews.5.b
+		trigger = {
+			NOT = {
+				TAG = INC
+			}
+		}
+	}
+}
+
+# Territory Surrendered
+news_event = {
+	id = incnews.6
+	title = incnews.6.t
+	desc = incnews.6.d
+
+	picture = GFX_news_event_032
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = incnews.6.a
+		trigger = {
+			TAG = INC
+		}
+	}
+	option = {
+		name = incnews.6.b
+		trigger = {
+			NOT = {
+				TAG = INC
+			}
+		}
+	}
+}

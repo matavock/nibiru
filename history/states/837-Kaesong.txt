@@ -1,0 +1,31 @@
+state={
+	id=837
+	name="Kaesong"
+	provinces={
+		848 1003 4107 7070 7155 7171 9981 10065 10083 11770 11915 12040 
+	}
+	history={
+		owner = KPA
+		buildings = {
+			infrastructure = 2
+			
+			air_base = 1
+			848 = {
+				bunker = 2
+ 			}
+			9981 = {
+				bunker = 2
+ 			}	
+			12040 = {
+				bunker = 2
+ 			}
+		}
+		
+		add_core_of = KOR
+		add_core_of = KPA
+
+	}
+	manpower=1640000
+	state_category = town
+	buildings_max_level_factor=1.000
+}

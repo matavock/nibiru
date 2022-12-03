@@ -1,0 +1,287 @@
+﻿capital = 541
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+		fighter1 = 1
+		early_bomber = 1
+		tactical_bomber1 = 1
+		strategic_bomber1 = 1
+		CAS1 = 1
+		naval_bomber1 = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "Leichttraktor"
+		type = light_tank_chassis_0
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 2
+		}
+		obsolete = yes
+		icon = "gfx/interface/technologies/gwtank.dds"
+	}
+	create_equipment_variant = {
+		name = "Panzer I Ausf. A"
+		type = light_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 5
+			tank_nsb_armor_upgrade = 1
+		}
+		icon = "gfx/interface/technologies/ger_basic_light_tank.dds"
+		obsolete = yes
+	}
+
+}
+recruit_character = PRE_wilhelm_iii
+recruit_character = PRE_hans_oster
+recruit_character = PRE_carl_friedrich_goerdeler
+recruit_character = PRE_julius_leber
+recruit_character = PRE_kurt_schumacher
+recruit_character = PRE_hjalmar_schacht
+recruit_character = PRE_von_lettow_vorbeck
+recruit_character = PRE_friedrich_paulus
+recruit_character = PRE_ernst
+recruit_character = PRE_acgs
+recruit_character = PRE_acr
+recruit_character = PRE_stc
+recruit_character = PRE_ncm
+recruit_character = PRE_democratic_guy
+recruit_character = PRE_communist_guy
+recruit_character = PRE_coi
+recruit_character = PRE_pot
+recruit_character = PRE_aa2
+recruit_character = PRE_awt
+recruit_character = PRE_acas
+recruit_character = PRE_mt
+recruit_character = PRE_nccr
+recruit_character = PRE_ai2
+recruit_character = PRE_ncs
+recruit_character = PRE_aco2
+recruit_character = PRE_acd2
+recruit_character = PRE_nt
+recruit_character = PRE_ar
+recruit_character = PRE_fascist_guy
+# Starting tech
+oob = "PRE_1936"
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	
+	mobile_warfare = 1
+	trade_interdiction = 1
+	formation_flying = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	oil_processing = 1
+	fuel_refining = 1
+	
+}
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		improved_light_tank = 1
+		basic_heavy_tank = 1
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+	}
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		transport = 1
+		early_destroyer = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		mtg_transport = 1
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		basic_battery = 1
+	}
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "PRE_1936_Naval"
+	else = {
+		set_naval_oob = "PRE_1936_Naval_Legacy"
+	}
+}
+
+
+set_research_slots = 3
+set_convoys = 50
+set_stability = 0.25
+
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+set_popularities = {
+	communism = 20
+	democratic = 30
+	fascism = 22
+	neutrality = 28
+}
+
+add_ideas = {
+PRE_idea_wilhelm_iii
+anti_fascism_government
+german_government
+donations_from_supporters
+limited_conscription
+}
+
+
+
+
+set_cosmetic_tag = PRE_SAF
+
+create_country_leader = {
+	name = "Otto Wels"
+	desc = "POLITICS_OTTO_WELS_DESC"
+	picture = "gfx/leaders/GER/ottowels.png"
+	expire = "1959.1.16"
+	ideology = socialism
+	traits = {
+		exiled
+		national_integralist
+	}
+}
+
+create_country_leader = {
+	name = "Ernst Thälmann"
+	desc = "POLITICS_ERNST_THALMANN_DESC"
+	picture = "gfx/leaders/GER/ernst.jpg"
+	expire = "1956.1.1"
+	ideology =  stalinism
+	traits = {
+		exiled
+			marxist_philosopher
+	}
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Flachgehende Minensuchboote"
+		type = destroyer_1
+		parent_version = 0
+		upgrades = {
+			destroyer_engine_upgrade = 1
+			ship_ASW_upgrade = 2
+			ship_anti_air_upgrade = 1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Königsberg Class"
+		type = light_cruiser_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 2
+			ship_engine_upgrade = 2
+			ship_gun_upgrade = 2
+			ship_anti_air_upgrade = 2
+		}
+		obsolete = yes
+	}
+}
+
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Flachgehende Minensuchboote"
+		type = ship_hull_light_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_1
+			mid_1_custom_slot = ship_mine_layer_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Königsberg Class"
+		type = ship_hull_cruiser_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_light_medium_battery_1
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+		obsolete = yes
+	}
+}
+

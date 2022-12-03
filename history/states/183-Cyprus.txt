@@ -1,0 +1,39 @@
+
+state={
+	id=183
+	name="STATE_183"
+	resources={
+		chromium=4.000
+	}
+
+	history={
+		owner = CYP
+		add_core_of = CYP
+		add_core_of = NCY
+		add_core_of = GRE
+		
+		
+		victory_points = {
+			13250 5 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+			13250 = {
+				naval_base = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		13250
+	}
+	manpower=307959
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

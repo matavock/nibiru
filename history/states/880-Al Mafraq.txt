@@ -1,0 +1,28 @@
+state={ #JOR
+	id=880
+	name="Al Mafraq"
+	provinces={
+		1544 4440 4574 7001 4591 
+	}
+	
+	history={
+		victory_points = {
+			4440 1 
+		}
+		victory_points = {
+			7001 1 
+		}
+		owner = JOR
+		buildings = {
+			infrastructure = 1
+
+		}
+
+		add_core_of = JOR
+
+	}
+	manpower=367142
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = rural
+}

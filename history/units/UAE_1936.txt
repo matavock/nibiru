@@ -1,0 +1,47 @@
+﻿division_template = {
+	name = "Alfurqat Almasha"				# Infantry Division
+
+	division_names_group = EGY_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+}
+
+
+units = {
+	##### Royal Iraqi Army #####
+	division = {
+		#name = "1 Alfurqat"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7960
+		division_template = "Alfurqat Almasha"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division = {
+		#name = "1 Alfurqat"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 8108
+		division_template = "Alfurqat Almasha"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	
+}
+
+
+
+
+
+instant_effect = {
+
+}

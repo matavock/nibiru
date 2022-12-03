@@ -1,0 +1,22 @@
+################
+##### CIN ######
+################
+
+CIN_defeat_soviet_category = {
+
+	icon = GFX_decision_category_saf_anti_colonialist_crusade
+	picture = GFX_decision_cat_picture_soviet_civil_war
+	allowed = {
+		tag = CIN
+	}
+
+	priority = {
+		base = 10
+	}
+
+	visible = {
+		SOV = {
+			has_war_with = CIN
+		}
+	}
+}

@@ -1,0 +1,30 @@
+state={
+	id=926
+	name="South Ossetia"
+	provinces={
+		1530 
+	}
+	history={
+		owner = SOV
+		victory_points = {
+			1530 1
+		}
+
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			
+
+		}
+		
+		add_core_of = SOV
+		add_core_of = GEO
+		add_core_of = SOO
+		
+
+	}
+	manpower=222000
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

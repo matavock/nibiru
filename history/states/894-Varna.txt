@@ -1,0 +1,31 @@
+
+state={
+	id=894
+	name="Székelyföld"
+
+	history={
+		owner = ROM
+		victory_points = {
+			3689 3 
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		
+
+		}
+		add_core_of = ROM
+		add_core_of = HUN
+		add_core_of = TRA
+
+	}
+
+	provinces={
+		3689 9668 711 9670 
+	}
+	manpower=889381
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

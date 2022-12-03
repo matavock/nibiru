@@ -1,0 +1,30 @@
+state={
+	id=829
+	name="Libyan Desert"
+	provinces={
+		1057 1994 4191 5004 10104 12022 
+	}
+	resources={
+		oil=3
+	}
+	history={
+		owner = LBA
+		victory_points = {
+			5004 1
+		}
+		victory_points = {
+			4191 3
+		}
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = LBA
+		add_claim_by = ITA
+	}
+	manpower=2633
+	impassable = yes
+	buildings_max_level_factor=1.000
+	state_category = rural
+	
+}

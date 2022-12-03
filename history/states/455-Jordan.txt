@@ -1,0 +1,36 @@
+
+state={
+	id=455
+	name="STATE_455"
+	resources={
+		oil=12.000
+	}
+
+	history={
+		owner = JOR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+
+		}
+		victory_points = {
+			7151 2 
+		}
+		victory_points = {
+			4115 1 
+		}
+		
+		add_core_of = JOR
+		add_claim_by = ISR
+
+	}
+
+	provinces={
+		4017 4115 7151 7170 10089 1
+	}
+	manpower=532000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

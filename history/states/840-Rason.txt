@@ -1,0 +1,25 @@
+state={
+	id=840
+	name="Rason"
+	provinces={
+		898 959 3803 3860 6822 6922 6944 11878 
+	}
+	history={
+victory_points = {
+			898 1 
+		}
+		owner = KPA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		
+		add_core_of = KOR
+		add_core_of = KPA
+
+	}
+	manpower=1150000
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

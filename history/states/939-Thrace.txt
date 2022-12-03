@@ -1,0 +1,36 @@
+state={
+	id=939
+	name="Thrace"
+	resources={
+		chromium=2.000
+	}
+	provinces={
+		11774 11905 13248 
+	}
+	history={
+		victory_points = {
+			11905 1 
+		}
+		victory_points = {
+			11774 1 
+		}
+		victory_points = {
+			13248 1 
+		}
+
+
+		owner = GRE
+		buildings = {
+			infrastructure = 1
+
+
+		}
+		add_core_of = GRE
+		add_claim_by = BUL
+
+	}
+	manpower=107200
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

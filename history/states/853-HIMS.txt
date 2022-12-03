@@ -1,0 +1,35 @@
+
+state={
+	id=853
+	name="Hims"
+
+	history={
+		1935.10.25 = {		
+			OSY = {
+				set_province_controller = 10383
+				set_province_controller = 12316
+			} 			
+		}
+		owner = SYR
+		victory_points = {
+			7513 1 
+		}
+		victory_points = {
+			4550 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SYR
+		add_core_of = OSY
+	}
+
+	provinces={
+		4550 7513 10383 12316 12442 
+	}
+	manpower=279000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

@@ -1,0 +1,104 @@
+﻿division_template = {
+	name = "Public Force"		
+	division_names_group = BRENGL_INF_01
+	# Luxembourg had a token garrison force of ~600 men
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		
+	}
+}
+
+
+units = { 
+
+division = { # "I Këmbësori Pjesëtim"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12766
+		division_template = "Public Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+division = { # "I Këmbësori Pjesëtim"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12766
+		division_template = "Public Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = { # "I Këmbësori Pjesëtim"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8043
+		division_template = "Public Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = { # "I Këmbësori Pjesëtim"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12723
+		division_template = "Public Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+division = { # "I Këmbësori Pjesëtim"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12766
+		division_template = "Public Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+
+	}
+	division = { # "I Këmbësori Pjesëtim"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8043
+		division_template = "Public Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = { # "I Këmbësori Pjesëtim"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12723
+		division_template = "Public Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "ERI"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 100
+	}
+}

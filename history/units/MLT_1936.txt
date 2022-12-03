@@ -1,0 +1,25 @@
+division_template = {
+	name = "Maltese Infantry"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 1
+}
+
+units = {
+	#Malta
+	division= {	
+		name = "Malta Command"
+		location = 12003
+		division_template = "Maltese Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+
+	}
+}	

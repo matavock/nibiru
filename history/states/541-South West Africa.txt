@@ -1,0 +1,41 @@
+
+state={
+	id=541
+	name="STATE_541"
+	resources={
+		steel=3.000
+		oil=1.000
+	}
+
+	history={
+		owner = PRE
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			2207 = {
+				naval_base = 1
+
+			}
+
+		}
+
+		victory_points = {
+			2229 2 
+		}
+		victory_points = {
+			2207 2 
+		}
+		add_core_of = NMB
+		add_core_of = SAF
+		add_core_of = PRE
+
+	}
+
+	provinces={
+		2207 2229 5154 
+	}
+	manpower=97569
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

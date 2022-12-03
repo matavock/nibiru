@@ -1,0 +1,25 @@
+state={
+	id=838
+	name="Pyongyang"
+	provinces={
+		912 3912 4052 9790 9795 9918 11835 11896 
+	}
+		history={
+		owner = KPA
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 5
+
+		}
+		victory_points = {
+			4052 5 
+		}
+		add_core_of = KOR
+		add_core_of = KPA
+	}
+	manpower=4500000
+	state_category = city
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,524 @@
+characters={
+	#Túpac Amaru 1572. Others 1650. #Túpac Amaru II 1801. Others 1868. #Túpac Amaru III
+	INC_tupac_3 = {
+		name="Túpac Amaru III"
+		country_leader={
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				the_sacred_king
+			}
+		}
+		portraits={
+			civilian={
+				large="gfx/leaders/INC/Portrait_Inca_Amaru.dds"
+			}
+		}
+	}
+	INC_mamaq_ch={
+		name="Mamaq Chalco Ccora"
+		gender = female
+		portraits={
+			civilian={
+				large="gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
+			}
+		}
+		country_leader={
+			expire="1965.1.1"
+			ideology=conservatism
+			traits={ }			
+		}
+	}
+	INC_ussun_cuy={
+		name="Ussun Cuya Paucar"
+		portraits={
+			civilian={
+				large="gfx/leaders/South America/Portrait_South_America_Generic_4.dds"
+			}
+		}
+		country_leader={
+			ideology=anti_revisionism
+			traits={ socialite_connections hedonist }
+			expire="1965.1.1"
+		}
+		corps_commander={
+			traits={ cavalry_officer trait_engineer jungle_fighter defensive_doctrine }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+		}
+	}
+	INC_justo_apu={
+		name="Justo Apu Sahuaraura"
+		country_leader={
+			expire = "1965.1.1"
+			ideology = falangism
+			traits = {
+				sins_of_the_father fascist_militia_leader fascist_sympathies
+			}
+		}
+		portraits={
+			civilian={
+				large="gfx/leaders/INC/Portrait_Inca_Sahuaraura.dds"
+			}
+		}
+		field_marshal={
+			traits={ commando cavalry_officer trait_engineer hill_fighter }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+		}
+	}
+	INC_xhemal_ar={
+		name="Xhemal Aranitasi"
+		portraits={
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		field_marshal={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+
+	### THEORISTS ###
+	INC_asiri_chalco={
+		name="Asiri Tuti Chalco"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_1.dds"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			ledger = army
+			allowed = {
+				original_tag = INC
+			}
+			research_bonus = {
+				cat_mass_assault = 0.15
+			}
+			traits = {
+				mass_assault_expert
+			}
+		}
+	}	
+	INC_yurak_passci={
+		name="Yurak Cusi Passci"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_2.dds"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			ledger = army
+			allowed = {
+				original_tag = INC
+			}
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			traits = {
+				military_theorist
+			}
+		}
+	}	
+	INC_ttika_pinto={
+		name="Ttika Pinto"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_political_advisor_south_america_3.dds"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			ledger = army
+			allowed = {
+				original_tag = INC
+			}
+			research_bonus = {
+				cat_mobile_warfare = 0.15
+			}
+			traits = {
+				mobile_warfare_expert
+			}
+		}
+	}
+
+	### POLITICAL ADVISORS ###	
+	INC_palla_ccora={
+		name=INC_palla_ccora
+		gender = female
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_political_advisor_female_south_america.dds"
+			}	
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				original_tag = INC
+			}
+			traits = {
+				staunch_monarchist 
+			}
+			do_effect = {
+				NOT = {
+					has_government = neutrality
+				}
+			}			
+			ai_will_do = {
+				factor = 0.500
+			}
+		}
+	}	
+	INC_chriss_saenz={
+		name=INC_chriss_saenz
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_political_advisor_south_america_1.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				original_tag = INC
+			}
+			traits = {
+				communist_revolutionary 
+			}
+			do_effect = {
+				not = {
+					has_government = communism 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+	INC_carina_sandoval={
+		name=INC_carina_sandoval
+		gender = female
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_political_advisor_female_europe.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				original_tag = INC
+			}
+			traits = {
+				fascist_demagogue 
+			}
+			do_effect = {
+				NOT = {
+					has_government = fascism 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}		
+	INC_george_barrueco={
+		name=INC_george_barrueco
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_political_advisor_south_america_2.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				original_tag = INC
+			}
+			traits = {
+				democratic_reformer 
+			}
+			do_effect = {
+				NOT = {
+					has_government = democratic 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}		
+	}
+	INC_zhu_yi={
+		name=INC_zhu_yi
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_chi_chen_yi.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = konstantin_von_neurath
+			allowed = {
+				original_tag = INC
+			}
+			traits = {
+				compassionate_gentleman
+			}
+		}
+	}				
+	INC_hector={
+		name=INC_hector
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_india_1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				original_tag = INC
+			}
+			traits = {
+				captain_of_industry prince_of_terror
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}		
+	INC_nayarak_chakana={
+		name="Nayarak Chakana"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_political_advisor_asia_2.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = GER_alfred_hugenberg
+			allowed = {
+				original_tag = INC
+			}
+			traits = {
+				backroom_backstabber
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+	INC_wayra_condori={
+		name="Wayra Condori"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_chi_t_v_soong.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = GER_alfred_hugenberg
+			allowed = {
+				original_tag = INC
+				has_dlc = "Waking the Tiger"
+			}
+			traits = {
+				financial_expert
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+
+	### MILITARY HIGH COMMAND ###
+	INC_kumya_ccahua={
+		name="Kumya Anco Ccahua"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_army_south_america_4.dds"
+			}
+		}	
+		advisor={
+			slot = high_command
+			ledger = army
+			allowed = {
+				original_tag = INC
+			}
+			visible = {
+			    has_completed_focus = INC_command_academy
+			}
+			traits = {
+				army_infantry_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}	
+	INC_shaya_manco={
+		name="Shaya Urpi Hualla"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_army_female_south_america.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			ledger = army
+			allowed = {
+				original_tag = INC
+			}
+			visible = {
+			    has_completed_focus = INC_command_academy
+			}
+			traits = {
+				army_cavalry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}	
+	INC_awak_gua={
+		name="Awak Inca Guañuna"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_army_europe_5.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = kurt_student
+			ledger = air
+			allowed = {
+				original_tag = INC
+			}
+			visible = {
+			    has_completed_focus = INC_command_academy
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	### ARMY CHIEFS ###
+	INC_coyllur_axi={
+		name="Coyllur Axi"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_army_south_america_5.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			allowed = {
+				original_tag = INC
+			}
+			visible = {
+				has_completed_focus = INC_chief_academy
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	INC_ylin_rawa={
+		name="Ylin Rawa"
+		gender = female
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_army_female_africa.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = franz_halder
+			allowed = {
+				original_tag = INC
+			}
+			visible = {
+			    has_completed_focus = INC_chief_academy
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}		
+	INC_thani_manco={
+		name="Thani Manco"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_army_asia_1.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			allowed = {
+				original_tag = INC
+			}
+			visible = {
+			    has_completed_focus = INC_chief_academy
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	INC_koya_chanca={
+		name="Koya Chanca"
+		gender = female
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_generic_army_female_south_america.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			allowed = {
+				original_tag = INC
+			}
+			visible = {
+			    has_completed_focus = INC_chief_academy
+			}
+			traits = {
+				army_chief_maneuver_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

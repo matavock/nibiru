@@ -1,0 +1,33 @@
+state=
+{
+	id=164
+	name="STATE_164"
+	manpower = 140000
+	
+	state_category = small_island
+	
+	history=
+	{
+		owner = GRE
+		victory_points = {
+			10007 3
+		}
+		victory_points = {
+			7003 1 
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+			10007 = {
+				naval_base = 4
+			}
+			7003 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = GRE
+	}
+	provinces=
+	{
+7003 10007 	}
+}

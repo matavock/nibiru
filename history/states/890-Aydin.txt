@@ -1,0 +1,31 @@
+
+state={
+	id=890
+	name="Aydın"
+
+	history={
+		owner = TUR
+		victory_points = {
+			6992 3 
+		}
+		victory_points = {
+			7130 1 
+		}
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = TUR
+
+	}
+
+	provinces={
+		6992 7130 9929 
+	}
+	manpower=323000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,676 @@
+﻿l_english:
+  
+ tmodern_category:0 "Diplomatic Actions"
+ tmodern_category_desc:0 "We can take some actions."
+ CIN_guerilla_tactics:0 "Guerilla Warfare"
+ CIN_irregular_military1:0 "Irregular Military"
+ CIN_irregular_military2:0 "Partially Organized Military"
+ CIN_irregular_military3:0 "Organized Military Forces"
+ CIN_mountain_warriors:0 "Warriors of Mountains"
+ UKR_kherson_push:0 "Christmas Offence"
+ UKR_surrender:0 "§R Unconditional Surrender §"
+ 
+ CIN_war_tactics:0 "Organize Chechen-Ingush Soldiers"
+ CIN_war_tactics_desc:0 "We must command our irregular forces more efficient and embrace the guerilla fight style."
+ 
+ CIN_army_reform:0 "Gain Order In the Military"
+ CIN_army_reform_desc:0 "We must quickly organize our forces."
+ 
+ CIN_organize_military:0 "Reform Chechen-Ingush Military"
+ CIN_organize_military_desc:0 "Create new military forces department."
+ 
+ CIN_mountanieer_people:0 "Warriors of Mountains"
+ CIN_mountanieer_people_desc:0 ""
+ CIN_grozny_rifle_factory:0 "Found the Grozny Rifle Factory"
+ CIN_grozny_rifle_factory_desc:0 ""
+ CIN_kick_start_industry:0 "Kick Start the War Industry"
+ CIN_kick_start_industry_desc:0 ""
+ 
+ CIN_expand_agriculture_industry:0 "Expand the Agriculture Industry"
+ CIN_expand_agriculture_industry_desc:0 ""
+ 
+ CIN_secure_the_new_nation:0 "Secure Our Precious Nation"
+ CIN_secure_the_new_nation_desc:0 ""
+ 
+ CIN_rebuild_the_nation:0 "Rebuild Our Chechen-Ingush Nation"
+ CIN_rebuild_the_nation_desc:0 ""
+ 
+ CIN_functioning_state:0 "Well-Functioned Country"
+ CIN_functioning_state_desc:0 ""
+ 
+ konigsberg_ceded:0 "Königsberg Ceded to Germans"
+ MNT_neutrality_party:0 "Royalists"
+ MNT_neutrality_party_long:0 "Royalists"
+ MNT_krsto_:0 "Krsto Popović"
+ papalstate_category:0 " §YPapacy Managament§ "
+ papalstate_category_desc:0 "the Throne of Saint Peter"
+ form_papal:0 "Proclaim Papal States"
+ form_italy:0 "Unite Italy Under the Papacy"
+ papal_volunteers:0 "Call Foreign Volunteers §Y"Papal Zouaves"§"
+ swissguards:0 "Ask for §YSwiss Guards§"
+ 
+ germanpop:0 "German Majority"
+ big_defeat:0 "National Catastrophe"
+ polgermans:0 "Unrest Among Poland Germans"
+ 
+ buy_rom_ukr:0 "Take Romanian Lands Back"
+ invade_china:0 "Take Back the Uyghur Lands"
+ 
+ 
+ TUR_cyprus_category:0 "§G[NCY.GetNameDEF]§! Management"
+ TUR_cyprus_category_desc:0 "We can influence the Turkish Cyprus Politics and secure our nation's desire. After all, those lands are part of our republic."
+ buy_ncy_remove_tsk:0 "Elections in the [NCY.GetNameDEF]"
+ buy_ncy:0 "Integrate the [NCY.GetNameDEF]"
+ sell_ncy:0 "Support the Federal Government of Cyprus"
+ turkish_cyp:0 "Unite the Cyprus island with name of the Turkish Cyprus"
+ buy_mobilize_island:0 "Reorganize and arm the Turkish Cypriots"
+ buy_mobilize_island2:0 "Populate the Island with Anatolian Turks"
+ 
+
+ 
+ italian_officers:0 "Italian Military Advisors"
+ AUS_annexed:0 "Austria Annexed"
+ Claim_Germany:0 "Claim German Rule"
+ Wilhelm_III_Throne:0 "Grant Full Leadership to the Wilhelm III"
+ PRE_the_election_of_1936:0 "Südwestafrika Elections of 1936"
+ 
+ toykan.1.t:0 "Bulgaria Send Ultimatom to Us"
+ toykan.1.d:0 "Bulgaria wants the lands they lost with the Treaty of Neu-sur-Seine back from us after the annexation of Macedonia."
+ toykan.1.a:0 "We can't afford war right now."
+ toykan.1.b:0 "Let them come, if they dare."
+ 
+ toykan.2.t:0 "Serbia Surrenders!"
+ toykan.2.d:0 "They agreed to give us back the lands we lost with the treaty."
+ toykan.2.a:0 "They fear from us."
+ toykan.2.b:0 "We want more of it."
+ 
+ toykan.3.t:0 "Serbia Rejects!"
+ toykan.3.d:0 "Serbia did not agree to give us back the lands we lost with the Agreement."
+ toykan.3.a:0 "How dare you!"
+ toykan.3.b:0 "We can't afford war right now..."
+ 
+ toykan.4.t:0 "Southern Tyrol Crisis!"
+ toykan.4.d:0 "The Germans said that we were holding South Tyrol unfairly, citing the reason we broke the alliance in World War I and hit them from behind. They stated that if we do not give them back those lands we have won with blood, this situation will be determined by blood again."
+ toykan.4.a:0 "Who is betraying right now?"
+ toykan.4.b:0 "I thought we got along well"
+ 
+ toykan.5.t:0 "Italy Refuses to Give Back Southern Tyrol"
+ toykan.5.d:0 "They seem to have forgotten their treachery in World War I. They said that they would defend their stolen German-Austrian lands. What a pity"
+ toykan.5.a:0 "I thought we got along well,  but now your people will be live under the German rule."
+ toykan.5.b:0 "Forget it."
+ 
+ toykan.6.t:0 "Monarchism is Back in Fashion"
+ toykan.6.d:0 "Hitler is no more, country back to normal. Even Wilhelm II invited to throne. We can go back to our homes."
+ toykan.6.a:0 "Long live German Empire!"
+ toykan.6.b:0 "Everyone can go back to homes, we have other plans."
+ 
+ toykan.7.t:0 "Südwestafrika Returns!"
+ toykan.7.d:0 "After the defeat of Hitler, the German people in exile in Namibia rejoice to return to their homeland! Although other states do not take kindly to this event, we are protecting human rights. At least we protected them from fascism."
+ toykan.7.a:0 "Long Live German Empire!"
+
+ toykan.8.t:0 "German Parliament Established!"
+ toykan.8.d:0 "Parliament was formed, the people gathered in Windhoek to elect their first government. Who will we choose for the continuation of our government in exile?"
+ toykan.8.a:0 "We are here for democracy, Otto Wels!"
+ toykan.8.b:0 "We are here for German tradition, Wilhelm II!"
+ toykan.8.c:0 "Socialist union is the way, Ernst Thalmann!"
+ toykan.8.e:0 "Preserve the military government, we are not secure here."
+ 
+ toykan.9.t:0 "Namibian Seperatist Movement Formed"
+ toykan.9.d:0 "Parliament was formed, the people gathered in Windhoek to elect their first government. Who will we choose for the continuation of our government in exile?"
+ toykan.9.a:0 "We are here for democracy, Otto Wels!"
+
+ 
+ news.634.t:0 "Crisis in Macedonia!"
+ news.634.desc:0 "Seeing this as a threat after Serbia's annexation of Macedonia, Bulgaria accused Serbia of threatening its national security. The two sides mobilized against each other and took sides at the borders. The foreign ministers of the two countries will meet and try to reach an agreement."
+ news.634.a:0 "Ok"
+ 
+ news.700.t:0 "South Tyrol Crisis"
+ news.700.desc:0 "After Germany's annexation of Austria, Hitler, who set his eyes on the Germans living in South Tyrol, sent a very harsh ultimatum to Italy against the unjust and treacherous capture of those lands by Italy after the first world war. It stabbed a great dagger in the friendship and closeness of these two countries to each other. Everyone is waiting for war."
+ news.700.a:0 "Ok"
+ 
+ news.701.t:0 "Italy Surrenders Southern Tyrol"
+ news.701.desc:0 "Today South Tyrol is officially attached to the German Reich. Thanks to Hitler's confidence in his own country, Italy could do nothing but surrender. Mussolini, on the other hand, garnered a great reaction from the people and lost the confidence of his people to a large extent. It seems that Italy will undergo a major change in its plans for the future after the ties between Germany and Italy are severed."
+ news.701.a:0 "Ok"
+ 
+ 
+ news.635.t:0 "Macedonian Crisis Averted"
+ news.635.desc:0 "The crisis between Serbia and Bulgaria was successfully resolved. Both sides ended the tension and reached an agreement. Peace in the Balkans continues for a few more days."
+ news.635.a:0 "Ok"
+ 
+ news.636.t:0 "[SOV.GetNameDEF] Threaten Belarus"
+ news.636.desc:0 "Trying to secure itself after the dangers that developed in the West, the Soviet Union this time set its sights on Belarus. The Soviet Union, which wanted to peacefully unite with Belarus, stated that this would be in the interests of both countries. The world has its eye on the fast-growing Red danger."
+ news.636.a:0 "Ok"
+ 
+ BUL_demand_macedonia:0 "Revoke the Treaty of Neuilly-sur-Seine"
+ 
+ buy_austria:0 "Integrate the Austria"
+ buy_czech:0 "Integrate the Czechs"
+ buy_ask_war_israel:0 "Make Plan for Israel Occupation"
+ buy_israel:0 "Remove the Danger from Holy Lands"
+ buy_ask_war_korea:0 "Make Plan for Korean Liberation"
+ buy_korea:0 "Start Mass Human Assault on Korea!"
+ buy_ask_japan:0 "Seek Support From Japan"
+ great_armenia:0 "Our Destiny"
+ help_korea:0 "Stand for South Korea"
+ help_nkorea:0 "Stand for North Korea"
+ ARM_ask_sov_for_help:0 "Ask for Russian Support"
+ buy_kaz:0 "Take the Opportunity on Central Asia"
+ ARM_first_conflict:0 "First Conflict"
+ ARM_second_conflict:0 "Second Conflict"
+ refugees_in:0 "Migrant Wave"
+ refugees_out:0 "Migration"
+ new_indust:0 "Developing City"
+ TUR_recall_ismet_to_active_service:0 "Recall Ismet Pasha To Active Service"
+ anti_fascism_government: "Enemies of NSDAP"
+ german_government:0 "German Ideals"
+ PRE_idea_wilhelm_iii:0 "Wilhelm III"
+ donations_from_supporters:0 "Donations From Supporters"
+ tykns_effects:0 "Industry & Extras"
+ ttmodern_advisors:0 "Additional Laws & Government"
+ tmodern_advisors:0 "Ministers"
+ health_budget:0 "Public Health Budget"
+ research_budget:0 "Science and Education Budget"
+ military_exercises:0 "Ministry of Armed Forces"
+ 
+ 
+ 
+ buy_mol:0 "Unite Romania"
+ buy_golan:0 "Take the Opportunity: [881.GetName]"
+ buy_donitz:0 "Rule the Waves"
+ buy_turkestan:0 "Form Turkestan"
+ 
+ 
+
+ GER_tyrol_demanded:0 "§RDemanded Tyrol From Italy§!"
+ GER_ita_will_not_ally:0 "§RThis move will end the friendship between us and Italy.§!"
+
+
+###
+### German Empire ###
+###
+
+### Land ###
+
+ PRE_EQUIPMENT_VERSION_1: "A"
+ PRE_EQUIPMENT_VERSION_2: "B"
+ PRE_EQUIPMENT_VERSION_3: "C"
+ PRE_EQUIPMENT_VERSION_4: "D"
+ PRE_EQUIPMENT_VERSION_5: "E"
+ PRE_EQUIPMENT_VERSION_6: "F"
+ PRE_EQUIPMENT_VERSION_7: "G"
+ PRE_EQUIPMENT_VERSION_8: "H"
+ PRE_EQUIPMENT_VERSION_9: "I"
+ PRE_EQUIPMENT_VERSION_10: "J"
+ PRE_EQUIPMENT_VERSION_11: "K"
+ PRE_EQUIPMENT_VERSION_12: "L"
+ PRE_EQUIPMENT_VERSION_13: "M"
+ PRE_EQUIPMENT_VERSION_14: "N"
+ PRE_EQUIPMENT_VERSION_15: "O"
+ PRE_EQUIPMENT_VERSION_16: "P"
+
+#Infantry Equip
+
+ PRE_infantry_equipment_0: "Gewehr Modell 98"
+ PRE_infantry_equipment_0_short: "Mauser G. 98"
+ PRE_infantry_equipment_0_desc: "The Gewehr 98 (Rifle 98) was the standard German infantry weapon of the Weltkrieg. It is a good example of the type of military rifle designed around the turn of the nineteenth and twentieth centuries, when rifle development reached fever pitch. In common with other armies, the German infantry carried a full length rifle, while other troops were issued with shorter carbines. The bolt and magazine system of the Gewehr 98 was designed by the Mauser company, although the rifle was produced under licence by a number of other commercial manufacturers. It was a well-made and accurate weapon, but was not well suited to trench warfare."
+ #Mauser Standardmodell :
+ PRE_infantry_equipment_1: "Karabiner Modell 98 Ausführung B"
+ PRE_infantry_equipment_1_short: "Mauser Kar. 98b"
+ PRE_infantry_equipment_1_desc: "The Weltkrieg showed first-hand that full-length rifles were unwieldy in trench warfare with little benefit. Germany's famed assault troops were given the shorter Kar. 98AZ whenever possible, and soon after the war, it was decided to standardise on a carbine-length rifle to replace the G.98. The Kar. 98b, based on the AZ model, differed little from its direct predecessor, but more significantly from the longer G. 98, with improved sights and a turned-down bolt. More importantly, it used more parts from the long rifle to increase parts interchangeability and lower manufacturing costs."
+ PRE_infantry_equipment_2: "Selbstladegewehr Modell 40"
+ PRE_infantry_equipment_2_short: "S.G. 40"
+ PRE_infantry_equipment_2_desc: "Designed by the Mauser company in response to a desire of the German Army for a self-loading rifle with a backup bolt action, the Selbstladegewehr 40 is a massive leap forward in German small arms design. While initial prototypes were highly inaccurate, heavy, and prone to jamming, the Heer eventually dropped some of its other specific requirements for the rifle. The end result was the initial prototype with only a few design edits, and it proved effective."
+ PRE_infantry_equipment_3: "Maschinenkarabiner Modell 42"
+ PRE_infantry_equipment_3_short: "M.Kb. 42"
+ PRE_infantry_equipment_3_desc: "The Maschinenkarabiner 42 is a revolutionary design chambered for a new intermediate cartridge, developed by famous German arms designer Hugo Schmeisser, in conjunction with the Haenel company. While the first prototype of the rifle was prone to jamming, both the military and even the Kaiser himself were extremely enthusiastic about the project, and immense resources were concentrated on improving the design, with the rifle deemed ready for adoption in 1942."
+ #G33/40:
+ PRE_infantry_weapons2: "Gewehr Modell 98/38"
+ PRE_infantry_weapons2_short: "G. 98/38"
+ PRE_infantry_weapons2_desc: "The Gewehr 98/38, also simply known as the G. 98/38, is a bolt-action rifle, sometimes considered a carbine, and based heavily on the Gewehr 98. The rifle is rather short, at only one metre long. Originally designed for the Mountain troops, the G. 98/38 was soon adopted by other German forces, including some cavalry and infantry regiments."
+ PRE_improved_infantry_weapons_2: "Maschinenpistole Modell 40"
+ PRE_improved_infantry_weapons_2_short: "M.P. 40"
+ PRE_improved_infantry_weapons_2_desc: "The M.P. 40, sometimes incorrectly called 'Schmeisser', was developed by Heinrich Vollmer and based on M.P. 38, with the aim of equipping German soldiers with an assault weapon. It uses magazines of 32 cartridges of 9mm, with its effective range being about 100-150 metres. It is a very reliable and particularly economical weapon to manufacture, usually used by officers, mechanised infantry and paratroopers."
+ #StG 44:
+ PRE_advanced_infantry_weapons2: "Maschinenkarabiner Modell 44"
+ PRE_advanced_infantry_weapons2_short: "M.Kb. 44 'Sturmgewehr'"
+ PRE_advanced_infantry_weapons2_desc: "The Maschinenkarabiner 44 is the outcome of the German need to provide infantrymen with heavier firepower from their rifles. As a result of the continuous development of M.Kb. 42, the M.Kb. 44 is devoid of many of the disadvantages of the previous design and is even sometimes called the 'Sturmgewehr' - the assault rifle. The final design has a shorter range than contemporary rifles due to German research that most of the combat in the European War takes place at distances less than 300 metres. At the sacrifice of range, close range firepower was greatly improved."
+ #Panzerfaust - whole line, don’t add numbers:
+ PRE_infantry_at: "Panzerabwehrrohr"
+ PRE_infantry_at_short: "Pa.R."
+ PRE_infantry_at_desc: "The Panzerabwehrrohr is the brainchild of Dr. Heinrich Langweiler, in response to an urgent requirement for a light one-shot throw-away infantry weapon with which infantry could use to tackle the growing numbers of enemy heavy and medium tanks, that are frequently overwhelming German defences. The range of the first Panzerabwehrrohr was only 30 metres, which made their use somewhat hazardous, until more developed variants with increased range came to production."
+ #Panzerschreck:
+ PRE_infantry_at2: "Raketenpanzerbüchse 54"
+ PRE_infantry_at2_short: "R.Pz.B. 54 'Panzerschreck'"
+ PRE_infantry_at2_desc: "The Raketenpanzerbüchse 54 shoulder-launched anti-tank rocket launchers, nicknamed 'Ofenrohr' ('stove pipe') and the more popular 'Panzerschreck' ('Tank's Fright'), are lightweight infantry weapons developed for the German military, inspired by the rumours about American rocket launchers. Under ideal conditions, the R.Pz.B. 54 can penetrate heavy tanks’ armour with its 8,8-centimetre rockets, already used by the Raketenwerfer 43 rocket launchers. As a drawback, the R.Pz.B. 54 produces a lot of smoke upon firing."
+ PRE_support_weapons: "Maschinengewehr M.08/15 & 7,58-cm leichter Minenwerfer"
+ PRE_support_weapons_short: "M.G. 08/15 & 7,58-cm l.M.W."
+ PRE_support_weapons_desc: "The Weltkrieg saw the introduction of some of the deadliest weapons known to man, such as the fearsome M.G. Modell 08/15. In the close confines of trench warfare, the once archaic mortar was brought back to relevance. Now, as we find ourselves watched by enemies such as the Commune of France, these weapons from the Weltkrieg will be brought back into service."
+ PRE_support_weapons2: "Maschinengewehr M.34 & 8-cm schwerer Granatwerfer M.34"
+ PRE_support_weapons2_short: "M.G. 34 & 8-cm s.G.W. 34"
+ PRE_support_weapons2_desc: "The Maschinengewehr Modell 34 (M.G. 34) is a recoil operated air-cooled machine gun. Chambered in the powerful 7.92x57-mm Mauser rifle cartridge, the machine gun's high rate of fire (900 RPM) and efficient mobility make it arguably the most advanced machine gun in the world; a testament to the power of the Kaiserreich. The 8-cm schwerer Granatwerfer Modell 34 is an infantry mortar that employs 8-cm shells. It has been noted for its high accuracy and rate of fire."
+ #MG 39Rh and 20-cm leLdgW :
+ PRE_support_weapons3: "Maschinengewehr M.39 & 20-cm leichter Ladungswerfer M.40"
+ PRE_support_weapons3_short: "M.G. 39 & 20-cm le.Ldg.W. 40"
+ PRE_support_weapons3_desc: "The Maschinengewehr Modell 39 (M.G. 39) was an improvement over the M.G. 34. This belt fed machine gun features a high rate of fire and was suited for all purposes. The 20-cm leichter Ladungswerfer Modell 40 was a spigot mortar designed for striking obstacles and strong points."
+ PRE_support_weapons4: "Maschinengewehr M.42 & Kurzer 8-cm Granatwerfer M.42"
+ PRE_support_weapons4_short: "M.G. 42 & Kz. 8-cm G.W. 42"
+ PRE_support_weapons4_desc: "Nicknamed the "Kaiser's Buzzsaw" given its incredibly high rate of fire at 1,200 rounds per minute, the M.G. 42 was the most effective support weapon of its time. Designed to be low cost and easy to build, the MG-42 proved to be highly reliable and easy to operate. It ws most notable for its very high cyclic rate for a gun using full power catridges and was adopted for both light machine gun fire roles and medium machine gun fire roles."
+ PRE_night_vision: "Zielgerät 1229"
+ PRE_night_vision_short: "Z.G. 1229 'Vampir'"
+ PRE_night_vision_desc: "The Z.G. 1229, also known in its code name 'Vampir', is an active infrared device developed for the M.Kb. 44 rifle. The Vampir weighs 2.25 kilograms and was fitted with lugs on the M.Kb. 44 at the C.G. Haenel weapons’ production facility in Suhl. As well as the sight and infrared spotlight, there is a 13.5 kilogram wooden cased battery for the light, and a second battery fitted inside a gas mask container to power the image converter. A grenadier carrying the Z.G. 1229 is known as a Nachtjäger (night-hunter)."
+ #Modified ZG 1229:
+ PRE_night_vision2: "Nachtzielgerät Modell 45"
+ PRE_night_vision2_short: "N.Z.G. 45"
+ PRE_night_vision2_desc: "The N.Z.G. 45, updated serial model of the Z.G. 1229, is very close to its predecessor, but has almost double the effective range with a less vulnerably located IR light source. Quickly replacing Z.G. 1229 in service, N.Z.G. 45 is still criticised by soldiers for its heavy battery and difficult maintenance."
+
+#Motorised
+
+ #Opel Blitz:
+ PRE_motorized_equipment_1: "Kraftfahrzeug 305"
+ PRE_motorized_equipment_1_short: "Kfz. 305"
+ PRE_motorized_equipment_1_desc: "The German Army in the early 1930s had more than 100 different vehicle designs in service, leading to massive logistical difficulties. In order to standardise their vehicle fleet, they opted for a commercial truck design by Adam Opel AG of Brandenburg to become their standard cargo truck. With only slight modifications to meet military requirements, presented in 1930, the Opel Blitz was accepted in service with designation Kraftfahrzeug 305 and by 1936 became the main truck of the German Army. Although well built, the Kfz.305 suffers from being rather too complicated for reliability in the rugged conditions, but still has better performance than other German trucks."
+ PRE_motorized_rocket_equipment: "Kraftfahrzeug 305/5"
+ ##Opel with Wurfrahmen 40, 305/5 is free number in kfz registry afaik:
+ PRE_motorized_rocket_equipment_1: "Kraftfahrzeug 305/5"
+ PRE_motorized_rocket_equipment_1_short: "Kfz. 305/5"
+ PRE_motorized_rocket_equipment_1_desc: "The Wurfrahmen 40 is a rocket firing framework with adjustable base plates fitted over and alongside a vehicle. Nicknamed 'Heulende Kuh' (Bellowing Cow), for the sounds when firing, is usually installed on the Kfz.305 truck (military designation the Kfz.305/5) in the amount of three base plates, with three on each side. The Kfz.305/5 shows itself successful in service as a support weapon for the mobile Panzer formations, particularly in urban areas."
+ PRE_mechanized_equipment_1: "Sonderkraftfahrzeug 11"
+ PRE_mechanized_equipment_1_short: "Sd.Kfz. 11"
+ PRE_mechanized_equipment_1_desc: "The Sonderkraftfahrzeug 11 was developed from 1934 to 1938, involving Borgward AG. Fom 1937 onwards, the design became associated with Hannoversche Maschinenbau AG. Initially intended to be a prime mover, the Sd.Kfz. 11 soon was transferred to the role of a transporter, when the need for an all-terrain vehicle became apparent. Capable of carrying eight soldiers in addition to towing a gun or a trailer, the truck became the main vehicle of panzergrenadiers."
+ PRE_mechanized_equipment_2: "Sonderkraftfahrzeug 251"
+ PRE_mechanized_equipment_2_short: "Sd.Kfz. 251"
+ PRE_mechanized_equipment_2_desc: "Developed on the chassis of Sd.Kfz. 11, the Schützenpanzerwagen Sonderkraftfahrzeug 251 half-tracks (commonly referred to as 'SWP') are built by Hannoversche Maschinenbau AG specifically to quickly transport a squad of infantrymen to the front lines with adequate armour protection from small arms fire. The truck examples are usually assigned to armour units for the purpose of helping troops stay right behind the fast moving tanks."
+ #Vollkettenaufklärer 38 Kätzchen :
+ PRE_mechanized_equipment_3: "Sonderkraftfahrzeug 256"
+ PRE_mechanized_equipment_3_short: "Sd.Kfz. 256"
+ PRE_mechanized_equipment_3_desc: "In late 1943, the German Army asked Auto-Union to develop a light, fully tracked reconnaissance vehicle, capable of carrying 6-8 men in an open-top superstructure. Introduced in 1944 the Schwerer Schützenpanzerwagen “Kätzchen” (Heavy Armoured Personnel Carrier 'Kitten') had the hull's shape similar to the hull of the Stu.Pz.Kpfw. VII, but much smaller. The vehicle has front wheel drive with five or six overlapping steel road wheels and was designed to attain speeds in excess of 50 km/hr and has light armour. Warmly met by the German Military despite not very high speed, the vehicle was adopted in service under the name Sd.Kfz. 256."
+
+#Amphibious
+ PRE_amphibious_mechanized_equipment_1: "Landwasserschlepper"
+ PRE_amphibious_mechanized_equipment_1_short: "L.W.S."
+ PRE_amphibious_mechanized_equipment_1_desc: "It was clear that well before any amphibious operations were planned, that a specialised vehicle would be useful to carry troops and supplies from shore to shore. Ordered in 1935 for use by German Army engineers, the Landwasserschlepper (Land Water Tractor) was intended as a lightweight river tug with some capacity to operate on land. Designed by Borsig of Düsseldorf, the hull of the L.W.S. is similar to that of a motor launch, resembling a tracked boat with twin rear-mounted tunnelled propellers and twin rudders. On land, it moves on steel-shod tracks with four bogies per side."
+ #Panzerfähre:
+ PRE_amphibious_mechanized_equipment_2: "Landwasserschlepper II"
+ PRE_amphibious_mechanized_equipment_2_short: "L.W.S. II"
+ PRE_amphibious_mechanized_equipment_2_desc: "With growing use of the L.W.S. in the field, the need for more armoured amphibious transporters became obvious. By 1943 a new design was created, called the L.W.S. II. Despite its name, the L.W.S. II is a completely new technology based on the St.Pz.Kpfw. IV chassis, featuring a small raised armoured driver's cabin and flat rear deck, alongside with four exhaust pipes in the top of the vehicle."
+
+#Armoured Car
+ PRE_gw_armored_car_equipment: "Leichter Panzerspähwagen, Sonderkraftfahrzeug 222"
+ PRE_gw_armored_car_equipment_short: "Sd.Kfz. 222"
+ PRE_gw_armored_car_equipment_desc: "Introduced in 1936, the Leichter Panzerspähwagen ('light armoured reconnaissance vehicle') Sd. Kfz. 222 is a modernised version of the Sd. Kfz. 221. Being a road armoured car, manned by a three-man crew and with 4-wheel drive, the Sd.Kfz. 222 is armed with a 2-cm Kw.K. 30 L/55 autocannon and a 7,92-mm M.G. 13 machine gun. Performing well on a good road network, the reconnaissance vehicle suffered in performance on the rough terrain and was badly received by colonial troops."
+ PRE_armored_car_equipment_1: "Schwerer Panzerspähwagen, 8-rad, Sonderkraftfahrzeug 231"
+ PRE_armored_car_equipment_1_short: "Sd.Kfz. 231"
+ PRE_armored_car_equipment_1_desc: "The Sd.Kfz. 231 Schwerer Panzerspähwagen ('heavy armoured reconnaissance vehicle') is a military designation for a line of reconnaissance armoured cars intended for armoured divisions. Initially developed in 1932 as 6 wheels variants, it was obvious that this variant will be obsolete in the nearest future. In 1937 the 8 wheels variant armed with 2-cm Kw.K. 30 L/55 autocannon was introduced in service. The all-wheel drive four-axle Sd.Kfz. 231 are one of the most technically advanced armoured vehicles and are able to operate on rough terrain, with a cross-country comparable to that of tanks."
+ #Sd. Kfz. 231 8-rad:
+ PRE_armored_car_equipment_2: "Schwerer Panzerspähwagen, Sonderkraftfahrzeug 234"
+ PRE_armored_car_equipment_2_short: "Sd. Kfz. 234"
+ PRE_armored_car_equipment_2_desc: "This new armoured car is seen as a successor to the eight-wheeled Panzerspähwagen Sd.Kfz.231. Among other priorities, better protection and heavier armament were viewed as crucial for the new armoured car. The production vehicle is heavier and bulkier than the Sd.Kfz.231, with mudguards that went along the side from end to end, with four storage compartments located inside. The main version of the vehicle, also known as Sd.Kfz.234/1, is armed with open-top turret fitted with a 2-cm Kw.K. 30 L/55 autocannon and coaxial M.G. 34."
+ PRE_armored_car_at_equipment: "Schwerer Panzerspähwagen, Sonderkraftfahrzeug 234/2"
+ PRE_armored_car_at_equipment_short: "Sd.Kfz. 234/2"
+ PRE_armored_car_at_equipment_desc: "A respectable armoured car, the Sd.Kfz.234/2 (also known as 'Puma') presents great speed and a significant 50 mm KwK.39/1 cannon. With improved frontal armour and formidable main gun, the car can traverse into volatile areas that are generally restricted to other like-minded vehicles. Being the greatly improved variant of the Sd.Kfz.234, the 'Puma' is intended to be used in a 6-strong platoon as a support vehicle. More often, though, commanders use the Sd.Kfz. 234/2 as fast tank hunters."
+
+#Trains
+
+# German designation: 1 of 7 State Companies - S for Express passenger / P for Passenger / G for goods or freight / T for Tender - Number for power, higher the more powerful - Production Series
+ # Bayern S 3/6 / DRB Class 18.4-5:
+ PRE_train_equipment_1: "K.Bay.Sts.B. S 3/6 L"
+ PRE_train_equipment_1_short: "Bayern S 3/6 L"
+ PRE_train_equipment_1_desc: "A proven express locomotive in service with the Royal Bavarian State Railways, the S 3/6 is widely ordered by other state railway companies. To improve fuel efficiency, the Series L was made and brought into widespread service across German and Reichspakt railways."
+ # DRB Class 52 :
+ PRE_train_equipment_2: "Preu. Sts.B. G 13"
+ PRE_train_equipment_2_short: "Prussian G 13"
+ PRE_train_equipment_2_desc: "Designed with the experience of operating the Prussian G 12 locomotives in the Great War and prioritising ease of manufacture, a long service life and ease of maintenance, the G 13 was the answer. It could haul up to 40% more freight than the other locomotives they were replacing, and were cheaper to produce."
+ # DRB Class 52 but now they’re armoured:
+ PRE_train_equipment_3: "Preu. Sts.B. G 13 Pz."
+ PRE_train_equipment_3_short: "Prussian G 13 P"
+ PRE_train_equipment_3_desc: "As railways started to be attacked by enemy aircraft, new locomotives to serve on the fronts need to be able to take hits from up to 20mm cannons. To protect the locomotive for service against air attack, some Prussian G 13 locomotives are fitted with three-inch-thick armour plates along the locomotive to protect the vital parts."
+
+ PRE_railway_gun_equipment_1: "Eisenbahngeschütz 80-cm Kanone"
+ PRE_railway_gun_equipment_1_short: "80-cm K. (E)"
+ PRE_railway_gun_equipment_1_desc: "Specifically designed to destroy heavy fortifications, the 800mm railway gun from Krupp is able to punch through seven metres of reinforced concrete. The gun is supported by two rail carriages and requires special semi-circular tracks to operate."
+
+#Artillery
+
+ PRE_artillery_equipment_1: "10,5-cm leichte Feldhaubitze Modell 33"
+ PRE_artillery_equipment_1_short: "10,5-cm le.F.H. 33"
+ PRE_artillery_equipment_1_desc: "The 10,5-cm le.F.H. 33 is the standard artillery piece of the Deutsches Heer, adopted for service in 1933 and used by all divisions and artillery battalions. This gun was developed in 1928-29 by Rheinmetall, and was a major advance on its predecessor the 10,5-cm le.F.H. 16 - a completely new three-point split trail gun carriage provides more stability and increases the traverse to 56 degrees alongside with the sighting mechanism to make it easier to fire at moving targets."
+ PRE_artillery_equipment_2: "15-cm schwere Feldhaubitze Modell 36"
+ PRE_artillery_equipment_2_short: "15-cm s.F.H. 36"
+ PRE_artillery_equipment_2_desc: "The 15-cm schwere Feldhaubitze 36, nicknamed Immergrün ('Evergreen'), is the basic division-level heavy howitzer, serving alongside the smaller but more numerous 10,5-cm le.F.H. 33. The gun originated with a contest between Rheinmetall and Krupp, both of whom entered several designs that were all considered unsatisfactory for one reason or another. In the end the army decided the solution was to combine the best features of both designs, using the Rheinmetall gun on a Krupp carriage. In 1935 the Army drafted a requirement for a lightened version of the gun which could be towed by a single horse team in one piece, for which a new proposed design from Rheinmetall was selected."
+ PRE_artillery_equipment_3: "17-cm Kanone Modell 40 in Mörserlafette"
+ PRE_artillery_equipment_3_short: "17-cm K. 40 Mrs.Laf."
+ PRE_artillery_equipment_3_desc: "The 17-cm Kanone 40, built by Krupp and Hannoversche Maschinenbau, is heavy corps-level gun. In the field, the gun delivers great damage, but also has a great disadvantage of requiring a long period of time to tear down for transport. A notable innovation on the 17-cm K. 40 is the \"double recoil\" or dual-recoil carriage. The dual-recoil mechanism absorbs all of the recoil energy with virtually no movement of the box trail upon firing, thus making for a very accurate weapon."
+
+ PRE_anti_tank_equipment_1: "3,7-cm Panzerabwehrkanone Modell 36"
+ PRE_anti_tank_equipment_1_short: "3,7-cm Pa.K. 36"
+ PRE_anti_tank_equipment_1_desc: "Design of a horse-drawn, 3,7-cm anti-tank gun (designated 3,7-cm Pa.K. 28) by Rheinmetall commenced in 1924. By the early 1930s, it became apparent that horse-drawn artillery is obsolete, and the gun was modified for motorised transport, allowing it to be towed at highway speeds. Nicknamed by soldiers 'Heeresanklopfgerät' ('army door-knocking device'), the re-designated 3,7-cm Pa.K. 36 is the main anti-tank weapon of Deutsches Heer and easily can manage with enemy light tanks."
+ PRE_anti_tank_equipment_2: "7,5-cm Panzerabwehrkanone Modell 40"
+ PRE_anti_tank_equipment_2_short: "7,5-cm Pa.K. 40"
+ PRE_anti_tank_equipment_2_desc: "The 7,5-cm Pa.K. 40 was developed after reports of new enemy tank designs began to reach Berlin in 1939. The project was initially given low priority, but following the growing tensions with France and the appearance of heavily armoured tanks, it was given an increased priority. In terms of armour-piercing action, the Pa.K. 40 is superior to the similar guns, but have less effective rollback damping systems, as a result of which the gun is behind analogues to quickly change position."
+ PRE_anti_tank_equipment_3: "12,8-cm Panzerabwehrkanone Modell 43"
+ PRE_anti_tank_equipment_3_short: "12,8-cm Pa.K. 43"
+ PRE_anti_tank_equipment_3_desc: "The 12,8-cm Pa.K. 43 is the new anti-tank gun developed initially as a field gun known as the Kanone 43. However, once heavier tanks started to appear the design requirements were altered to include an anti-armour role. The 12,8-cm Pa.K. 44 has a good anti-tank performance over long to extreme-long ranges - 1,800–2,700 metres and beyond - while also doubling as an effective field gun when firing high-explosive shells. But since it was not possible to install a 12,8-cm barrel on the carriage of a conventional anti-tank gun, a special carriage for the gun was designed. The high profile of the gun had to be maintained, which makes the gun extremely visible."
+
+ PRE_anti_air_equipment_1: "2-cm Flugzeugabwehrkanone Modell 36"
+ PRE_anti_air_equipment_1_short: "2-cm Fla.K. 36"
+ PRE_anti_air_equipment_1_desc: "The 2-cm Fla.K. 30 automatic anti-aircraft cannon was developed by Rheinmetall in 1930, and the Deutsches Heer began to receive guns in 1933. In 1936, due to the growth of tensions, Mauser modernised the gun - the upgraded model received the designation 2-cm Flugzeugabwehrkanone 36 and was adopted by the German army. The principle of operation of the Fla.K. 36 mechanisms remains the same - the use of recoil force with a short barrel stroke, but otherwise is similar with only increased the rate of fire to 220 rounds per minute and slightly lowered overall weight to 420 kg."
+ PRE_anti_air_equipment_2: "3,7-cm Flugzeugabwehrkanone Modell 37"
+ PRE_anti_air_equipment_2_short: "3,7-cm Fla.K. 37"
+ PRE_anti_air_equipment_2_desc: "The original 3,7-cm gun was developed by Rheinmetall in 1935. The cannon had an overall length of 89 calibres, which allowed a 4,800 metres maximum ceiling. The Fla.K. 35 was only produced in small numbers, and production had already ended in 1936. Development continued, focusing on replacement of the existing cumbersome dual-axle mount with a lighter single-axle one, resulting in a 3,7-cm Fla.K. 36 with the practical rate of fire raised to 120 rounds per minute. A new, simplified sighting system introduced the next year led to the otherwise-identical 3,7-cm Fla.K. 37 which quickly became the main variant of the gun for the German Army."
+ PRE_anti_air_equipment_3: "8,8-cm Flugzeugabwehrkanone Modell 41"
+ PRE_anti_air_equipment_3_short: "8,8-cm Fla.K. 41"
+ PRE_anti_air_equipment_3_desc: "Initially developed in 1930 by Krupp the 8,8-cm Flugzeugabwehrkanone 30, commonly known as 'acht-acht' ('eight-eight'), was later modified by Rheinmetall. The versatile carriage allows the 8,8-cm Fla.K. to fire in a limited anti-tank mode when still on its wheels, and many consider the 8,8-cm Fla.K. line to be one of the best of its time. The Rheinmetall Fla.K. 41 is a second generation 8,8-cm gun, which some generals say is 'almost equal to the 12,8-cm cannon'. While having good characteristics, the Fla.K. 41 has problems in service, and is used mainly where it can be properly maintained."
+
+ PRE_rocket_artillery_equipment_1: "28/32-cm Schweres Wurfgerät Modell 40"
+ PRE_rocket_artillery_equipment_1_short: "s.W.G. 40"
+ PRE_rocket_artillery_equipment_1_desc: "Initially designed for Nebeltruppen (Smoke Troops) for smokescreen setting, the schwere Wurfgerät 40 exists in two variants - with wooden and steel frames. The open frames of the most common steel version have short hinged legs to adjust elevation and are sized to fit the 32-centimetre rocket, but adapter rails are provided to allow the 28-centimetre rockets to fit. The s.W.G. 40 also can be mounted on schwere Wurfrahmen 40 frames attached to the sides of different vehicles."
+ PRE_rocket_artillery_equipment_2: "21-cm Raketenwerfer Modell 42"
+ PRE_rocket_artillery_equipment_2_short: "R.W. 42"
+ PRE_rocket_artillery_equipment_2_desc: "The 21-cm Raketenwerfer 42 is a five-barreled multiple rocket launcher mounted on the towed carriage derived from that of the 3,7 cm Pa.K. 36 anti-tank gun. The launchers are organised into batteries of six with three batteries per battalion. Intended to provide the fire support and settle smokescreens, the R.W. 42 are mainly used as rocket artillery and almost don't participate in chemical warfare."
+
+#Tanks
+ #Oberschlesien:
+ PRE_gw_tank_equipment: "Sturmpanzerwagen II"
+ PRE_gw_tank_equipment_short: "St.Pzw. II"
+ #Pz 1:
+ PRE_light_tank_equipment_1: "Spähpanzer I"
+ PRE_light_tank_equipment_1_short: "Sp.Pz. I"
+ #Pz II:
+ PRE_light_tank_equipment_2: "Spähpanzer II"
+ PRE_light_tank_equipment_2_short: "Sp.Pz. II"
+ #Pz II M / Vk 16 Leopard:
+ PRE_light_tank_equipment_3: "Spähpanzer III"
+ PRE_light_tank_equipment_3_short: "Sp.Pz. III"
+ #Sturmpanzer I Bison:
+ PRE_light_tank_artillery_equipment_1: "Geschützwagen I"
+ PRE_light_tank_artillery_equipment_1_short: "G.W. I"
+ #Wespe:
+ PRE_light_tank_artillery_equipment_2: "Geschützwagen II"
+ PRE_light_tank_artillery_equipment_2_short: "G.W. II"
+ #Sturmpanzer II Bison:
+ PRE_light_tank_artillery_equipment_3: "Geschützwagen III"
+ PRE_light_tank_artillery_equipment_3_short: "G.W. III"
+ #PzJg 1:
+ PRE_light_tank_destroyer_equipment_1: "Jagdpanzer I"
+ PRE_light_tank_destroyer_equipment_1_short: "Jg.Pz. I"
+ #Marder 2 75mm:
+ PRE_light_tank_destroyer_equipment_2: "Jagdpanzer II"
+ PRE_light_tank_destroyer_equipment_2_short: "Jg.Pz. II"
+ #Stug Leopard:
+ PRE_light_tank_destroyer_equipment_3: "Sturmgeschütz III"
+ PRE_light_tank_destroyer_equipment_3_short: "Stu.G. III"
+ #Flakpanzer 1:
+ PRE_light_tank_aa_equipment_1: "Fla.K. auf Sp.Pz. I"
+ PRE_light_tank_aa_equipment_1_short: "Fla.K.Pz. I"
+ #37mm FlaK 43 Sfi. auf Pz.Kpfw. II Ausf. L 'Luchs':
+ PRE_light_tank_aa_equipment_2: "Fla.K. auf Sp.Pz. II Ausführung"
+ PRE_light_tank_aa_equipment_2_short: "Fla.K.Pz. II"
+ #fake:
+ PRE_light_tank_aa_equipment_3: "Fla.K. auf Sp.Pz. III Ausführung"
+ PRE_light_tank_aa_equipment_3_short: "Fla.K.Pz. III"
+
+ #PZ 3:
+ PRE_medium_tank_equipment_1: "Sturmpanzerkampfwagen III"
+ PRE_medium_tank_equipment_1_short: "St.Pz.Kpfw. III"
+ #PZ 4:
+ PRE_medium_tank_equipment_2: "Sturmpanzerkampfwagen IV"
+ PRE_medium_tank_equipment_2_short: "St.Pz.Kpfw. IV"
+ #Panther:
+ PRE_medium_tank_equipment_3: "Sturmpanzerkampfwagen VI"
+ PRE_medium_tank_equipment_3_short: "St.Pz.Kpfw. VI"
+ #Heuschrecke:
+ PRE_medium_tank_artillery_equipment_1: "Waffenträger IV"
+ PRE_medium_tank_artillery_equipment_1_short: "W.T. IV"
+ #Hummel:
+ PRE_medium_tank_artillery_equipment_2: "Waffenträger III"
+ PRE_medium_tank_artillery_equipment_2_short: "W.T. III"
+ #WT Panther:
+ PRE_medium_tank_artillery_equipment_3: "Waffenträger VI"
+ PRE_medium_tank_artillery_equipment_3_short: "W.T. VI"
+ #Stug4:
+ PRE_medium_tank_destroyer_equipment_1: "Sturmgeschütz IV"
+ PRE_medium_tank_destroyer_equipment_1_short: "Stu.G. IV"
+ #JgPz4:
+ PRE_medium_tank_destroyer_equipment_2: "Jagdpanzer IV"
+ PRE_medium_tank_destroyer_equipment_2_short: "Jg.Pz. IV"
+ #Jagdpanther:
+ PRE_medium_tank_destroyer_equipment_3: "Jagdpanzer VI"
+ PRE_medium_tank_destroyer_equipment_3_short: "Jg.Pz. VI"
+ #Ostwind:
+ PRE_medium_tank_aa_equipment_1: "Fla.K. auf Stu.Pz.Kpfw. III Ausführung"
+ PRE_medium_tank_aa_equipment_1_short: "Fla.K.Pz. III"
+ #Kugelblitz:
+ PRE_medium_tank_aa_equipment_2: "Fla.K. auf Stu.Pz.Kpfw. IV Ausführung"
+ PRE_medium_tank_aa_equipment_2_short: "Fla.K.Pz. IV"
+ #Coelian:
+ PRE_medium_tank_aa_equipment_3: "Fla.K. auf Stu.Pz.Kpfw. VI Ausführung"
+ PRE_medium_tank_aa_equipment_3_short: "Fla.K.Pz. VI"
+
+ #VK 30.01 H:
+ PRE_heavy_tank_equipment_1: "Heerpanzerwagen III"
+ PRE_heavy_tank_equipment_1_short: "H.Pz.Kpfw. III"
+ #Tiger:
+ PRE_heavy_tank_equipment_2: "Sturmpanzerkampfwagen V"
+ PRE_heavy_tank_equipment_2_short: "Stu.Pz.Kpfw. V"
+ #Tiger:
+ PRE_heavy_tank_equipment_3: "Sturmpanzerkampfwagen VII"
+ PRE_heavy_tank_equipment_3_short: "Stu.Pz.Kpfw. VII"
+ #fake:
+ PRE_heavy_tank_artillery_equipment_1: "Geschützwagen III"
+ PRE_heavy_tank_artillery_equipment_1_short: "G.W. III"
+ #GW Tiger mit 17cm:
+ PRE_heavy_tank_artillery_equipment_2: "Geschützwagen V"
+ PRE_heavy_tank_artillery_equipment_2_short: "G.W. V"
+ #GW Tiger mit 21cm:
+ PRE_heavy_tank_artillery_equipment_3: "Geschützwagen VII"
+ PRE_heavy_tank_artillery_equipment_3_short: "G.W. VII"
+ #St. Emil with dicker max:
+ PRE_heavy_tank_destroyer_equipment_1: "Jagdpanzer III"
+ PRE_heavy_tank_destroyer_equipment_1_short: "Jg.Pz. III"
+ #Ferdinand/tiger Hybrid with dicker max:
+ PRE_heavy_tank_destroyer_equipment_2: "Sturmgeschütz V"
+ PRE_heavy_tank_destroyer_equipment_2_short: "Stu.G. V"
+ #Jagdtiger:
+ PRE_heavy_tank_destroyer_equipment_3: "Sturmgeschütz VII"
+ PRE_heavy_tank_destroyer_equipment_3_short: "Stu.G. VII"
+ #fake, icon reference from Pz.Sfl. IVc:
+ PRE_heavy_tank_aa_equipment_1: "Fla.K. auf Stu.Pz.Kpfw. III Ausführung"
+ PRE_heavy_tank_aa_equipment_1_short: "Fla.K.Pz. III"
+ #fake, icon reference from Pz.Sfl. IVc:
+ PRE_heavy_tank_aa_equipment_2: "Fla.K. auf Stu.Pz.Kpfw. V Ausführung"
+ PRE_heavy_tank_aa_equipment_2_short: "Fla.K.Pz. V"
+ #fake:
+ PRE_heavy_tank_aa_equipment_3: "Fla.K. auf Stu.Pz.Kpfw. VII Ausführung"
+ PRE_heavy_tank_aa_equipment_3_short: "Fla.K.Pz. VII"
+
+ #E100:
+ PRE_super_heavy_tank_equipment_1: "Grosspanzerkampfwagen VIII"
+ PRE_super_heavy_tank_equipment_1_short: "G.Pz.Kpfw. VIII"
+ #GWE 100:
+ PRE_super_heavy_tank_artillery_equipment_1: "Grossgeschützwagen VIII"
+ PRE_super_heavy_tank_artillery_equipment_1_short: "G.G.W. VII"
+ #JGPZ 100:
+ PRE_super_heavy_tank_destroyer_equipment_1: "Grosssturmgeschütz VIII"
+ PRE_super_heavy_tank_destroyer_equipment_1_short: "G.Stu.G. VIII"
+ #fake:
+ PRE_super_heavy_tank_aa_equipment_1: "Fla.K. auf G.Pz.Kpfw. VIII Ausführung"
+ PRE_super_heavy_tank_aa_equipment_1_short: "G.Fla.K.Pz. VIII"
+
+ #E50:
+ PRE_modern_tank_equipment_1: "Kampfpanzer 1"
+ PRE_modern_tank_equipment_1_short: "KPz-1"
+ #fake:
+ PRE_modern_tank_artillery_equipment_1: "Panzerhaubitze 1"
+ PRE_modern_tank_artillery_equipment_1_short: "PzH-1"
+ #JGpanther mit 10,5:
+ PRE_modern_tank_destroyer_equipment_1: "Kampfjagdpanzer 1"
+ PRE_modern_tank_destroyer_equipment_1_short: "KJgPz-1"
+ #fake:
+ PRE_modern_tank_aa_equipment_1: "FlaK auf Flakpanzer 1"
+ PRE_modern_tank_aa_equipment_1_short: "FlaKPz-1"
+
+ #Pz.2 modified, i.e. Schwimmpanzer II:
+ PRE_amphibious_tank_equipment_1: "Panzerfähre III"
+ PRE_amphibious_tank_equipment_1_short: "Pz.F. III"
+ #Panzerfähre with tower:
+ PRE_amphibious_tank_equipment_2: "Panzerfähre V"
+ PRE_amphibious_tank_equipment_2_short: "Pz.F. V"
+
+
+###
+### BAY - Bavaria ###
+###
+
+ PRE_CAS_equipment_1: "$GER_CAS_equipment_1$"
+ PRE_CAS_equipment_1_short: "$GER_CAS_equipment_1_short$"
+ PRE_CAS_equipment_1_desc: "$GER_CAS_equipment_1_desc$"
+ PRE_cv_CAS_equipment_1: "$GER_cv_CAS_equipment_1$"
+ PRE_cv_CAS_equipment_1_short: "$GER_cv_CAS_equipment_1$"
+ PRE_cv_CAS_equipment_1_desc: "$GER_cv_CAS_equipment_1_desc$"
+ PRE_CAS_equipment_2: "$GER_CAS_equipment_2$"
+ PRE_CAS_equipment_2_short: "$GER_CAS_equipment_2_short$"
+ PRE_CAS_equipment_2_desc: "$GER_CAS_equipment_2_desc$"
+ PRE_cv_CAS_equipment_2: "$GER_cv_CAS_equipment_2$"
+ PRE_cv_CAS_equipment_2_short: "$GER_cv_CAS_equipment_2_short$"
+ PRE_cv_CAS_equipment_2_desc: "$GER_cv_CAS_equipment_2_desc$"
+ PRE_CAS_equipment_3: "$GER_CAS_equipment_3$"
+ PRE_CAS_equipment_3_short: "$GER_CAS_equipment_3$"
+ PRE_CAS_equipment_3_desc: "$GER_CAS_equipment_3_desc$"
+ PRE_cv_CAS_equipment_3: "$GER_cv_CAS_equipment_3$"
+ PRE_cv_CAS_equipment_3_short: "$GER_cv_CAS_equipment_3_short$"
+ PRE_cv_CAS_equipment_3_desc: "$GER_cv_CAS_equipment_3_desc$"
+
+ PRE_fighter_equipment_0: "$GER_fighter_equipment_0$"
+ PRE_fighter_equipment_0_short: "$GER_fighter_equipment_0_short$"
+ PRE_fighter_equipment_0_desc: "$GER_fighter_equipment_0_desc$"
+ PRE_cv_fighter_equipment_0: "$GER_cv_fighter_equipment_0$"
+ PRE_cv_fighter_equipment_0_short: "$GER_cv_fighter_equipment_0_short$"
+ PRE_cv_fighter_equipment_0_desc: "$GER_cv_fighter_equipment_0_desc$"
+ PRE_fighter_equipment_1: "$GER_fighter_equipment_1$"
+ PRE_fighter_equipment_1_short: "$GER_fighter_equipment_1_short$"
+ PRE_fighter_equipment_1_desc: "$GER_fighter_equipment_1_desc$"
+ PRE_cv_fighter_equipment_1: "$GER_cv_fighter_equipment_1$"
+ PRE_cv_fighter_equipment_1_short: "$GER_cv_fighter_equipment_1_short$"
+ PRE_cv_fighter_equipment_1_desc: "$GER_cv_fighter_equipment_1_desc$"
+ PRE_fighter_equipment_2: "$GER_fighter_equipment_2$"
+ PRE_fighter_equipment_2_short: "$GER_fighter_equipment_2_short$"
+ PRE_fighter_equipment_2_desc: "$GER_fighter_equipment_2_desc$"
+ PRE_cv_fighter_equipment_2: "$GER_cv_fighter_equipment_2$"
+ PRE_cv_fighter_equipment_2_short: "$GER_cv_fighter_equipment_2_short$"
+ PRE_cv_fighter_equipment_2_desc: "$GER_cv_fighter_equipment_2_desc$"
+ PRE_fighter_equipment_3: "$GER_fighter_equipment_3$"
+ PRE_fighter_equipment_3_short: "$GER_fighter_equipment_3_short$"
+ PRE_fighter_equipment_3_desc: "$GER_fighter_equipment_3_desc$"
+ PRE_cv_fighter_equipment_3: "$GER_cv_fighter_equipment_3$"
+ PRE_cv_fighter_equipment_3_short: "$GER_cv_fighter_equipment_3_short$"
+ PRE_cv_fighter_equipment_3_desc: "$GER_cv_fighter_equipment_3_desc$"
+ PRE_jet_fighter_equipment_1: "$GER_jet_fighter_equipment_1$"
+ PRE_jet_fighter_equipment_1_short: "$GER_jet_fighter_equipment_1_short$"
+ PRE_jet_fighter_equipment_1_desc: "$GER_jet_fighter_equipment_1_desc$"
+ PRE_jet_fighter_equipment_2: "$GER_jet_fighter_equipment_2$"
+ PRE_jet_fighter_equipment_2_short: "$GER_jet_fighter_equipment_2_short$"
+ PRE_jet_fighter_equipment_2_desc: "$GER_jet_fighter_equipment_2_desc$"
+
+ PRE_nav_bomber_equipment_1: "$GER_nav_bomber_equipment_1$"
+ PRE_nav_bomber_equipment_1_short: "$GER_nav_bomber_equipment_1_short$"
+ PRE_nav_bomber_equipment_1_desc: "$GER_nav_bomber_equipment_1_desc$"
+ PRE_cv_nav_bomber_equipment_1: "$GER_cv_nav_bomber_equipment_1$"
+ PRE_cv_nav_bomber_equipment_1_short: "$GER_cv_nav_bomber_equipment_1_short$"
+ PRE_cv_nav_bomber_equipment_1_desc: "$GER_cv_nav_bomber_equipment_1_desc$"
+ PRE_nav_bomber_equipment_2: "$GER_nav_bomber_equipment_2$"
+ PRE_nav_bomber_equipment_2_short: "$GER_nav_bomber_equipment_2_short$"
+ PRE_nav_bomber_equipment_2_desc: "$GER_nav_bomber_equipment_2_desc$"
+ PRE_cv_nav_bomber_equipment_2: "$GER_cv_nav_bomber_equipment_2$"
+ PRE_cv_nav_bomber_equipment_2_short: "$GER_cv_nav_bomber_equipment_2_short$"
+ PRE_cv_nav_bomber_equipment_2_desc: "$GER_cv_nav_bomber_equipment_2_desc$"
+ PRE_nav_bomber_equipment_3: "$GER_nav_bomber_equipment_3$"
+ PRE_nav_bomber_equipment_3_short: "$GER_nav_bomber_equipment_3_short$"
+ PRE_nav_bomber_equipment_3_desc: "$GER_nav_bomber_equipment_3_desc$"
+ PRE_cv_nav_bomber_equipment_3: "$GER_cv_nav_bomber_equipment_3$"
+ PRE_cv_nav_bomber_equipment_3_short: "$GER_cv_nav_bomber_equipment_3_short$"
+ PRE_cv_nav_bomber_equipment_3_desc: "$GER_cv_nav_bomber_equipment_3_desc$"
+
+ PRE_heavy_fighter_equipment_1: "$GER_heavy_fighter_equipment_1$"
+ PRE_heavy_fighter_equipment_1_short: "$GER_heavy_fighter_equipment_1_short$"
+ PRE_heavy_fighter_equipment_1_desc: "$GER_heavy_fighter_equipment_1_desc$"
+ PRE_heavy_fighter_equipment_2: "$GER_heavy_fighter_equipment_2$"
+ PRE_heavy_fighter_equipment_2_short: "$GER_heavy_fighter_equipment_2_short$"
+ PRE_heavy_fighter_equipment_2_desc: "$GER_heavy_fighter_equipment_2_desc$"
+ PRE_heavy_fighter_equipment_3: "$GER_heavy_fighter_equipment_3$"
+ PRE_heavy_fighter_equipment_3_short: "$GER_heavy_fighter_equipment_3_short$"
+ PRE_heavy_fighter_equipment_3_desc: "$GER_heavy_fighter_equipment_3_desc$"
+
+ PRE_tac_bomber_equipment_0: "$GER_tac_bomber_equipment_0$"
+ PRE_tac_bomber_equipment_0_short: "$GER_tac_bomber_equipment_0_short$"
+ PRE_tac_bomber_equipment_0_desc: "$GER_tac_bomber_equipment_0_desc$"
+ PRE_tac_bomber_equipment_1: "$GER_tac_bomber_equipment_1$"
+ PRE_tac_bomber_equipment_1_short: "$GER_tac_bomber_equipment_1_short$"
+ PRE_tac_bomber_equipment_1_desc: "$GER_tac_bomber_equipment_1_desc$"
+ PRE_tac_bomber_equipment_2: "$GER_tac_bomber_equipment_2$"
+ PRE_tac_bomber_equipment_2_short: "$GER_tac_bomber_equipment_2_short$"
+ PRE_tac_bomber_equipment_2_desc: "$GER_tac_bomber_equipment_2_desc$"
+ PRE_tac_bomber_equipment_3: "$GER_tac_bomber_equipment_3$"
+ PRE_tac_bomber_equipment_3_short: "$GER_tac_bomber_equipment_3_short$"
+ PRE_tac_bomber_equipment_3_desc: "$GER_tac_bomber_equipment_3_desc$"
+ PRE_jet_tac_bomber_equipment_1: "$GER_jet_tac_bomber_equipment_1$"
+ PRE_jet_tac_bomber_equipment_1_short: "$GER_jet_tac_bomber_equipment_1_short$"
+ PRE_jet_tac_bomber_equipment_1_desc: "$GER_jet_tac_bomber_equipment_1_desc$"
+ PRE_jet_tac_bomber_equipment_2: "$GER_jet_tac_bomber_equipment_2$"
+ PRE_jet_tac_bomber_equipment_2_short: "$GER_jet_tac_bomber_equipment_2_short$"
+ PRE_jet_tac_bomber_equipment_2_desc: "$GER_jet_tac_bomber_equipment_2_desc$"
+
+ PRE_strat_bomber_equipment_1: "$GER_strat_bomber_equipment_1$"
+ PRE_strat_bomber_equipment_1_short: "$GER_strat_bomber_equipment_1_short$"
+ PRE_strat_bomber_equipment_1_desc: "$GER_strat_bomber_equipment_1_desc$"
+ PRE_strat_bomber_equipment_2: "$GER_strat_bomber_equipment_2$"
+ PRE_strat_bomber_equipment_2_short: "$GER_strat_bomber_equipment_2_short$"
+ PRE_strat_bomber_equipment_2_desc: "$GER_strat_bomber_equipment_2_desc$"
+ PRE_strat_bomber_equipment_3: "$GER_strat_bomber_equipment_3$"
+ PRE_strat_bomber_equipment_3_short: "$GER_strat_bomber_equipment_3_short$"
+ PRE_strat_bomber_equipment_3_desc: "$GER_strat_bomber_equipment_3_desc$"
+ PRE_jet_strat_bomber_equipment_1: "$GER_jet_strat_bomber_equipment_1$"
+ PRE_jet_strat_bomber_equipment_1_short: "$GER_jet_strat_bomber_equipment_1_short$"
+ PRE_jet_strat_bomber_equipment_1_desc: "$GER_jet_strat_bomber_equipment_1_desc$"
+
+ PRE_rocket_interceptor_equipment_1: "$GER_rocket_interceptor_equipment_1$"
+ PRE_rocket_interceptor_equipment_1_short: "$GER_rocket_interceptor_equipment_1_short$"
+ PRE_rocket_interceptor_equipment_1_desc: "$GER_rocket_interceptor_equipment_1_desc$"
+ PRE_rocket_interceptor_equipment_2: "$GER_rocket_interceptor_equipment_2$"
+ PRE_rocket_interceptor_equipment_2_short: "$GER_rocket_interceptor_equipment_2_short$"
+ PRE_rocket_interceptor_equipment_2_desc: "$GER_rocket_interceptor_equipment_2_desc$"
+ PRE_rocket_interceptor_equipment_3: "$GER_rocket_interceptor_equipment_3$"
+ PRE_rocket_interceptor_equipment_3_short: "$GER_rocket_interceptor_equipment_3_short$"
+ PRE_rocket_interceptor_equipment_3_desc: "$GER_rocket_interceptor_equipment_3_desc$"
+
+ PRE_scout_plane_equipment_1: "$GER_scout_plane_equipment_1$"
+ PRE_scout_plane_equipment_1_short: "$GER_scout_plane_equipment_1_short$"
+ PRE_scout_plane_equipment_1_desc: "$GER_scout_plane_equipment_1_desc$"
+ PRE_scout_plane_equipment_2: "$GER_scout_plane_equipment_2$"
+ PRE_scout_plane_equipment_2_short: "$GER_scout_plane_equipment_2_short$"
+ PRE_scout_plane_equipment_2_desc: "$GER_scout_plane_equipment_2_desc$"
+
+ PRE_transport_plane_equipment_1: "Junkers Transportflugzeug 52"
+ PRE_transport_plane_equipment_1_short: "Ju 52"
+
+#Missile
+ PRE_guided_missile_equipment_1: "Vergeltungswaffe-1"
+ PRE_guided_missile_equipment_1_short: "V-1"
+ PRE_guided_missile_equipment_2: "Vergeltungswaffe-2"
+ PRE_guided_missile_equipment_2_short: "V-2"
+ PRE_guided_missile_equipment_3: "Aggregat-10"
+ PRE_guided_missile_equipment_3_short: "A-10"
+
+ PRE_ship_fire_control_system_1: "Type 1935 (C. 35)"
+ PRE_ship_anti_air_1: "Quadruple 2cm Flakvierling"
+ PRE_ship_anti_air_2: "Twin 3,7cm AA (SK C/30)"
+ PRE_ship_anti_air_3: "Twin 8,8cm AA (SK C/32)"
+ PRE_ship_anti_air_4: "Twin 3,7cm Flak M43"
+ PRE_ship_anti_air_5: "Twin 10,5cm AA (SK C/33 na)"
+ PRE_ship_sub_snorkel_1: "Float Valve Schnorchel"
+ PRE_ship_sub_snorkel_2: "Improved Schnorchel"
+ PRE_ship_sonar_1: "Atlas-Werke GHG"
+ PRE_ship_sonar_2: "S-Gerät"
+ PRE_ship_radar_1: "FuMO 22 Radar"
+ PRE_ship_radar_2: "FuMO 26 Radar"
+ PRE_ship_radar_3: "FuMO 27 Radar"
+ PRE_ship_radar_4: "FuMO 34 Radar"

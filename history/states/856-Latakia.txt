@@ -1,0 +1,32 @@
+state={
+	id=856
+	name="Latakia"
+	provinces={
+		1088 10087 
+	}
+	history={
+		owner = SYR
+
+		victory_points = {
+			1088 1 
+		}
+		victory_points = {
+			10087 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			1088 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = SYR
+		add_core_of = OSY
+
+	}
+	manpower=320000
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

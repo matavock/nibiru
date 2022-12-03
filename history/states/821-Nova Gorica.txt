@@ -1,0 +1,28 @@
+state={
+	id=821
+	name="Nova Gorica"
+	provinces={
+		599 11595 
+	}
+	history={
+		
+		victory_points = {
+			599 1 
+				}
+		owner = SLV
+
+		add_core_of = SLV
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			599 = {
+			naval_base = 2
+				}
+
+		}
+
+		}
+	manpower=434000
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

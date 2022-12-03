@@ -1,0 +1,35 @@
+state={
+	id=846
+	name="Ceuta-Melilla"
+	provinces={
+		13241 13242 
+	}
+	history={
+		owner = SPR
+		buildings = {
+			infrastructure = 2
+			13241 = {
+				naval_base = 2
+
+			}
+			13242 = {
+				naval_base = 2
+
+			}
+
+		}
+		victory_points = {
+			13241 1 
+		}
+		victory_points = {
+			13242 1 
+		}
+		
+		add_core_of = MOR
+		add_core_of = SPR
+
+	}
+	manpower=40000
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+}

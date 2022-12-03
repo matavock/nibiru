@@ -1,0 +1,48 @@
+state={
+	id=826
+	name="Breclav"
+	provinces={
+		543 557 5283 11525 
+	}
+	history={
+		victory_points = {
+			557 3 
+		}
+		
+		
+		owner = CZE
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			anti_air_building = 2
+			543 = {
+				bunker = 7
+
+			}
+			557 = {
+				bunker = 7
+
+			}
+			5283 = {
+				bunker = 7
+
+			}
+			11525 = {
+				bunker = 7
+
+			}
+			
+
+		}
+		add_core_of = CZE
+		1938.9.30 = {
+			owner = GER
+			controller = GER
+
+		}
+
+	}
+	manpower=800000
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

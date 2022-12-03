@@ -1,0 +1,66 @@
+﻿###########################
+# Ukraine Events
+###########################
+
+add_namespace = ukraine
+
+# ukraine asks Soviet for peace
+country_event = {
+	id = ukraine.1
+	title = ukraine.1.t
+	desc = ukraine.1.d
+	picture = GFX_report_event_stalin_02
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ukraine.1.a
+		ai_chance = {
+			base = 10
+		}
+		set_global_flag = ukraine_wins
+		UKR = {
+			transfer_state = 137
+			white_peace = SOV
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.25
+		}
+		add_stability = -0.1
+		hidden_effect = {
+			news_event = {
+				id = news.700
+				days = 1
+			}
+		}
+	}
+	
+	option = {
+		name = ukraine.1.b
+		ai_chance = {
+			base = 0
+		}
+		CIN = {
+			country_event = { id = ukraine.101 days = 1 }
+		}
+	}
+}
+
+# Italy says no
+country_event = {
+	id = ukraine.101
+	title = ukraine.101.t
+	desc = ukraine.101.d
+	picture = GFX_report_event_stalin_02
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ukraine.101.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+

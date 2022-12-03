@@ -1,0 +1,31 @@
+
+state={
+	id=100
+	name="STATE_100"
+
+	history={
+		owner = ICE
+		victory_points = {
+			12674 3 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
+			12674 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = ICE
+
+	}
+
+	provinces={
+		4861 12674 12689 13253 13254 
+	}
+	manpower=115870
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

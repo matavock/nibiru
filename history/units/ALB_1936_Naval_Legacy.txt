@@ -1,0 +1,13 @@
+units = {
+	### MEDITERRANIAN FLEET ###			
+	fleet = {
+		name = "Albania Command"
+		naval_base = 11767 # Malta
+		task_force = {
+			name = "Albanian Fleet"
+			location = 11767 # Malta	
+			ship = { name = "FM-16 Shqipnja" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ALB } } }
+			ship = { name = "FM-23 Skender Bej" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ALB } } }
+		}							
+	}
+}	

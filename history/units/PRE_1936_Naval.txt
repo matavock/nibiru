@@ -1,0 +1,15 @@
+units = {
+	### MEDITERRANIAN FLEET ###			
+	fleet = {
+		name = "Südwestafrikanische Flotte"
+		naval_base = 2207 # Malta
+		task_force = {
+			name = "Flachgehende Minensuchboote"
+			location = 2207 # Malta	
+			ship = { name = "Königsberg" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Königsberg Class" } } }		
+			ship = { name = "FM 52 Lüderitz" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = PRE version_name = "Flachgehende Minensuchboote" } } }
+			ship = { name = "FM 53 Windhoek" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = PRE version_name = "Flachgehende Minensuchboote" } } }
+			
+		}							
+	}
+}	

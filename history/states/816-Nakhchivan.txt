@@ -1,0 +1,29 @@
+state={
+	id=816
+	name="Nakhchivan"
+	provinces={
+		6997 
+	}
+	history={
+		owner = SOV
+		victory_points = {
+			6997 1
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			
+
+		}
+		
+		add_claim_by = ARM
+		add_core_of = SOV
+		add_core_of = AZR
+		
+
+	}
+	manpower=180000
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

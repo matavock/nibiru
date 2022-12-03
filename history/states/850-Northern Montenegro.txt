@@ -1,0 +1,24 @@
+state={
+	id=850
+	name="Eastern Montenegro"
+	provinces={
+		937 6913 
+	}
+	history={
+		victory_points = {
+			6913 1 
+		}
+		owner = MNT
+		add_core_of = MNT
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_claim_by = YUG
+
+	}
+	manpower=227000
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+}

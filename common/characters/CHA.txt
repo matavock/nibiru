@@ -1,0 +1,105 @@
+characters={
+
+	PRE_wilhelm_iii={ #Empty Wilhelm III so he doesn't become ruler automatically if the neutrals are in power
+		name=GER_wilhelm_iii
+		portraits={
+			civilian={
+				large="GFX_portrait_ger_wilhelm_iii"
+			}
+			army={
+				large="GFX_portrait_ger_wilhelm_iii"
+			}	
+		}
+		country_leader={
+				ideology= fascism_ideology
+				traits={ imperial_connections }
+				expire="1969.6.9.1"
+				id=-1
+			}
+		field_marshal={
+			traits = { expert_delegator  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		
+	}
+	PRE_ernst={ #Empty Wilhelm III so he doesn't become ruler automatically if the neutrals are in power
+		name="Ernst Junger"
+		portraits={
+			civilian={
+				large="gfx/leaders/PRE/ErnstJunger.jpg"
+			}
+			army={
+				large="gfx/leaders/PRE/ErnstJunger.jpg"
+			}	
+		}
+		country_leader={
+				ideology= despotism
+				traits={ figurehead_president}
+				expire="1969.6.9.1"
+				id=-1
+			}
+		corps_commander={
+			traits={ infantry_leader }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+		
+	}
+	NCY_mehmet_remzi_okan ={ #
+		name="Mehmet Remzi Okan"
+		portraits={
+			civilian={
+				large="gfx/leaders/CYP/Mehmet_Remzi_Okan.jpg"
+			}
+				
+		}
+		country_leader={
+				ideology= despotism
+				traits={ old_figurehead likes_turkey }
+				expire="1969.6.9.1"
+				id=-1
+			}
+		
+		
+	}
+	
+	CHA_chad={
+		instance = {
+			allowed = {
+				
+			}
+			name="Giga Chad"
+			portraits={
+				civilian={
+					large="gfx/leaders/CHA/gigachad.jpg"
+				}
+				army={
+					large = "gfx/leaders/CHA/chad.jpg"
+				}
+			}
+			country_leader={
+				ideology=despotism
+				traits={ Chad }
+				expire="6969.6.9.1"
+				id=-1
+			}
+			field_marshal={
+			traits = { skilled_staffer infantry_leader trickster adaptable  }
+			skill = 9
+			attack_skill = 10
+			defense_skill = 10
+			planning_skill = 10
+			logistics_skill = 10
+		}
+		}
+	}
+
+}

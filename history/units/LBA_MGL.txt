@@ -1,0 +1,177 @@
+﻿division_template = {
+	name = "Jaysh Alshaeb"				# Infantry Division
+
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		
+	}
+}
+
+
+
+
+units = {
+	division = {
+		#name = "1 Alfurqat"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4120
+		division_template = "Jaysh Alshaeb"	
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		#name = "1 Alfurqat"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4120
+		division_template = "Jaysh Alshaeb"	
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		#name = "1 Alfurqat"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4120
+		division_template = "Jaysh Alshaeb"	
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		#name = "1 Alfurqat"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4120
+		division_template = "Jaysh Alshaeb"	
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+division = {
+		#name = "1 Alfurqat"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4120
+		division_template = "Jaysh Alshaeb"	
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		#name = "1 Alfurqat"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7063
+		division_template = "Jaysh Alshaeb"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	
+	division = {
+		#name = "3 Alfurqat"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1130
+		division_template = "Jaysh Alshaeb"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division = {
+		#name = "3 Alfurqat"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1130
+		division_template = "Jaysh Alshaeb"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		#name = "3 Alfurqat"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11954
+		division_template = "Jaysh Alshaeb"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "3 Alfurqat"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11954
+		division_template = "Jaysh Alshaeb"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		#name = "4 Alfurqat"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 9977
+		division_template = "Jaysh Alshaeb"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		#name = "4 Alfurqat"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 4060
+		division_template = "Jaysh Alshaeb"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+division = {
+		#name = "4 Alfurqat"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 4060
+		division_template = "Jaysh Alshaeb"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+}
+
+

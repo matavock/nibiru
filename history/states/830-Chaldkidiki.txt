@@ -1,0 +1,35 @@
+
+state={
+	id=830
+	name="Thessaloniki"
+	resources={
+		chromium=11.000
+	}
+	history={
+		owner = GRE
+
+		victory_points = {
+			11818 20 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			air_base = 2
+			11818 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = GRE
+
+	}
+
+	provinces={
+		895 3936 11577 11818 
+	}
+	manpower=705700
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

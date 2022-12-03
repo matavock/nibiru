@@ -1,0 +1,1146 @@
+
+TUR_cyprus_category = {
+	buy_ncy = {
+
+		icon = GFX_decision_generic_tank
+
+		available = {
+		NOT = { has_decision = sell_ncy has_decision = turkish_cyp  }
+		is_subject = no
+		NOT = { has_war_with = NCY }
+		NCY = { has_opinion = { target = TUR value > 89 } }
+		}
+
+		visible = {
+			tag = TUR
+country_exists = NCY
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+
+		}
+
+		days_remove = 15
+
+		cost = 50
+
+		remove_effect = {
+		TUR = { annex_country = { target = NCY transfer_troops = yes } } 
+		GRE = { 
+				hidden_effect = {
+				country_event = libya.38
+				
+				}
+				custom_effect_tooltip = may_provoke_hostility
+				add_opinion_modifier = { target = TUR modifier = TUR_insulted_our_honour }
+				add_opinion_modifier = { target = TUR modifier = embargo }
+				remove_opinion_modifier = { target = TUR modifier = BFTB_balkan_pact_ally }
+			}
+			CYP = { 
+				
+				add_opinion_modifier = { target = TUR modifier = condemn_aggression }
+				add_opinion_modifier = { target = TUR modifier = embargo }
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			
+			
+		}
+	}
+	sell_ncy = {
+
+		icon = GFX_decision_generic_operation
+		available = {
+		NOT = { has_decision = buy_ncy has_decision = turkish_cyp  }
+		is_subject = no
+		NOT = { has_war_with = NCY }
+		NOT = { has_war_with = CYP }
+		NOT = { has_war_with = GRE }
+		CYP = { controls_state = 183 }
+		NCY = { controls_state = 862 }
+		}
+
+		visible = {
+			tag = TUR
+		country_exists = NCY
+		
+		
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+
+		}
+
+		days_remove = 15
+
+		cost = 0
+
+		remove_effect = {
+		add_political_power = 400
+		add_stability = 0.10
+		if = {
+		limit = { CYP = { controls_state = 183 } } 
+		CYP = { annex_country = { target = NCY transfer_troops = yes } } }
+			GRE = { 
+				add_opinion_modifier = { target = TUR modifier = huge_increase }
+			}
+			CYP = { 
+				transfer_state = 861
+				add_opinion_modifier = { target = TUR modifier = huge_increase }
+			}
+		}
+	
+
+		ai_will_do = {
+			base = 0
+			
+			
+		}
+	}
+	turkish_cyp = {
+		
+		icon = GFX_decision_generic_operation
+		available = {
+		NOT = { has_decision = sell_ncy has_decision = buy_ncy  }
+		is_subject = no
+		NOT = { has_war_with = NCY }
+		NOT = { has_war_with = CYP }
+		NOT = { has_war_with = GRE }
+		OR = {
+		CYP = { controls_state = 183 }
+		GRE = { controls_state = 183 }
+		}
+		OR = {
+		AND = {
+		NCY = { controls_state = 862 }
+		NCY = { has_opinion = { target = TUR value > 89 } }
+		}
+		TUR = { controls_state = 862 }
+		}
+		}
+
+		visible = {
+			tag = TUR
+		country_exists = CYP
+		
+		
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+
+		}
+
+		days_remove = 15
+
+		cost = 50
+
+		remove_effect = {
+		
+
+		if = { limit = {  TUR = { controls_state = 862 } }	declare_war_on = { target = CYP type = annex_everything } }
+		if = { limit = {  NCY = { controls_state = 862 } } TUR = {	puppet = NCY declare_war_on = { target = CYP type = annex_everything } } }
+		
+		GRE = { 
+				add_opinion_modifier = { target = TUR modifier = TUR_insulted_our_honour }
+				add_opinion_modifier = { target = TUR modifier = embargo }
+				remove_opinion_modifier = { target = TUR modifier = BFTB_balkan_pact_ally }
+			}
+			CYP = { 
+				
+				add_opinion_modifier = { target = TUR modifier = condemn_aggression }
+				add_opinion_modifier = { target = TUR modifier = embargo }
+			}
+			ENG = { 
+				
+				add_opinion_modifier = { target = TUR modifier = condemn_aggression }
+				add_opinion_modifier = { target = TUR modifier = embargo }
+			}
+			FRA = { 
+				
+				add_opinion_modifier = { target = TUR modifier = condemn_aggression }
+				add_opinion_modifier = { target = TUR modifier = embargo }
+			}
+		}
+	
+
+		ai_will_do = {
+			base = 0
+			
+			
+		}
+	}
+
+	buy_mobilize_island = {
+
+		icon = GFX_decision_generic_industry
+highlight_states = {
+			highlight_state_targets = {
+				state = 862
+			}
+		}
+		available = {
+		NOT = { has_decision = sell_ncy has_decision = buy_ncy has_decision = turkish_cyp  }
+		NCY = { controls_state = 862 }
+		has_manpower > 59
+		command_power > 14.9
+		original_tag = TUR
+		NOT = { has_war_with = NCY }
+		}
+
+		visible = {
+			tag = TUR
+			country_exists = NCY
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		fire_only_once = yes
+		days_remove = 5
+			
+			remove_effect = {
+			add_command_power  = -15
+			TUR = { add_manpower = -60 }
+			NCY = { add_manpower = 5000 }
+			
+			
+		}
+	}
+	buy_mobilize_island2 = {
+
+		icon = GFX_decision_generic_construction
+		cost = 50
+			highlight_states = {
+			highlight_state_targets = {
+				state = 862
+			}
+		}
+		available = {
+		NOT = { has_decision = sell_ncy has_decision = buy_ncy has_decision = turkish_cyp  }
+		NCY = { controls_state = 862 }
+		original_tag = TUR
+		NOT = { has_war_with = NCY }
+		}
+
+		visible = {
+			tag = TUR
+			country_exists = NCY
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+			complete_effect = {
+			add_ideas = TUR_financing_private_enterprise
+			}
+
+		fire_only_once = yes
+		days_remove = 70
+			
+			remove_effect = {
+			remove_ideas = TUR_financing_private_enterprise
+			862 = {
+					
+					add_manpower = 35000
+					add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 13252
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = naval_base
+							level = 1
+							province = 13252
+							instant_build = yes
+						}
+					
+					
+					add_building_construction = {
+					type = industrial_complex
+					level = 1
+					}
+					
+				}
+			
+			
+		}
+	}
+
+
+
+
+}
+tmodern_category = {
+			buy_ncy_remove_tsk = {
+
+		icon = GFX_decision_generic_political_discourse
+
+		available = {
+
+		original_tag = TUR
+		NOT = { has_war_with = NCY }
+		}
+
+		visible = {
+			tag = TUR
+			country_exists = NCY
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 2000
+		}
+
+		fire_only_once = yes
+		days_remove = 25
+			
+			remove_effect = {
+			NCY = { retire_country_leader = yes add_political_power = 75 set_party_name = { ideology = neutrality long_name = NCY_neutrality_party_new_long name = NCY_neutrality_party_new }}
+			add_political_power = 75
+			
+			TUR = {country_event = { days = 1 id = Libya.28 }}
+			
+			
+			
+		}
+	}
+		PRE_the_election_of_1936  = { # Election crisis
+
+		icon = generic_political_discourse
+
+		allowed = { 
+			original_tag = PRE
+		}
+
+		available = {
+			always = no 
+		}
+
+		days_mission_timeout = 26
+
+		fire_only_once = yes
+
+		activation = {
+			NOT = { has_country_flag = PRE_1936_election }
+			
+		}
+
+		visible = {
+			NOT = { has_country_flag = PRE_1936_election }
+		}
+
+		cancel_if_not_visible = no
+
+		is_good = no
+
+		
+
+		timeout_effect = {
+				country_event = { id = toykan.8 days = 1 }
+			
+				set_country_flag = PRE_1936_election
+		}
+	}
+	
+	
+	
+		
+	
+	buy_hile_sov = {
+
+		icon = GFX_decision_generic_army_support
+
+		available = {
+		surrender_progress > 0.40
+			has_war_with = GER
+		original_tag = SOV
+		has_government = communism
+		}
+
+		visible = {
+			is_ai = yes
+			original_tag = SOV
+			has_government = communism
+		}
+
+		fire_only_once = yes
+
+		target_trigger = {
+			FROM = {
+				tag = GER
+			}
+		}
+
+		ai_will_do = {
+			factor = 2000
+		}
+
+
+
+		days_remove = 190
+
+		targeted_modifier = {
+			tag = GER
+			attack_bonus_against = 0.70
+			defense_bonus_against = 0.70
+		}
+	}
+	Claim_Germany = {
+
+		icon = GFX_decision_generic_army_support
+
+		available = {
+		
+		original_tag = PRE
+		OR = {
+		NOT = { country_exists = GER }
+		has_war_with = GER
+		}
+		}
+
+		visible = {
+		
+			original_tag = PRE
+			
+		}
+
+		fire_only_once = yes
+
+	
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		
+
+		complete_effect = {
+				PRE = {	every_state = {
+					limit = { is_core_of = GER }
+					add_core_of = PRE
+				}
+				}
+				PRE = { set_cosmetic_tag = GER }
+				
+		}
+
+		
+	}
+	
+
+	
+	
+	
+	
+	
+
+	
+	
+
+	buy_czech = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+		has_army_manpower = { size > 749999 }
+		CZE = { is_puppet_of = GER }
+		}
+
+		visible = {
+			original_tag = GER
+			CZE = { is_puppet_of = GER }
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+			consumer_goods_factor = 0.10
+			political_power_gain = -0.15
+		}
+
+		days_remove = 30
+		days_re_enable = 10
+
+		cost = 20
+
+		remove_effect = {
+		annex_country = { target = CZE transfer_troops = no }
+		}
+
+		ai_will_do = {
+			base = 100
+			
+			
+		}
+	}
+	buy_mol = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+		has_army_manpower = { size > 239999 }
+		country_exists = MOL
+		}
+
+		visible = {
+			original_tag = ROM
+			country_exists = MOL
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+			consumer_goods_factor = 0.10
+			political_power_gain = -0.15
+		}
+
+		days_remove = 30
+		days_re_enable = 10
+
+		cost = 0
+
+		remove_effect = {
+		hidden_effect = { news_event = { hours = 1 id = news.631 } }
+		MOL = {
+			country_event = generic.23
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_government = democratic
+			}
+			
+		}
+	}
+	buy_rom_ukr = {
+
+		icon = GFX_decision_oppression
+        war_with_on_remove = UKR
+		available = {
+			ROM = { controls_state =  78 }
+		has_army_manpower = { size > 249999 }
+		UKR = {
+		OR = {
+		controls_state = 766
+		controls_state = 80
+		}
+		}
+		}
+
+		visible = {
+			original_tag = ROM
+			UKR = {
+			OR = {
+		controls_state = 766
+		controls_state = 80
+		}
+		has_war_with = SOV
+		}
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+			political_power_gain = -0.15
+		}
+
+		days_remove = 20
+
+		cost = 0
+
+		remove_effect = {
+		hidden_effect = { news_event = { hours = 4 id = news.619 } }
+		UKR = {
+			country_event = libya.29
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_government = democratic
+			}
+			
+		}
+	}
+
+	
+	buy_kaz = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+		country_exists = UZB
+		}
+	war_with_on_remove = KAZ
+		visible = {
+			original_tag = SOV
+			country_exists = UZB
+			UZB = { owns_state = 583 owns_state = 590 owns_state = 588 owns_state = 407 }
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+			
+		}
+
+		days_remove = 30
+		days_re_enable = 10
+
+		cost = 25
+
+		remove_effect = {
+		UZB = {
+			country_event = libya.27
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			
+		}
+	}
+	buy_golan = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+		ISR = { has_war = no }
+		has_army_manpower = { size > 74999 }
+		country_exists = SYR
+		OR = {
+		SYR = { has_civil_war = yes }
+		SYR = { has_war = yes }
+		}
+		
+		  divisions_in_border_state = { state = 896 border_state = 881 size > 0 }
+		  SYR = {
+		   divisions_in_border_state = { state = 881 border_state = 896 size < 1 } 
+		   }
+		}
+
+		visible = {
+			original_tag = ISR
+			NOT = { ISR = { controls_state = 881 } }
+		}
+
+		fire_only_once = yes
+		modifier = {
+			
+		}
+
+		days_remove = 1
+		days_re_enable = 5
+		cost = 5
+
+		remove_effect = {
+		hidden_effect = { news_event = { hours = 4 id = news.613 } }
+		
+		ISR = { transfer_state = 881 }
+		SYR = {
+			country_event = libya.18
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+			
+			
+		}
+	}
+	buy_turkestan = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+		country_exists = KYR
+		country_exists = TAJ
+		country_exists = TMS
+		
+		}
+
+		visible = {
+			original_tag = UZB
+			is_subject = no
+			OR = {
+			country_exists = KYR
+		country_exists = TAJ
+		country_exists = TMS
+			}
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+			
+		}
+		
+		days_remove = 30
+		days_re_enable = 10
+
+		cost = 30
+
+		remove_effect = {
+		declare_war_on = { target = KYR type = annex_everything }
+		declare_war_on = { target = TAJ type = annex_everything }
+		declare_war_on = { target = TMS type = annex_everything }
+		
+		UZB = {	every_state = {
+					limit = { is_core_of = KYR }
+					add_core_of = UZB
+				}
+				}
+				UZB = {	every_state = {
+					limit = { is_core_of = TAJ }
+					add_core_of = UZB
+				}
+				}
+				UZB = {	every_state = {
+					limit = { is_core_of = TMS }
+					add_core_of = UZB
+				}
+				}
+		hidden_effect = { 
+			news_event = { hours = 6 id = news.601 }	
+				}
+		}
+
+		ai_will_do = {
+			base = 100
+			
+			
+		}
+	}
+	invade_china = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+		country_exists = PRC
+		PRC = { has_war_with = JAP owns_state = 617 }
+		
+		NOT = {  is_in_faction_with = PRC }
+		has_war = no
+		SIK = { has_war_with = PRC  }
+		is_subject = no
+		owns_state = 586
+		owns_state = 732
+		owns_state = 742
+		}
+		
+		visible = {
+			original_tag = UZB
+			is_subject = no
+			
+		}
+		war_with_on_remove = PRC
+		fire_only_once = yes
+
+		modifier = {
+			
+			
+		}
+
+		days_remove = 50
+
+		cost = 0
+
+		remove_effect = {
+		declare_war_on = { target = PRC type = annex_everything }
+		
+		hidden_effect = { news_event = { hours = 8 id = news.628 } create_wargoal = {
+				type = annex_everything
+				target = PRC
+				expire = 0
+			} }
+		
+		}
+
+		ai_will_do = {
+			base = 100
+			
+			
+		}
+	}
+	
+		buy_ask_war_israel = {
+
+		icon = GFX_decision_category_generic_crisis
+
+		available = {
+		ISR = { is_subject = no }
+		country_exists = ISR
+		country_exists = JOR
+		country_exists = PAL
+		
+		has_manpower > 110000
+		
+		}
+		visible = {
+		original_tag = EGY
+		is_subject = no
+		
+		
+		country_exists = ISR
+		country_exists = PAL
+		country_exists = JOR
+			
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+			
+		}
+
+		days_remove = 10
+
+		cost = 10
+
+		remove_effect = {
+		hidden_effect = {
+		news_event = { hours = 23 id = news.611 }
+		}
+		create_faction = "cairo_pact"
+		JOR = { country_event = Libya.13 }
+		PAL = { country_event = Libya.13 }
+		if = { limit = { country_exists = SYR SYR = { has_war = no  }  }  SYR = { country_event = Libya.13 } }
+		if = { limit = { country_exists = OSY OSY = { has_war = no  }  }  OSY = { country_event = Libya.13 } }
+		add_timed_idea = { idea = HUN_war_preparation days = 50 }
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				
+				date > 1938.6.1
+			}
+	}
+	}
+	
+	
+	
+		buy_israel = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+		ISR = { is_subject = no }
+		country_exists = ISR
+		country_exists = JOR
+		country_exists = PAL
+		
+		has_manpower > 110000
+		
+		}
+		war_with_on_remove = ISR
+		visible = {
+		PAL = { has_country_flag = agree_isr }
+		original_tag = EGY
+		is_subject = no
+		
+		
+		country_exists = ISR
+		country_exists = PAL
+		country_exists = JOR
+			
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+			
+		}
+
+		days_remove = 30
+
+		cost = 25
+
+		remove_effect = {
+
+		declare_war_on = { target = ISR type = annex_everything }
+		if = { limit = { PAL = { is_in_faction_with = EGY } } PAL =  { declare_war_on = { target = ISR type = annex_everything } } }
+		
+		hidden_effect = { 
+			news_event = { hours = 6 id = news.605 }
+				}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				date > 1938.6.1
+			}
+	}
+}
+ 
+	
+	
+	
+	
+	
+		BUL_demand_macedonia = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+
+		available = {
+		
+		is_subject = no
+		country_exists = YUG
+		has_war = no
+		YUG = { controls_state = 940 controls_state = 106 controls_state = 831 }
+
+		}
+		visible = {
+		YUG = { controls_state = 940 controls_state = 106 controls_state = 831 }
+		NOT = { has_country_flag = BUL_asked_mac }
+		original_tag = BUL
+		is_subject = no
+		country_exists = YUG
+		}
+
+		fire_only_once = yes
+		modifier = {
+			
+			
+		}
+
+		days_remove = 5
+
+		cost = 0
+
+		remove_effect = {
+		
+		hidden_effect = { set_country_flag = BUL_asked_mac news_event = { id = news.634 } }
+		YUG = { country_event = toykan.1 }
+		}
+
+		ai_will_do = {
+			base =100
+			
+	}
+	}
+	
+	
+	
+	#karabag savasi#
+	ARM_ask_sov_for_help = {
+
+		icon = GFX_decision_category_sov_great_patriotic_war
+
+		available = {
+		is_subject = no
+		country_exists = SOV
+		country_exists = AZR
+		AZR = { controls_state = 818 controls_state = 816 }
+
+		}
+		visible = {
+		original_tag = ARM
+		is_subject = no
+		country_exists = AZR
+		country_exists = SOV
+		}
+
+		fire_only_once = yes
+		modifier = {
+			
+			
+		}
+
+		days_remove = 35
+
+		cost = 5
+
+		remove_effect = {
+		hidden_effect = { set_country_flag = asked_sov }
+		SOV = { country_event = libya.19 }
+		}
+
+		ai_will_do = {
+			base =100
+			
+	}
+	}
+	
+	ARM_first_conflict = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+		highlight_states = { highlight_state_targets = {   state = 816 } }
+		available = {
+		has_war = no 
+		is_subject = no
+		country_exists = AZR
+		AZR = { controls_state = 818 controls_state = 816 }
+
+		}
+		visible = {
+		has_country_flag = asked_sov
+		original_tag = ARM
+		is_subject = no
+		country_exists = AZR
+		}
+
+		fire_only_once = yes
+		war_with_on_remove = AZR
+		war_with_on_complete = AZR
+		modifier = {
+			
+			
+		}
+
+		days_remove = 35
+
+		cost = 10
+
+		remove_effect = {
+		hidden_effect = { set_country_flag = first_inflict_completed news_event = { id = news.614 }}
+		start_border_war = { change_state_after_war = no attacker = { state = 817 num_provinces = 3 on_win = libya.20 on_lose = libya.21 } defender = { state = 816 num_provinces = 1 on_win = libya.20  on_lose =  libya.21 days = 3 } }
+		}
+
+		ai_will_do = {
+			base =100
+			
+	}
+	}
+	AZR_take_karabakh = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+		available = {
+		 AZR = { OR = { has_civil_war = no has_war = no  }} 
+		is_subject = no
+		country_exists = ARM
+		country_exists = AZR
+		ARM = { controls_state = 818 controls_state = 816 }
+
+		}
+		visible = {
+		ARM = { controls_state = 818 controls_state = 816 }
+		original_tag = AZR
+		is_subject = no
+		country_exists = ARM
+		country_exists = AZR
+		}
+
+		fire_only_once = yes
+		war_with_on_remove = ARM
+		war_with_on_complete = ARM
+		modifier = {
+			
+			
+		}
+
+		days_remove = 70
+
+		cost = 0
+		complete_effect = {
+		add_war_support = 0.05
+			}
+		remove_effect = {
+				TUR = { country_event = libya.26 }
+		declare_war_on = { target = ARM type = annex_everything }
+		
+		}
+
+		ai_will_do = {
+			base = 110
+			modifier = {
+				add = 100
+				
+				
+			}
+	}
+	}
+	ARM_second_conflict = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+		available = {
+		SOV = { has_completed_focus = SOV_operation_zet }
+		 AZR = { OR = { has_civil_war = yes has_war = yes  }} 
+		has_war = no 
+		controls_state = 817
+		ARM = { has_border_war = no } 
+		is_subject = no
+		country_exists = AZR
+		AZR = { controls_state = 818 controls_state = 816 }
+
+		}
+		visible = {
+		has_country_flag = asked_sov
+		has_country_flag = first_inflict_completed
+		original_tag = ARM
+		is_subject = no
+		country_exists = AZR
+		}
+
+		fire_only_once = yes
+		war_with_on_remove = AZR
+		war_with_on_complete = AZR
+		modifier = {
+			
+			
+		}
+
+		days_remove = 10
+
+		cost = 10
+		complete_effect = {
+	hidden_effect = { set_country_flag = second_inflict_completed news_event = { id = news.615 }   }
+	
+		add_war_support = 0.05
+	
+			}
+		remove_effect = {
+		hidden_effect = { news_event = { id = news.616 days = 2 } }
+		TUR = { country_event = libya.26 }
+		declare_war_on = { target = AZR type = annex_everything }
+		
+		}
+
+		ai_will_do = {
+			base = 110
+			modifier = {
+				add = 100
+				
+				
+			}
+	}
+	}
+}

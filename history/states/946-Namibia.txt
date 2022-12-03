@@ -1,0 +1,29 @@
+state={
+	id=946
+	name="Namibia"
+	provinces={
+		4879 5189 7605 10963 13058 13255 
+	}
+	
+	history={
+		owner = PRE
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+		
+
+		}
+		victory_points = {
+			4879 3 
+		}
+
+		add_core_of = NMB
+		add_core_of = SAF
+		add_core_of = PRE
+
+	}
+	manpower=401969
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,2223 @@
+﻿###########################
+# My mod Events dont be curious about name of libya
+###########################
+add_namespace = toykan
+add_namespace = libya
+
+# Italian Ultimatum (Libya)
+country_event = {
+	id = libya.1
+	title = libya.1.t
+	desc = libya.1.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.1.a
+		ai_chance = {
+			base = 10
+		}
+		
+		give_military_access = ITA
+		hidden_effect = {
+		ITA = { country_event = { id = libya.2 } }
+		set_country_flag = lba_agreed_oil_work
+		}
+		LBA = { add_tech_bonus = {
+				name = GER_coal_liquidization
+				bonus = 1.0
+				uses = 3
+				category = synth_resources
+			}  add_opinion_modifier = { target = ITA modifier = aided_industry } }
+		
+	}
+option = { # Accept demands
+		name = libya.1.b
+		ai_chance = {
+			base = 0
+		}
+		hidden_effect = {
+		ITA = { country_event = { id = libya.3 } }
+		}
+	}
+
+}
+
+country_event = {
+	id = libya.2
+	title = libya.2.t
+	desc = libya.2.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.2.a
+		ai_chance = {
+			base = 10
+		}
+		add_tech_bonus = {
+				name = GER_coal_liquidization
+				bonus = 1.0
+				uses = 3
+				category = synth_resources
+			}
+	
+	}
+	
+}
+#vermedioil
+country_event = {
+	id = libya.3
+	title = libya.3.t
+	desc = libya.3.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.3.a
+		ai_chance = {
+			base = 10
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = libya.4
+	title = libya.4.t
+	desc = libya.4.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.4.a
+		ai_chance = {
+			base = 95
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		add_political_power = 50
+		set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+					
+				}
+		add_popularity = { ideology = fascism popularity = 0.1 }
+		add_ideas = victor_emmanuel
+	}
+	option = { # Accept demands
+		name = libya.4.b
+		ai_chance = {
+			base = 5
+		}
+		add_political_power = 50
+		set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+					
+				}
+				add_popularity = { ideology = neutrality popularity = 0.1 }
+			
+	}
+	option = { # Accept demands
+		name = libya.4.c
+		ai_chance = {
+			base = 1
+		}
+		add_political_power = 50
+		set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+					
+				}
+				add_popularity = { ideology = democratic popularity = 0.2 }
+		add_ideas = victor_emmanuel
+	}
+	option = { # Accept demands
+		name = libya.4.e
+		ai_chance = {
+			base = 1
+		}
+		add_political_power = 50
+		set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					
+				}
+				add_popularity = { ideology = communism popularity = 0.3 }
+		add_ideas = victor_emmanuel
+	}
+	
+}
+country_event = {
+	id = libya.5
+	title = libya.5.t
+	desc = libya.5.d
+	picture = GFX_report_event_tur_turkish_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.5.a
+		ai_chance = {
+			base = 10
+		}
+		TUR = {
+		add_stability = 0.05
+		add_war_support = 0.05
+		}
+	}
+	option = { # Accept demands
+		name = libya.5.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		hidden_effect = {
+		news_event = { hours = 3 id = news.600 }
+		}
+		TUR = { declare_war_on = { target = KUR type = annex_everything } 
+		add_stability = -0.05
+		add_war_support = -0.05
+		
+		}
+		
+		ENG = {
+				add_opinion_modifier = { target = TUR modifier = middle_east_expansionism }
+			}
+			FRA = {
+				add_opinion_modifier = { target = TUR modifier = middle_east_expansionism }
+			}
+			USA = {
+				add_opinion_modifier = { target = TUR modifier = middle_east_expansionism }
+			}
+			SYR = {
+				add_opinion_modifier = { target = TUR modifier = middle_east_expansionism }
+			}
+	}
+	
+}
+
+
+country_event = {
+	id = libya.6
+	title = libya.6.t
+	desc = libya.6.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.6.a
+		ai_chance = { 
+			factor = 20 
+			modifier = {
+				factor = 100
+				SLO = { has_opinion = { target = CZE value > 50 } }
+			}
+		}
+		CZE = {
+		if = {
+				limit = { has_idea = CZE_divided_nation }
+				remove_ideas = CZE_divided_nation
+			}
+			annex_country = { target = SLO transfer_troops = yes }
+			drop_cosmetic_tag = yes
+			add_threat = -3
+			add_stability = 0.10
+			add_political_power = 120
+			
+			
+				}
+				CZE = {	every_state = {
+					limit = { is_core_of = SLO }
+					add_core_of = CZE
+				}
+				}
+		
+		
+	}
+	option = { # reject demands
+		name = libya.6.b
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 100
+				SLO = { has_opinion = { target = CZE value < 50 } }
+			}
+		}
+		add_political_power = 120
+	}
+	
+}
+
+country_event = {
+	id = libya.7
+	title = libya.7.t
+	desc = libya.7.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.7.a
+		ai_chance = { 
+			factor = 60 
+			modifier = {
+				factor = 0
+				OR = {			
+					any_other_country = {
+						OR = {
+							is_major = yes
+							tag = ROM
+						}
+						NOT = { tag = ITA }
+						OR = {
+							has_guaranteed = ROOT
+							is_in_faction_with = ROOT
+						}
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ITA }
+					}
+				}
+			}
+			modifier = {
+				factor = 20
+				OR = {
+				is_historical_focus_on = no
+				is_guaranteed_by = ENG
+				is_guaranteed_by = FRA
+				is_guaranteed_by = SOV
+				is_guaranteed_by = ITA
+				is_guaranteed_by = USA
+				}
+			}
+		}
+			YUG = {
+			give_military_access = GER
+			give_military_access = ITA
+			give_military_access = HUN
+			give_military_access = BUL
+			}
+			ITA = {
+			transfer_state = 103
+			transfer_state = 163
+			transfer_state = 852
+			transfer_state = 849
+			}
+			BUL = {
+			transfer_state = 803
+			transfer_state = 106
+			transfer_state = 831
+			}
+			HUN = {
+			transfer_state = 45
+			transfer_state = 931
+			}
+			YUG = {
+			add_manpower = 84000
+			add_tech_bonus = {
+			name = GER_soviet_treaty
+			ahead_reduction = 2
+			technology = basic_medium_tank
+			}
+			add_tech_bonus = {
+			name = GER_soviet_treaty
+			bonus = 1.0
+			uses = 2
+			category = armor
+			}
+			add_tech_bonus = {
+				name = GER_four_year_plan
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+			
+			}
+		hidden_effect = {
+			news_event = { hours = 3 id = news.168 }
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	option = { # reject demands
+		name = libya.7.b
+		ai_chance = { 
+			factor = 40
+			modifier = {
+			factor = 100
+				OR = {
+					has_government = communism #glorious tito will never yield!
+					has_government = fascism 
+					is_subject = yes
+				}
+				}
+		}
+		
+		
+		
+		GER = {
+				create_wargoal = {
+					type = take_state_focus
+					target = YUG
+					generator = { 107 }
+				}
+			
+			
+			}
+			ITA = {
+			add_state_claim = 103
+			add_state_claim = 163
+			add_state_claim = 852
+			add_state_claim = 849
+			}
+			BUL = {
+			add_state_claim = 859
+			}
+			HUN = {
+			add_state_claim = 45
+			add_state_claim = 764
+			add_state_claim = 931
+			}
+		
+		
+		
+		
+		
+	}
+	
+}
+
+
+country_event = {
+	id = libya.8
+	title = libya.8.t
+	desc = libya.8.d
+	picture = GFX_report_event_german_inspect_troops
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+			
+	ALB = {
+		NOT = {  has_country_flag = lose_kosovo  }
+
+		has_war_with = YUG
+		
+		OR = {
+		YUG = { has_full_control_of_state = 802 }
+		YUG = { owns_state = 802 }
+		surrender_progress > 0.25
+		}
+		
+		has_civil_war = no
+		is_subject = no
+		}
+	}
+	
+	immediate = {
+	hidden_effect = {
+	news_event = { id = news.602 }
+	}
+	YUG = {
+	add_stability = 0.05
+	white_peace = ALB
+	annex_country = { target = KOS }
+	transfer_state = 802
+	}
+	ALB = {
+	set_country_flag = lose_kosovo
+	set_politics = { 
+			ruling_party = communism
+			elections_allowed = no
+			
+		}
+		add_timed_idea = { idea = big_defeat days = 180 }
+		
+			add_popularity = {  
+				ideology = communism
+				popularity = 0.28
+			}
+			add_popularity = {  
+				ideology = democratic
+				popularity = 0.08
+			}
+			add_popularity = {  
+				ideology = fascism
+				popularity = 0.03
+			}
+	}
+	
+	}
+
+}
+
+
+country_event = {
+	id = libya.9
+	title = libya.9.t
+	desc = libya.9.d
+	picture = GFX_report_event_soldiers_marching
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.9.a
+		ai_chance = {
+			base = 10
+		}
+		
+				add_opinion_modifier = { 
+					target = FROM
+					modifier = medium_increase
+				}
+			
+	}
+
+}
+
+country_event = {
+	id = libya.10
+	title = libya.10.t
+	desc = libya.10.d
+	picture = GFX_report_event_saf_coup
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.10.a
+		ai_chance = {
+			base = 10
+		}
+		
+		add_opinion_modifier = { 
+					target = FROM
+					modifier = medium_increase
+				}
+	}
+
+}
+
+country_event = {
+	id = libya.11
+	title = libya.11.t
+	desc = libya.11.d
+	picture = GFX_report_event_german_inspect_troops
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+			
+	PAL = {
+		NOT = {  has_country_flag = lose_palestine  }
+		AND = {
+		has_war_with = ISR
+		}
+		ISR = { is_in_faction = no has_full_control_of_state = 878 }
+		}
+		
+		EGY = { 
+		OR = {
+		surrender_progress > 0.15
+		ISR = { is_in_faction = no has_full_control_of_state = 453 }
+		}
+		}
+	}
+	
+	immediate = {
+	hidden_effect = {
+	news_event = { id = news.603 }
+	EGY = {
+	dismantle_faction = yes
+	}
+	}
+	ISR = {
+	add_stability = 0.05
+	white_peace = PAL
+	white_peace = JOR
+	white_peace = EGY
+	annex_country = { target = PAL }
+	transfer_state = 453 
+	}
+	PAL = {
+	set_country_flag = lose_palestine
+	}
+	
+	}
+
+}
+country_event = {
+	id = libya.12
+	title = libya.12.t
+	desc = libya.12.d
+	picture = GFX_report_event_german_inspect_troops
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+			
+	ISR = {
+		NOT = {  has_country_flag = lose_israel  }
+		is_in_faction = no
+		
+		AND = {
+		has_war_with = PAL
+		surrender_progress > 0.25
+		}
+		has_civil_war = no
+		}
+	}
+	
+	immediate = {
+	EGY = {
+	dismantle_faction = yes
+	}
+	hidden_effect = {
+	news_event = { id = news.604 }
+	}
+	PAL = {
+	add_stability = 0.05
+	transfer_state = 454
+	}
+	
+	ISR = {
+	set_country_flag = lose_israel
+	}
+	
+	}
+
+}
+
+country_event = {
+	id = libya.13
+	title = libya.13.t
+	desc = libya.13.d
+	picture = GFX_report_event_saf_coup
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.13.a
+		ai_chance = {
+			base = 98
+		}
+		hidden_effect = {
+		ROOT = { set_country_flag = agree_isr }
+		}
+		EGY = { add_to_faction = ROOT }
+		
+		add_political_power = 15
+		add_manpower = 2000
+		
+		add_timed_idea = { idea = HUN_war_preparation days = 50 }
+		add_opinion_modifier = { 
+					target = FROM
+					modifier = medium_increase
+				}
+				FROM = {
+				add_manpower = -2000
+				add_opinion_modifier = { 
+					target = ROOT
+					modifier = medium_increase
+				}
+				}
+	}
+	option = { # REJECT demands
+		name = libya.13.b
+		ai_chance = {
+			base = 2
+			modifier = {
+				factor = 0
+				original_tag = PAL
+				}
+		}
+
+	}
+
+}
+
+
+
+
+
+country_event = {
+	id = libya.18
+	title = libya.18.t
+	desc = libya.18.d
+	picture = GFX_report_event_saf_coup
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.18.a
+		ai_chance = {
+			base = 98
+		}
+		add_stability = -0.03
+		add_war_support = -0.05
+		add_political_power = -10
+
+	}
+	option = { # REJECT demands
+		name = libya.18.b
+		ai_chance = {
+			base = 2
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				}
+				}
+				add_stability = 0.03
+				add_war_support = 0.05
+				add_political_power = 10
+				SYR = {
+				declare_war_on = { target = ISR type = annex_everything }
+				}
+				
+		
+
+	}
+
+
+}
+
+country_event = {
+	id = libya.19
+	title = libya.19.t
+	desc = libya.19.d
+	picture = GFX_report_event_saf_coup
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.19.a
+		ai_chance = {
+			base = 98
+		}
+		SOV = {
+		add_equipment_to_stockpile = { type = infantry_equipment amount = -900 producer = SOV }
+		
+		 add_manpower = -19000
+		}
+		ARM = { add_manpower = 19000
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 900 producer = SOV } 
+			add_equipment_to_stockpile = { type = fighter_equipment amount = 35 producer = SOV } 
+			}
+		
+
+	}
+	option = { # REJECT demands
+		name = libya.19.b
+		ai_chance = {
+			base = 2
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				}
+				}
+				
+				add_political_power = 10
+				
+				
+		
+
+	}
+
+
+}
+
+############KARABAQH############
+country_event = {
+	id = libya.20
+	title = libya.20.t
+	desc = libya.20.d
+	picture = GFX_report_event_saf_coup
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.20.a
+		ai_chance = {
+			base = 98
+		}
+		army_experience = 10
+		add_war_support = 0.08
+
+	}
+
+}
+
+country_event = {
+	id = libya.21
+	title = libya.21.t
+	desc = libya.21.d
+	picture = GFX_report_event_saf_coup
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.21.a
+		ai_chance = {
+			base = 98
+		}
+		add_war_support = -0.10
+		add_stability = -0.07
+
+	}
+
+
+
+}
+
+country_event = {
+	id = libya.22
+	title = libya.22.t
+	desc = libya.22.d
+	picture = GFX_report_event_saf_coup
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.22.a
+		ai_chance = {
+			base = 98
+		}
+		ARM = { add_stability = -0.05 add_war_support = -0.8   } AZR = { declare_war_on = { target = ARM type = annex_everything }  }
+		hidden_effect = { news_event = { id = news.616 days = 2 } }
+	}
+
+
+
+}
+
+country_event = {
+	id = libya.23
+	title = libya.23.t
+	desc = libya.23.d
+	picture = GFX_report_event_saf_coup
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.23.a
+		ai_chance = {
+			base = 98
+		}
+		AZR = { add_stability = -0.05 add_war_support = -0.8  } ARM = { declare_war_on = { target = AZR type = annex_everything } }
+		hidden_effect = { news_event = { id = news.616 days = 2 } }
+	}
+
+
+
+}
+
+country_event = {
+	id = libya.24
+	title = libya.24.t
+	desc = libya.24.d
+	picture = GFX_report_event_german_inspect_troops
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+			
+	AZR = {
+		NOT = {  has_country_flag = lose_karabaq  }
+		is_in_faction = no
+		has_war_with = ARM
+		
+		surrender_progress > 0.30 
+		
+		
+		
+		is_subject = no
+		}
+	}
+	
+	immediate = {
+	ARM = {
+	
+	transfer_state = 818
+	transfer_state = 942
+	add_stability = 0.05
+	add_war_support = 0.05
+	white_peace = AZR
+	}
+	818 = { set_state_name = "Artsakh" }
+	set_province_name = { id = 1610 name = "Stepanakert" }
+	816 = { set_demilitarized_zone = yes }
+	AZR = {
+	add_state_claim = 818
+	set_country_flag = lose_karabaq
+	add_stability = -0.10
+	add_war_support = -0.10
+	}
+	
+	}
+
+}
+
+country_event = {
+	id = libya.25
+	title = libya.25.t
+	desc = libya.25.d
+	picture = GFX_report_event_german_inspect_troops
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+			
+	ARM = {
+		NOT = {  has_country_flag = lose_karabaq  }
+
+		has_war_with = AZR
+		is_in_faction = no
+		 surrender_progress > 0.55 
+
+		
+		
+		is_subject = no
+		}
+	}
+	
+	immediate = {
+	
+	817 = { set_state_name = "Sünik" }
+	set_province_name = { id = 4660 name = "Qarakilse" }
+	set_province_name = { id = 12450 name = "Basarkeçer" }
+	
+	816 = { set_state_name = "Karabakh" }
+	set_province_name = { id = 1610 name = "Khankendi" }
+	AZR = {
+	transfer_state = 817
+	add_stability = 0.05
+	add_war_support = 0.05
+	white_peace = ARM
+	}
+	ARM = {
+	set_country_flag = lose_karabaq
+	add_stability = -0.10
+	add_war_support = -0.10
+	}
+	
+	}
+
+}
+
+
+country_event = {
+	id = libya.26
+	title = libya.26.t
+	desc = libya.26.d
+	picture = GFX_report_event_tur_cakmak_general_staff
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.26.a
+		ai_chance = {
+			base = 98
+		}
+		TUR = {
+		add_equipment_to_stockpile = { type = infantry_equipment amount = -300 producer = TUR }
+		 add_manpower = -8000
+		}
+		AZR = { hidden_effect = { load_oob = AZR_TUR_HELP } add_manpower = 8000
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 300 producer = TUR } }
+			
+	}
+	
+	option = { # Accept demands
+		name = libya.26.b
+		ai_chance = {
+			base = 0
+		}
+		add_stability = -0.05
+		add_war_support = -0.05
+	}
+
+
+}
+
+country_event = {
+	id = libya.27
+	title = libya.27.t
+	desc = libya.27.d
+	picture = GFX_report_event_tur_cakmak_general_staff
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.27.a
+		ai_chance = {
+			base = 98
+			modifier = { # If they stand a chance they will fight
+				factor = 0
+				strength_ratio = {
+					tag = FROM
+					ratio > 0.75
+				}
+				}
+		}
+		SOV = {  transfer_state = 583 transfer_state = 590 transfer_state = 588 transfer_state = 407  }
+			add_stability = -0.10
+		add_war_support = -0.20
+		hidden_effect = {
+		news_event = { hours = 6 id = news.617 }
+		}
+	}
+	
+	option = { # Accept demands
+		name = libya.27.b
+		ai_chance = {
+			base = 2
+		}
+		SOV = { create_wargoal = {
+					type = take_state_focus
+					target = KAZ
+					generator = { 583 590 588 407 406 }
+				}
+				}
+				hidden_effect = {
+		news_event = { hours = 6 id = news.618 }
+		}
+	}
+
+
+}
+
+country_event = {
+	id = libya.28
+	title = libya.28.t
+	desc = libya.28.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.28.a
+		ai_chance = {
+			base = 10
+		}
+		
+	}
+	
+}
+
+country_event = { #romania demand ukraine
+	id = libya.29
+	title = libya.29.t
+	desc = libya.29.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.29.a
+		ai_chance = {
+			base = 10
+			modifier = { # Don't accept if in a faction that can protect them
+				factor = 0
+				NOT = { is_in_faction_with = FROM }
+				OR = {
+					any_other_country = {
+						is_major = yes
+						is_in_faction_with = UKR
+					}
+					has_idea = anti_soviet_pact
+					has_country_flag = baltic_entente_flag
+					FROM = { surrender_progress > 0.5 }
+				}
+			}
+			modifier = {
+				factor = 0.5
+				is_historical_focus_on = no
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = UKR
+				}
+			}
+		}
+		
+		ROM = { transfer_state = 80 }
+		ROM = { transfer_state = 766 }
+	}
+	option = { # Accept demands
+		name = libya.29.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				OR = {
+					is_historical_focus_on = no
+					any_other_country = {
+						is_major = yes
+						is_in_faction_with = UKR
+						NOT = { is_in_faction_with = FROM }
+					}
+				}
+			}
+			modifier = {
+				add = 5
+				is_historical_focus_on = no
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = UKR
+				}
+			}
+		}
+		ROM = {
+			declare_war_on = { target = UKR type = annex_everything }
+			}
+		
+	}
+	
+}
+
+country_event = {
+	id = libya.30
+	title = libya.30.t
+	desc = libya.30.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.30.a
+		ai_chance = {
+			base = 10
+		}
+		add_opinion_modifier = { 
+					target = FROM
+					modifier = medium_increase
+				}
+	}
+	
+}
+
+country_event = {
+	id = libya.31
+	title = libya.31.t
+	desc = libya.31.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.31.a
+		ai_chance = {
+			base = 10
+		}
+		add_opinion_modifier = { 
+					target = FROM
+					modifier = medium_increase
+				}
+	}
+	
+}
+
+country_event = {
+	id = libya.32
+	title = libya.32.t
+	desc = libya.32.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.32.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				OR = {
+					has_manpower < 10000
+					has_opinion = {
+					target = VTC
+					value > 50
+				}
+				}
+		}
+		
+	}
+	SWI = { 
+	add_manpower = -1000
+	}
+	hidden_effect = {
+	VTC = {
+	country_event = { days = 1 id = libya.33 }
+	}
+	}
+	}
+	
+	option = { # REJECT demands
+		name = libya.32.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 90
+				OR = {
+					has_manpower < 10000
+					has_opinion = {
+					target = VTC
+					value < 50
+				}
+				}
+		}
+		
+	}
+		VTC = {
+	country_event = { days = 1 id = libya.34 }
+	}
+	}
+	
+}
+country_event = {
+	id = libya.33
+	title = libya.33.t
+	desc = libya.33.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.33.a
+		ai_chance = {
+			base = 10
+		}
+		add_manpower = 1000
+	}
+	
+}
+country_event = {
+	id = libya.34
+	title = libya.34.t
+	desc = libya.34.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.34.a
+		ai_chance = {
+			base = 10
+		}
+		
+	}
+	
+}
+
+
+
+
+
+
+country_event = {
+	id = libya.38
+	title = libya.38.t
+	desc = libya.38.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.38.a
+		ai_chance = {
+			base = 0
+		}
+		GRE = { declare_war_on = { target = TUR type = annex_everything } }
+	}
+	option = { # Accept demands
+		name = libya.38.b
+		ai_chance = {
+			base = 100
+		}
+		add_opinion_modifier = { target = TUR modifier = large_decrease }
+		
+	}
+	
+}
+
+
+country_event = { #sovyete ne sunmalıyız?
+	id = libya.39
+	title = libya.39.t
+	desc = libya.39.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # kaynak sun
+		name = libya.39.a
+		ai_chance = {
+			base = 100
+		}
+		effect_tooltip = {
+		SOV = { add_political_power = 100	add_offsite_building = { type = industrial_complex level = 3 } }
+		
+		
+		GER = {  add_political_power = -100 add_timed_idea = { idea = TUR_financing_private_enterprise days = 120 }}
+	}
+	SOV = { country_event = { id = libya.40 hours = 1 } }
+	}
+	option = { # bir şey sunmamıza gerek yok
+		name = libya.39.b
+		ai_chance = {
+			base = 0
+		}
+		SOV = { country_event = { id = libya.41 hours = 1 } }
+		
+	}
+	
+}
+
+country_event = { #ger bize ekonomik destek oluyo
+	id = libya.40
+	title = libya.40.t
+	desc = libya.40.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.40.a
+		ai_chance = {
+			base = 100
+		}
+		GER = { country_event = { id = libya.42 hours = 1 } }
+		SOV = { set_country_flag = konigsberg_ceded }
+		SOV = { add_political_power = 100	add_offsite_building = { type = industrial_complex level = 3 } }
+		GER = {  add_political_power = -100 add_timed_idea = { idea = TUR_financing_private_enterprise days = 120 }}
+		
+		
+	}
+	option = { # Accept demands
+		name = libya.40.b
+		ai_chance = {
+			base = 0
+		}
+		GER = { country_event = { id = libya.43 hours = 1 } }
+		add_political_power = -50
+		 763 = { add_resistance = 15 }
+	}
+	
+}
+
+country_event = { #hiçbir şey
+	id = libya.41
+	title = libya.41.t
+	desc = libya.41.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.41.a
+		ai_chance = {
+			base = 60
+			modifier = {
+				factor = 100
+				has_opinion = {
+					target = GER
+					value > 50
+				}
+			}
+		}
+		SOV = { set_country_flag = konigsberg_ceded }
+		GER = { country_event = { id = libya.42 hours = 1 } }
+	}
+	option = { # Accept demands
+		name = libya.41.b
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 100
+				has_opinion = {
+					target = GER
+					value < 0
+				}
+			}
+		}
+		GER = { country_event = { id = libya.43 hours = 1 } }
+		add_political_power = -50
+		 763 = { add_resistance = 15 }
+		
+	}
+	
+}
+
+country_event = { # ACCEPTS
+	id = libya.42
+	title = libya.42.t
+	desc = libya.42.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.42.a
+		ai_chance = {
+			base = 100
+			
+		}
+		add_war_support = 0.1
+	transfer_state= 763
+	763 = { set_state_name = "Königsberg" }
+	set_province_name = { id = 6332 name = "Königsberg" }
+	set_province_name = { id = 11265 name = "Rauschen" }
+	hidden_effect = {
+			news_event = { id = news.621 days = 2 } }
+	}
+	
+	
+}
+country_event = { # REJECTS
+	id = libya.43
+	title = libya.43.t
+	desc = libya.43.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = libya.43.a
+		ai_chance = {
+			base = 100
+			
+		}
+		add_war_support = -0.05
+		hidden_effect = {
+			news_event = { id = news.622 days = 2 } }
+		
+	}
+
+	
+}
+
+country_event = { # what to do with slovakia
+	id = libya.44
+	title = libya.44.t
+	desc = libya.44.d
+	picture = GFX_report_event_cze_divided_nation
+	
+	is_triggered_only = yes
+	
+	option = { # give southern slovakia to hungary and puppet slovakia
+		name = libya.44.a
+		ai_chance = {
+			base = 90
+			
+		}
+			if = {
+		limit = {
+		SLO = { controls_state = 664 }
+		}
+		SLO = {
+				country_event = { id = germany.51 }
+				
+			}
+		}
+
+		
+		
+	}
+	
+	option = { # Accept demands
+		name = libya.44.b
+		ai_chance = {
+			base = 10
+			modifier = {
+			is_historical_focus_on = no
+			factor = 100
+			}
+		}
+		SLO = {
+				country_event = { id = libya.45 }
+				
+			}
+		
+	}
+
+	
+}
+
+country_event = { # german wants annex us
+	id = libya.45
+	title = libya.45.t
+	desc = libya.45.d
+	picture = GFX_report_event_cze_divided_nation
+	
+	is_triggered_only = yes
+	
+	option = { # give southern slovakia to hungary and puppet slovakia
+		name = libya.45.a
+		ai_chance = {
+			base = 90
+			
+		}
+		HUN = { annex_country = { target = SLO transfer_troops = no } add_ai_strategy = {
+					type = alliance
+					id = "GER"
+					value = 200
+				} }
+		
+	}
+	
+	option = { # Accept demands
+		name = libya.45.b
+		ai_chance = {
+			base = 10
+			
+		}
+		HUN = { add_state_claim = 70 add_state_claim = 71 create_wargoal = {
+				type = take_claimed_state
+				target = SLO
+			}  }
+			GER = { create_wargoal = {
+				type = take_claimed_state
+				target = SLO
+			}  }
+		
+	}
+
+	
+}
+
+country_event = { # german wants annex us
+	id = libya.46
+	title = libya.46.t
+	desc = libya.46.d
+	picture = GFX_report_event_cze_divided_nation
+	
+	
+	hidden = yes
+	trigger = {
+		BOS = { NOT = {   owns_state = 804  }  }	
+	
+	
+		NOT = { has_global_flag = bos_become_bosnia }
+	
+		
+		
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+	BOS = { set_cosmetic_tag = BOS_ONLY }
+	set_global_flag = bos_become_bosnia
+	}
+
+	
+}
+
+country_event = { # german wants annex us
+	id = libya.47
+	title = libya.47.t
+	desc = libya.47.d
+	picture = GFX_report_event_cze_divided_nation
+	hidden = yes
+	
+	
+	trigger = {
+		has_global_flag = bos_become_bosnia	
+	BOS = {
+	 
+		owns_state = 804 
+		
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+	BOS = { drop_cosmetic_tag = yes }
+	clr_global_flag = bos_become_bosnia
+	}
+
+	
+}
+
+country_event = { # german wants istria
+	id = libya.50
+	title = libya.50.t
+	desc = libya.50.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # SAY YE
+		name = libya.50.a
+		ai_chance = {
+			base = 90
+			
+		}
+		GER = { country_event = { id = libya.52 } }
+		
+	}
+	
+	option = { # SAY NEY
+		name = libya.50.b
+		ai_chance = {
+			base = 10
+			
+		}
+		GER = { country_event = { id = libya.51 } }
+	}
+
+	
+}
+country_event = { # cro say no
+	id = libya.51
+	title = libya.51.t
+	desc = libya.51.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # give southern slovakia to hungary and puppet slovakia
+		name = libya.51.a
+		ai_chance = {
+			base = 90
+			
+		}
+		create_wargoal = {
+				type = annex_everything
+				target = CRO
+				expire = 0
+			}
+		
+	}
+	
+
+	
+}
+country_event = { # cro say ye
+	id = libya.52
+	title = libya.52.t
+	desc = libya.52.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # give southern slovakia to hungary and puppet slovakia
+		name = libya.52.a
+		ai_chance = {
+			base = 5
+			
+		}
+		news_event = { hours = 3 id = news.624 }
+		CRO = {
+		add_state_claim = 851
+		add_state_claim = 858
+		add_state_claim = 104
+				add_ai_strategy = {
+					type = alliance
+					id = "GER"
+					value = 200
+				}
+			}
+			GER = {
+				add_ai_strategy = {
+					type = alliance
+					id = "CRO"
+					value = 200
+				}
+			}
+		GER = { add_to_faction = CRO }
+		GER = {
+				transfer_state = 163
+				transfer_state = 820
+				
+			}
+		
+	}
+	option = { # give southern slovakia to hungary and puppet slovakia
+		name = libya.52.b
+		ai_chance = {
+			base = 95
+			
+		}	
+		news_event = { hours = 3 id = news.624 }
+		CRO = {
+		add_state_claim = 851
+		add_state_claim = 858
+		add_state_claim = 104
+				add_ai_strategy = {
+					type = alliance
+					id = "GER"
+					value = 200
+				}
+			}
+			GER = {
+				add_ai_strategy = {
+					type = alliance
+					id = "CRO"
+					value = 200
+				}
+			}
+		GER = { add_to_faction = CRO }
+	ITA = {
+	remove_opinion_modifier = { target = GER modifier = hostile_status }
+				transfer_state = 163
+				transfer_state = 820
+				
+			}
+				ITA = {
+				add_ai_strategy = {
+					type = alliance
+					id = "GER"
+					value = 200
+				}
+			}
+			ITA = { add_opinion_modifier = { target = GER modifier = medium_increase } }
+		
+	}
+	
+
+	
+}
+country_event = { # german wants bosnia
+	id = libya.53
+	title = libya.53.t
+	desc = libya.53.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # SAY YE
+		name = libya.50.a
+		ai_chance = {
+			base = 90
+			
+		}
+		GER = { country_event = { id = libya.55 } }
+		
+	}
+	
+	option = { # SAY NEY
+		name = libya.53.b
+		ai_chance = {
+			base = 5
+			
+		}
+		GER = { country_event = { id = libya.54 } }
+	}
+
+	
+}
+country_event = { # cro say no
+	id = libya.54
+	title = libya.54.t
+	desc = libya.54.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # give southern slovakia to hungary and puppet slovakia
+		name = libya.54.a
+		ai_chance = {
+			base = 90
+			
+		}
+		news_event = { hours = 3 id = news.626 }
+		create_wargoal = {
+				type = annex_everything
+				target = BOS
+				expire = 0
+			}
+		
+	}
+	
+
+	
+}
+country_event = { # cro say ye
+	id = libya.55
+	title = libya.55.t
+	desc = libya.55.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # give southern slovakia to hungary and puppet slovakia
+		name = libya.55.a
+		ai_chance = {
+			base = 5
+			
+		}
+		news_event = { hours = 3 id = news.625 }
+		GER = {
+				puppet = BOS
+				
+			}
+		
+	}
+	option = { # give southern slovakia to hungary and puppet slovakia
+		name = libya.55.b
+		ai_chance = {
+			base = 5
+			
+		}	
+		news_event = { hours = 3 id = news.625 }
+	CRO = {
+				transfer_state = 851
+				transfer_state = 804
+			
+			}
+			CRO = {	every_state = {
+					limit = { is_core_of = BOS }
+					add_core_of = CRO
+				}
+				}
+				GER = {
+				puppet = BOS
+				
+			}
+			CRO = { add_opinion_modifier = { target = GER modifier = medium_increase } }
+		
+	}
+	option = { # give southern slovakia to hungary and puppet slovakia
+		name = libya.55.c
+		ai_chance = {
+			base = 90
+			
+		}
+		news_event = { hours = 3 id = news.625 }
+	CRO = {
+				annex_country = { target = BOS transfer_troops = no }
+				
+			}
+			CRO = {	every_state = {
+					limit = { is_core_of = BOS }
+					add_core_of = CRO
+				}
+				}
+			CRO = { add_opinion_modifier = { target = GER modifier = medium_increase } }
+		
+	}
+	
+
+	
+}
+
+country_event = { # german wants annex us
+	id = libya.56
+	title = libya.56.t
+	desc = libya.56.d
+	picture = GFX_report_event_cze_divided_nation
+	
+	
+	hidden = yes
+	trigger = {
+	PRC = { controls_state = 619 }
+	date > 1938.1.1
+	OR = {
+		PRC = { has_war_with = JAP  }	
+		PRC = { has_war_with = CHI  }	
+		PRC = { has_war_with = TUR  }	
+		
+	}
+		NOT = { has_global_flag = SIK_became_free }
+	
+		
+		
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	immediate = {
+	619 = { set_demilitarized_zone = yes }
+	news_event = { hours = 8 id = news.627 }
+	
+	
+	
+	add_ai_strategy = {
+					type = alliance
+					id = "UZB"
+					value = 200
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = "UZB"
+					value = 200
+				}
+				add_ai_strategy = {
+					type = support
+					id = "UZB"
+					value = 200
+				}
+			
+	
+	 
+	SIK = { transfer_state = 619 declare_war_on = { target = PRC type = annex_everything } 
+	    load_oob = SIK_1936  add_manpower = 60000 }
+	set_global_flag = SIK_became_free
+	}
+
+	
+}
+
+country_event = { # german wants annex us
+	id = libya.57
+	title = libya.57.t
+	desc = libya.57.d
+	picture = GFX_report_event_cze_divided_nation
+	
+	
+	hidden = yes
+	trigger = {
+	CIN = { has_war_with = SOV }
+	date > 1936.1.1
+
+		NOT = { has_global_flag = cecen_war_news_played }
+	
+		
+		
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+	news_event = { hours = 0 id = news.632 }
+	set_global_flag = cecen_war_news_played
+	}
+
+	
+}
+
+
+country_event = { # 
+	id = toykan.1
+	title = toykan.1.t
+	desc = toykan.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # give strumica and dimitrigrad
+		name = toykan.1.a
+		ai_chance = {
+			base = 90
+			
+		}
+		BUL = { country_event = { hours = 3 id = toykan.2 } }
+
+		
+	}
+	option = { # givenothin
+		name = toykan.1.b
+		ai_chance = {
+			base = 10
+			
+		}
+		BUL = { country_event = { hours = 3 id = toykan.3 } }
+	
+		
+	}
+
+	
+}
+
+country_event = { # 
+	id = toykan.2
+	title = toykan.2.t
+	desc = toykan.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # accept strumica and dimitrigrad
+		name = toykan.2.a
+		ai_chance = {
+			base = 90
+			
+		}
+		news_event = { hours = 0 id = news.635 }
+		BUL = { transfer_state = 940 transfer_state = 106 }
+
+		
+	}
+	option = { # daha fazlasını istiyoruz
+		name = toykan.2.b
+		ai_chance = {
+			base = 10
+			
+		}
+		
+		BUL = {  create_wargoal = {
+			type = take_state
+			target = YUG
+			generator = { 106 940 831 803 }
+		} }
+	
+		
+	}
+
+	
+}
+
+country_event = { # 
+	id = toykan.3
+	title = toykan.3.t
+	desc = toykan.3.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # accept strumica and dimitrigrad
+		name = toykan.3.a
+		ai_chance = {
+			base = 90
+			
+		}
+		BUL = {  create_wargoal = {
+			type = take_state
+			target = YUG
+			generator = { 106 940 831 803 }
+		} }
+
+		
+	}
+	option = { # no accept
+		name = toykan.3.b
+		ai_chance = {
+			base = 10
+			
+		}
+		hidden_effect = {
+		news_event = { hours = 0 id = news.635 }
+	
+		}
+	}
+
+	
+}
+
+country_event = { # 
+	id = toykan.4
+	title = toykan.4.t
+	desc = toykan.4.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # accept strumica and dimitrigrad
+		name = toykan.4.a
+		ai_chance = {
+			base = 40
+			
+		}
+		hidden_effect =  { news_event = { id = news.701 }  }
+		GER = { add_war_support = 0.05	transfer_state = 39
+			transfer_state = 903 }
+		add_stability = -0.10
+		add_war_support = -0.10
+
+		
+	}
+	option = { # no accept
+		name = toykan.4.b
+		ai_chance = {
+			base = 60
+				
+		}
+		add_war_support = 0.05
+		GER = { country_event = { hours = 0 id = toykan.5 } }
+
+		
+	}
+
+	
+}
+country_event = { # 
+	id = toykan.5
+	title = toykan.5.t
+	desc = toykan.5.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # accept strumica and dimitrigrad
+		name = toykan.5.a
+		ai_chance = {
+			base = 100
+			
+		}
+		
+	  create_wargoal = {
+			type = take_state
+			target = ITA
+			generator = { 39 903 }
+		} 
+		
+	}
+	option = { # accept strumica and dimitrigrad
+		name = toykan.5.b
+		ai_chance = {
+			base = 1
+			
+		}
+
+		
+	}
+
+}
+
+country_event = { # 
+	id = toykan.6
+	title = toykan.6.t
+	desc = toykan.6.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # accept strumica and dimitrigrad
+		name = toykan.6.a
+		ai_chance = {
+			base = 100
+			
+		}
+		
+		hidden_effect = {remove_ideas = PRE_wilhelm_iii
+		remove_ideas = donations_from_supporters
+		remove_ideas = anti_fascism_government
+		retire_character = PRE_wilhelm_iii
+		remove_state_core = 541 }
+		GER = {
+			annex_country = { target = PRE transfer_troops = yes }
+		}
+		GER = {
+				country_event = { id = toykan.7 }
+			}
+	 
+	}
+	option = { # accept strumica and dimitrigrad
+		name = toykan.6.b
+		ai_chance = {
+			base = 0
+			
+		}
+		retire_character = PRE_wilhelm_iii
+		remove_ideas = PRE_wilhelm_iii
+		remove_ideas = donations_from_supporters
+		remove_ideas = anti_fascism_government
+		
+	}
+
+}
+
+country_event = { # 
+	id = toykan.7
+	title = toykan.7.t
+	desc = toykan.7.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # accept strumica and dimitrigrad
+		name = toykan.7.a
+		ai_chance = {
+			base = 100
+			
+		}
+		
+	
+	 
+	}
+
+
+}
+
+
+country_event = { # 
+	id = toykan.8
+	title = toykan.8.t
+	desc = toykan.8.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # accept strumica and dimitrigrad
+		name = toykan.8.a
+		ai_chance = {
+			base = 100
+			
+		}
+				PRE = {
+				set_capital = { state = 946 }
+				add_political_power = 25
+				}
+			set_politics = { ruling_party = democratic elections_allowed = yes }
+			add_popularity = { ideology = democratic popularity = 0.1 }
+	
+				
+	
+	 
+	}
+	
+	
+	option = { # accept strumica and dimitrigrad
+		name = toykan.8.b
+		ai_chance = {
+			base = 100
+			
+		}
+		PRE = {
+				set_capital = { state = 946 }
+				add_political_power = 25
+				}
+		set_politics = { ruling_party = fascism elections_allowed = no }
+			add_popularity = { ideology = fascism popularity = 0.1 }
+	
+	 
+	}
+	
+	
+	option = { # accept strumica and dimitrigrad
+		name = toykan.8.c
+		ai_chance = {
+			base = 100
+			
+		}
+		PRE = {
+				set_capital = { state = 946 }
+				add_political_power = 25
+				}
+		set_politics = { ruling_party = communism elections_allowed = no }
+			add_popularity = { ideology = communism popularity = 0.1 }
+	 
+	}
+	
+	option = { # accept strumica and dimitrigrad
+		name = toykan.8.e
+		ai_chance = {
+			base = 100
+			
+		}
+		PRE = {
+				set_capital = { state = 946 }
+				add_political_power = 75
+				}
+		add_ideas = extensive_conscription 
+		set_politics = { ruling_party = neutrality elections_allowed = no }
+		add_popularity = { ideology = neutrality popularity = 0.15 }
+		set_party_name = { ideology = neutrality long_name = PRE_army_party name = PRE_army_party_long }
+		
+		
+		PRE_von_lettow_vorbeck = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						great_war_hero 
+					}
+				}
+				promote_leader = yes
+			}
+		}
+	}
+
+}
+

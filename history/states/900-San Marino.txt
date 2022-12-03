@@ -1,0 +1,27 @@
+state={
+	id=900
+	name="San Marino"
+	provinces={
+		13315 
+	}
+	history = {
+		owner = SNM
+		victory_points = {
+			13315 3
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = SNM
+		add_core_of = ITA
+	
+	
+
+	}
+
+	manpower=11462
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

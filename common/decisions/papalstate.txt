@@ -1,0 +1,144 @@
+papalstate_category = {
+
+	form_italy = {
+
+		icon = GFX_formitaly
+
+		days_remove = 30
+		fire_only_once = yes
+		cost = 0
+		visible = {
+			tag = VTC
+			NOT = { country_exists = ITA }
+		}
+		available = {
+			NOT = { country_exists = ITA }
+			controls_state = 158  
+			controls_state = 2
+			controls_state = 114
+			controls_state = 160
+			controls_state = 115  
+			controls_state = 117  
+		}
+		modifier = {
+			civilian_factory_use = 2
+				
+		}
+		remove_effect = {
+		set_cosmetic_tag = ITA										
+		set_capital = { state = 2 }
+		VTC = {	every_state = {
+					limit = { is_core_of = ITA }
+					add_core_of = VTC
+				}
+				}
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	form_papal = {
+
+		icon = GFX_formpapal
+		
+		days_remove = 30
+		fire_only_once = yes
+		cost = 0
+		visible = {
+			tag = VTC
+		}
+		available = {
+			OR = { num_of_controlled_states > 1 
+				VTC = { controls_state = 2 }
+				}
+				num_of_civilian_factories_available_for_projects > 1
+		}
+		modifier = {
+			civilian_factory_use = 2
+				
+		}
+		remove_effect = {
+		set_cosmetic_tag = VTC_PAP
+		set_capital = { state = 2 }
+		900 = {
+		add_core_of = VTC
+		}
+		162 = {
+		add_core_of = VTC
+		}
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	papal_volunteers = {
+
+		icon = GFX_papalvolunteers
+		days_re_enable = 1
+		days_remove = 30
+		fire_only_once = no
+		cost = 75
+		visible = {
+			tag = VTC
+		}
+		available = {
+			
+				
+		}
+		modifier = {
+			weekly_manpower = 1000
+			political_power_cost = 0.25
+		}
+		remove_effect = {
+		
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	swissguards = {
+
+		icon = GFX_swissguards
+		days_re_enable = 1
+		days_remove = 5
+		fire_only_once = no
+		cost = 50
+		visible = {
+			tag = VTC
+		}
+		available = {
+			country_exists = SWI
+				
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		SWI = { country_event = { days = 1 id = libya.32 } }
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	}

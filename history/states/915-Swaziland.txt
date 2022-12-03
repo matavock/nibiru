@@ -1,0 +1,23 @@
+state={
+	id=915
+	name="Swaziland"
+	provinces={
+		7900 
+	}
+	history={
+		victory_points = {
+			7900 1
+		}
+		owner = SAF
+		add_core_of = SAF
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+	manpower=278000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = rural
+}

@@ -1,0 +1,23 @@
+state={
+	id=917
+	name="Eupen"
+	provinces={
+		3488 
+	}
+	history={
+		owner = BEL
+		victory_points = {
+			3488 3 
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = BEL
+
+	}
+	manpower=64000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

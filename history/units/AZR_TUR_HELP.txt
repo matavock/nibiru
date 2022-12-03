@@ -1,0 +1,48 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Dag Tugayi" 				# Mountain Brigade
+
+	division_names_group = TUR_MTN_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+	}
+}
+
+
+units = {
+division= {	# "94ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11674
+		division_template = "Dag Tugayi"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+
+	}	
+division= {	# "78ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6997
+		division_template = "Dag Tugayi"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+
+	}	
+
+	
+	
+	
+
+}
+
+
+

@@ -1,0 +1,26 @@
+state={
+	id=923
+	name="Limnos"
+	provinces={
+		13238 
+	}
+		history={
+		owner = GRE
+		buildings = {
+			infrastructure = 1
+			13238 = {
+				naval_base = 1
+
+			}
+
+		}
+		victory_points = {
+			13238 1 
+		}
+		add_core_of = GRE
+
+	}
+	manpower=22000
+	state_category = small_island
+	buildings_max_level_factor=1.000
+}

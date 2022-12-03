@@ -1,0 +1,27 @@
+
+state={
+	id=897
+	name="Sochi"
+
+	history={
+		owner = SOV
+		victory_points = {
+			9663 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SOV
+		add_core_of = GEO
+		add_core_of = ABK
+	}
+
+	provinces={
+		3698 9663 
+	}
+	manpower=267000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

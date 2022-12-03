@@ -1,0 +1,26 @@
+﻿division_template = {
+	name = "Esperitu Infanteria"
+
+	division_names_group = INC_Inf_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "1. Esperitu Infanteria"
+		location = 2212
+		division_template = "Esperitu Infanteria"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "INC" } }
+	}
+	division = {
+		name = "2. Esperitu Infanteria"
+		location = 2212
+		division_template = "Esperitu Infanteria"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "INC" } }
+	}
+}

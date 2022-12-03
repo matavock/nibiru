@@ -1,0 +1,30 @@
+
+state={
+	id=68
+	name="Lubusz"
+	manpower = 1250840
+	resources={
+		aluminium=15 # was: 24
+	}
+
+	state_category = city
+
+	history={
+		victory_points = {
+			3473 1
+		}
+		victory_points = {
+			6236 3
+		}
+		owner = POL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = POL
+	}
+
+	provinces={
+		444 537 3473 3572 6236 9387 11478 
+	}
+}

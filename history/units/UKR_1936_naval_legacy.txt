@@ -1,0 +1,66 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	### Northern Fleet -- Murmansk
+	fleet = {
+		name = "Severnyy Flot"
+		naval_base = 6727 # Murmansk
+		task_force = {				
+			name = "Severnyy Flot"
+			location = 6727 # Murmansk
+			# 1ya Flotiliya Esmintsev
+			ship = { name = "Dzerzhinskiy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = UKR } } }
+			ship = { name = "Nezamozhnik" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = UKR } } }
+			ship = { name = "Petrovskiy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = UKR } } }
+		}	
+		task_force = {	
+			name = "Severnyy Podvodniy Flot"
+			location = 6727 # Murmansk
+			# 5iy Podvodniy Flot
+			ship = { name = "D-1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = UKR } } }			
+			ship = { name = "D-2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = UKR } } }			
+			ship = { name = "D-3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = UKR } } }				
+		}
+	}
+	
+	
+
+	### Black Sea Fleet -- Sevastopol
+	fleet = {
+		name = "Chernomorskiy Flot"
+		naval_base = 11670 # Sevastopopl
+		task_force = {				
+			name = "Chernomorskiy Flot"
+			location = 11670 # Sevastopopl
+			ship = { name = "Parizhskaya Kommuna" definition = battleship equipment = { battleship_1 = { amount = 1 owner = UKR } } }
+			ship = { name = "Krasni Kavkaz" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = UKR } } }
+			ship = { name = "Krasny Krym" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = UKR } } }
+			ship = { name = "Chervonaya Ukraina" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = UKR } } }
+			ship = { name = "Komintern" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = UKR } } }
+		}	
+		task_force = {	
+			name = "Chernomorskiy Podvodniy Flot"
+			location = 11670 # Sevastopopl
+			# 9iy Podvodniy Flot
+			ship = { name = "Shch-121" definition = submarine equipment = { submarine_1 = { amount = 1 owner = UKR } } }			
+			ship = { name = "Shch-122" definition = submarine equipment = { submarine_1 = { amount = 1 owner = UKR } } }			
+			ship = { name = "Shch-123" definition = submarine equipment = { submarine_1 = { amount = 1 owner = UKR } } }			
+			ship = { name = "Shch-124" definition = submarine equipment = { submarine_1 = { amount = 1 owner = UKR } } }			
+		}	
+	}
+
+	
+} 
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	
+}
+
+#####################

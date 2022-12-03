@@ -1,0 +1,7 @@
+papalstate_category = {
+	icon =  GFX_decision_invincible_nation
+	picture = GFX_decision_cat_picture_form_papal
+	allowed = {
+		tag = VTC
+	}
+}

@@ -1,0 +1,76 @@
+﻿division_template = {
+	name = "Divizioni Mbretëror Shqiptar"			#Infantry Division - In 1936, Albania only had one triangular division.	They did have some tankettes and infantry support tanks, so 1 recon
+	division_names_group = ALB_INF_01
+	priority = 2
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Brigada e Malësorëve"		# Mountain Brigade
+
+	division_names_group = ALB_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+
+units = {
+	
+division = {
+		#name = "1. 'Ibarska' Pesadijska Div."  			# Peadijska if we get font support
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6940
+		division_template = "Divizioni Mbretëror Shqiptar"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+
+division = {
+		#name = "22. 'Ibarska' Pesadijska Div."  			# Peadijska if we get font support
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9849
+		division_template = "Brigada e Malësorëve"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+
+
+}  # Neboja if we get font support
+
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "KOS"
+		}
+		requested_factories = 1
+		progress = 0.37
+		efficiency = 100
+	}
+	
+	
+}

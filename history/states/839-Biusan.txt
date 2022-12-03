@@ -1,0 +1,32 @@
+state={
+	id=839
+	name="Biusan"
+	provinces={
+		4056 4086 7121 12089 
+	}
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 2
+
+			industrial_complex = 1
+			dockyard = 2
+			air_base = 1
+			4056 = {
+				naval_base = 3
+
+			}
+
+		}
+		victory_points = {
+			4056 3 
+		}
+		
+		add_core_of = KOR
+		add_core_of = KPA
+
+	}
+	manpower=3800000
+	state_category = city
+	buildings_max_level_factor=1.000
+}

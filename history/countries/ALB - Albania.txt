@@ -1,0 +1,128 @@
+﻿capital = 44
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	
+	set_autonomy = {
+		target = KOS
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.2
+	}
+	else = {
+		puppet = KOS
+		
+		
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "ALB_1936_Naval"
+	else = {
+		set_naval_oob = "ALB_1936_Naval_Legacy"
+	}
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		
+		early_destroyer = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		basic_battery = 1
+	}
+}
+recruit_character = ALB_king_zog
+recruit_character = ALB_enver_hoxha
+recruit_character = ALB_xhemal_aranitasi
+recruit_character = ALB_eqrem_belishi
+recruit_character = ALB_gjon_burbank
+recruit_character = ALB_halil_nergutti
+recruit_character = ALB_ismael_ghaxa
+recruit_character = ALB_hajre_fetahu
+recruit_character = ALB_xhelal_mitrovica
+recruit_character = ALB_selim_moishiou
+recruit_character = ALB_kol_bibe_mirakaj
+recruit_character = ALB_qemal_komani
+recruit_character = ALB_prenk_pervizi
+recruit_character = ALB_alexander_mori
+recruit_character = ALB_aziz_sulejmani
+recruit_character = ALB_kristo_cajupi
+recruit_character = ALB_eqrem_libohova
+recruit_character = ALB_zuhdi_shabani
+recruit_character = ALB_rexhep_mitrovica
+recruit_character = ALB_hasan_begolli
+recruit_character = ALB_fiqri_dine
+recruit_character = ALB_midhat_frasheri
+recruit_character = ALB_jocelyn_percy
+OOB = "ALB_1936"
+give_guarantee = KOS
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	
+}
+add_ideas = {
+limited_conscription
+italian_officers
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 80
+	communism = 20
+}
+
+set_convoys = 5
+
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Flachgehende Minensuchboote"
+		type = destroyer_1
+		parent_version = 0
+		upgrades = {
+			destroyer_engine_upgrade = 1
+			ship_ASW_upgrade = 2
+			ship_anti_air_upgrade = 1
+		}
+		obsolete = yes
+	}
+}
+
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Flachgehende Minensuchboote"
+		type = ship_hull_light_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_1
+			mid_1_custom_slot = ship_mine_layer_1
+		}
+	}
+}
+

@@ -1,0 +1,186 @@
+﻿division_template = {
+	name = "Kurdish Freedom Fighters"		
+	division_names_group = BRENGL_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "Kurdish Mountain Fighters"		# Mountain Brigade
+
+	division_names_group = BRENGL_INF_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+	}
+}
+division_template = {
+
+	division_names_group = BRENGL_CAV_01
+
+	name = "Kurdish Cavalry" 			# Cavalry Division
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+	}
+}
+division_template = {
+
+	division_names_group = BRENGL_CAV_01
+
+	name = "Kurdish Camelry" 			# Cavalry Division
+	regiments = {
+		camelry = { x = 0 y = 0 }
+		camelry = { x = 0 y = 1 }
+		camelry = { x = 0 y = 2 }
+	}
+}
+units = { 
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1578
+		division_template = "Kurdish Camelry"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1549
+		division_template = "Kurdish Camelry"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1549
+		division_template = "Kurdish Freedom Fighters"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10811
+		division_template = "Kurdish Cavalry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10804
+		division_template = "Kurdish Freedom Fighters"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13265
+		division_template = "Kurdish Freedom Fighters"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+
+	}
+division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13267
+		division_template = "Kurdish Freedom Fighters"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10811
+		division_template = "Kurdish Freedom Fighters"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	
+	
+	#ERBIL
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3916
+		division_template = "Kurdish Freedom Fighters"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3916
+		division_template = "Kurdish Freedom Fighters"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	
+	#SULEYMANIYA
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13266
+		division_template = "Kurdish Freedom Fighters"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6826
+		division_template = "Kurdish Mountain Fighters"
+		start_experience_factor = 1
+		start_equipment_factor = 0.8
+
+	}
+
+}

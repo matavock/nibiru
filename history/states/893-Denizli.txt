@@ -1,0 +1,29 @@
+
+state={
+	id=893
+	name="Dubai"
+
+	history={
+		owner = UAE
+		victory_points = {
+			10904 2 
+		}
+		buildings = {
+			infrastructure = 2
+			10904 = {
+				naval_base = 1
+
+			}
+		}
+		add_core_of = UAE
+
+	}
+
+	provinces={
+		10904 13282 13284 13286 
+	}
+	manpower=63000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

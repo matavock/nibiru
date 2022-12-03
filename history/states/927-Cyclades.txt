@@ -1,0 +1,23 @@
+state={
+	id=927
+	name="Cyclades"
+	provinces={
+		3401 
+	}
+		history={
+		owner = GRE
+		buildings = {
+			infrastructure = 1
+			dockyard = 1
+
+		}
+		victory_points = {
+			3401 1 
+		}
+		add_core_of = GRE
+
+	}
+	manpower=120000
+	state_category = small_island
+	buildings_max_level_factor=1.000
+}

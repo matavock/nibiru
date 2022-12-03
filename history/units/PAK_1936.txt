@@ -1,0 +1,114 @@
+﻿### Pakistan OOB ###
+
+division_template = {
+	name = "Infantry Division"
+	division_names_group = BRENGL_INF_01		# Uses generic English templates
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Armoured Division"
+	division_names_group = BRENGL_ARM_01		# Uses generic English templates
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+
+division= {	
+		name = "Infantry Division"
+		location = 5105
+		division_template = "Infantry Division"			# Garrison force (older equipment, low experience)
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	
+	division= {	
+		name = "Infantry Division"
+		location = 10887
+		division_template = "Infantry Division"			# Garrison force (older equipment, low experience)
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	
+	division= {	
+		name = "Infantry Division"
+		location = 12763
+		division_template = "Infantry Division"			# Garrison force (older equipment, low experience)
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	
+division= {	
+		name = "Infantry Division"
+		location = 8066
+		division_template = "Infantry Division"			# Garrison force (older equipment, low experience)
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Infantry Division"
+		location = 3456
+		division_template = "Infantry Division"			# Garrison force (older equipment, low experience)
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	
+	division= {	
+		name = "Armored Division"
+		location = 3456
+		division_template = "Armoured Division"			# Garrison force (older equipment, low experience)
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { gw_tank_equipment = { owner = "PAK" creator = "ENG" } }
+	}
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+}
+	#India Command
+	
+	#Northern Command
+	
+	
+
+
+
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "PAK"
+		}
+		requested_factories = 1
+		progress = 0.12
+		efficiency = 100
+	}
+}

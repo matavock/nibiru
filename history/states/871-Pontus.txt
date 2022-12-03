@@ -1,0 +1,34 @@
+
+state={
+	id=871
+	name="Trabzon"
+
+	history={
+		owner = TUR
+		victory_points = {
+			9932 15 
+		}
+		victory_points = {
+			3979 3 
+		}
+		buildings = {
+			infrastructure = 2
+			9932 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = TUR
+		add_core_of = PON
+
+	}
+
+	provinces={
+		3714 3979 9932 11753 
+	}
+	manpower=1060000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

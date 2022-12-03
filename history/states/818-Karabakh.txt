@@ -1,0 +1,29 @@
+
+state={
+	id=818
+	name="Nagorno-Karabakh"
+
+	history={
+	set_demilitarized_zone = yes
+		owner = SOV
+		victory_points = {
+			1610 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_claim_by = ARM
+		add_core_of = SOV
+		add_core_of = ARM
+
+	}
+
+	provinces={
+		1610 
+	}
+	manpower=280000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -1,0 +1,31 @@
+state={
+	id=943
+	name="Arifjan"
+	resources={
+		oil=7.000
+	}
+	provinces={
+		13347 
+	}
+	history={
+		owner = USA
+		
+
+		buildings = {
+			infrastructure = 2
+			13347 = {
+				naval_base = 3
+
+			}
+			air_base = 4
+
+		}
+		add_core_of = KUW
+		add_claim_by = IRQ
+
+	}
+	manpower=1000
+	state_category = wasteland
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,42 @@
+
+state={
+	id=831
+	name="Macedonia"
+	resources={
+		chromium=70.000
+		aluminium=16.000
+	}
+
+	history={
+		owner = MAC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+
+		}
+		victory_points = {
+			867 1 
+		}
+		victory_points = {
+			3882 5 
+		}
+		victory_points = {
+			11856 1 
+		}
+		victory_points = {
+			974 1 
+		}
+		add_core_of = MAC
+		add_claim_by = BUL
+
+	}
+
+	provinces={
+		867 907 974 3833 3865 3882 6886 11856 13243 
+	}
+	manpower=1213700
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

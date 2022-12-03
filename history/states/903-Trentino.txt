@@ -1,0 +1,28 @@
+
+state={
+	id=903
+	name="Trentino"
+
+	history={
+		victory_points = {
+			9598 3 
+		}
+		owner = ITA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = ITA
+		add_claim_by = AUS
+
+	}
+
+	provinces={
+		6631 9598 
+	}
+	manpower=241650
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

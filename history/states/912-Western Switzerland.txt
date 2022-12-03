@@ -1,0 +1,30 @@
+state={
+	id=912
+	name="Western Switzerland"
+	resources={
+		aluminium=8.000
+		steel = 4
+	}
+	provinces={
+		3612 6666 6683 9622 11590 13124 
+	}
+		history={
+		owner = SWI
+		victory_points = {
+			6666 10 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 2
+			air_base = 2
+
+		}
+		add_core_of = SWI
+
+	}
+	manpower=1032400
+	state_category = city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

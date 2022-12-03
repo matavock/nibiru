@@ -1,0 +1,23 @@
+
+state={
+	id=845
+	name="Dornogovi"
+
+	history={
+		owner = MON
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = MON
+
+	}
+
+	provinces={
+		1723 1787 1853 4655 4856 10632 12539 12612 
+	}
+	manpower=7000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

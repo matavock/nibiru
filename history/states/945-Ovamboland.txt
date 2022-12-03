@@ -1,0 +1,26 @@
+state={
+	id=945
+	name="Ovamboland"
+	provinces={
+		7770 8136 10957 10978 12519 12921 13217 
+	}
+	history={
+		owner = PRE
+		victory_points = { 8136 2 }
+		victory_points = { 13217 1 }
+		buildings = {
+
+			infrastructure = 1
+		
+
+		}
+		add_core_of = NMB
+		add_core_of = SAF
+		start_resistance = NMB
+
+	}
+	manpower=192593
+	state_category = wasteland
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

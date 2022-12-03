@@ -1,0 +1,1327 @@
+add_namespace = wtt_pampa
+
+#Event for Chili and Guillermo Billinghurst
+country_event = {
+	id = wtt_pampa.3
+	title = wtt_pampa.3.t
+	desc = wtt_pampa.3.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+	
+	#accept
+	option = {
+		name = wtt_pampa.3.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				strength_ratio = { tag = INC ratio > 1.5 }
+			}
+			modifier = {
+				factor = 0.2
+				strength_ratio = { tag = INC ratio > 3 }
+			}
+			modifier = {
+				factor = 0
+				strength_ratio = { tag = INC ratio > 5 }
+			}
+		}
+		INC = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = INC_chili_politician_accept_opinion
+			}
+			country_event = { id = wtt_pampa.4 days = 1 }
+		}
+		PRU = { country_event = { id = wtt_pampa.6 } }
+	}
+
+	#refuse
+	option = {
+		name = wtt_pampa.3.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				strength_ratio = { tag = INC ratio < 1 }
+			}
+			modifier = {
+				factor = 0.2
+				strength_ratio = { tag = INC ratio < 0.5 }
+			}
+			modifier = {
+				factor = 0
+				strength_ratio = { tag = INC ratio < 0.2 }
+			}
+		}
+		#set_country_flag = billinghurst_refused_invite_inca
+		INC = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = INC_chili_politician_decline_opinion
+			}
+			country_event = { id = wtt_pampa.5 days = 1 }
+			hidden_effect = { news_event = { id = incnews.2 hours = 30 } }
+		}
+	}
+}
+
+#Notification event for Inca-State that Guillermo accepted
+country_event = {
+	id = wtt_pampa.4
+	title = wtt_pampa.4.t
+	desc = wtt_pampa.4.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+	
+	#accept
+	option = {
+		name = wtt_pampa.4.a
+		set_country_flag = billinghurst_accept_inca
+		create_country_leader = {
+			name = "Guillermo Billinghurst"
+			desc = "POLITICS_GUILL_BILL_DESC"
+			picture = Portrait_Inca_Guillermo.dds
+			expire = "1938.9.1"
+			ideology = socialism
+			traits = {
+				cornered_fox imperial_connections
+			}
+		}
+		hidden_effect = { 
+			news_event = { id = wtt_news.3 hours = 6 } 
+			set_cosmetic_tag = INC_democratic
+		}
+	}
+}
+
+#Guillermo refuses the Inca invitation!
+country_event = {
+	id = wtt_pampa.5
+	title = wtt_pampa.5.t
+	desc = wtt_pampa.5.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	#To Bad.
+	option = {
+		name = wtt_pampa.5.a
+		PRU = { country_event = { id = wtt_pampa.6 } }
+	}
+}
+
+### Peruvian response to inviting guillermo
+
+# Peruvian Response
+country_event = {
+	id = wtt_pampa.6
+	title = wtt_pampa.6.t
+	desc = wtt_pampa.6.d
+
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	# This means war!
+	option = { 
+		name = wtt_pampa.6.a
+		trigger = {
+			INC = { has_country_flag = billinghurst_accept_inca }
+		}
+		ai_chance = { 
+			factor = 1 
+			modifier = {
+				factor = 10
+				strength_ratio = {
+					tag = INC
+					ratio > 0.7
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+					tag = INC
+					ratio > 1
+				}
+			}
+		}
+		add_political_power = -150
+		add_stability = -0.1
+		if = {
+			limit = {
+				CHL = {
+					is_puppet = no
+					NOT = { has_war_with = PRU }
+				}
+			}
+			CHL = {
+				country_event = wtt_pampa.7
+				custom_effect_tooltip = needs_approval
+			}
+		}
+	}
+
+    # Diplomatic response
+	option = { 
+		name = wtt_pampa.6.b
+		ai_chance = { 
+			factor = 99 
+			modifier = {
+				factor = 0
+			}
+		}
+		add_opinion_modifier = { target = INC modifier = protest_action }
+	}
+}
+
+# Chilese Response (Peru Press for War)
+country_event = {
+	id = wtt_pampa.7
+	title = wtt_pampa.7.t
+	desc = {
+		text = wtt_pampa.7.d
+		trigger = {
+			NOT = { INC = { has_country_flag = billinghurst_accept_inca } }
+		}
+	}
+	desc = {
+		text = wtt_pampa.7.d.2
+		trigger = {
+			INC = { has_country_flag = billinghurst_accept_inca }
+		}
+	}
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { # War out of the question
+		name = wtt_pampa.7.a
+		ai_chance = { factor = 40 }
+		PRU = { 
+		    country_event = { hours = 6 id = wtt_pampa.8 }
+		}
+	}
+}
+
+# Peru (Chili Refuses Support)
+country_event = {
+	id = wtt_pampa.8
+	title = wtt_pampa.8.t
+	desc = wtt_pampa.8.d
+	picture = GFX_report_event_chamberlain_announce
+	
+	
+	is_triggered_only = yes
+	
+	option = { # Push Ahead
+		name = wtt_pampa.8.a
+		ai_chance = { 
+			factor = 60
+			modifier = {
+				factor = 3
+				strength_ratio = {
+					tag = INC
+					ratio > 1.0
+				}
+				NOT = { is_puppet_of = CHL }
+			}		
+		}		
+		INC = { country_event = wtt_pampa.9 }
+	}
+	option = { # Back Down
+		name = wtt_pampa.8.b
+		ai_chance = { factor = 40 }
+		CHL = { country_event = wtt_pampa.10 }
+		add_opinion_modifier = { target = CHL modifier = protest_action }
+	}
+}
+
+# Inca (Peru goes to war)
+country_event = {
+	id = wtt_pampa.9
+	title = wtt_pampa.9.t
+	desc = wtt_pampa.9.d
+	picture = GFX_report_event_degaulle_inspect_troops
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_pampa.9.a
+		add_war_support = 0.1 #original German clay
+		CHL = { 
+			country_event = wtt_pampa.11 
+			if = {
+				limit = {
+					CHL = { 
+						is_in_faction_with = PRU 
+						is_faction_leader = yes
+					}
+				}
+				remove_from_faction = PRU
+			}
+		}
+		PRU = {
+			declare_war_on = {
+				target = INC
+				type = take_state_focus
+				generator = { 835 } 
+			}
+			if = {
+				limit = { 
+					NOT = { has_government = communism }
+				}
+				start_civil_war = {
+					ideology = communism
+					size = 0.2
+				}
+			}
+			if = {
+				limit = { 
+					has_government = communism
+				}
+				start_civil_war = {
+					ideology = democratic
+					size = 0.3
+				}
+			}
+		}
+		hidden_effect = {
+			USA = {
+				diplomatic_relation = {
+					country = PRU
+					relation = guarantee
+					active = no
+				}
+			}
+			news_event = { id = incnews.4 hours = 6 }
+		}
+	}
+}
+
+# Chili (Peru Backs Down)
+country_event = {
+	id = wtt_pampa.10
+	title = wtt_pampa.10.t
+	desc = wtt_pampa.10.d
+	picture = GFX_report_event_german_inspect_troops
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_pampa.10.a
+		add_opinion_modifier = { target = PRU modifier = protest_action }
+		INC = {
+			add_war_support = 0.1
+		}
+	}
+}
+
+# Chili (Peru Goes Ahead Anyway)
+country_event = {
+	id = wtt_pampa.11
+	title = wtt_pampa.11.t
+	desc = wtt_pampa.11.d
+	picture = GFX_report_event_tanks_vietnam
+	
+	is_triggered_only = yes
+	
+	#Take action
+	option = { 
+		name = wtt_pampa.11.a
+		ai_chance = { factor = 40 }
+		PRU = {
+			country_event = wtt_pampa.12
+		}
+	}
+	
+    #Let them have their way
+	option = { 
+		name = wtt_pampa.11.b
+		ai_chance = { factor = 60 }
+        CHL = {
+			add_opinion_modifier = { target = PRU modifier = minor_sanctions }
+		}
+	}
+}
+
+# Chili (Ultimatum to Peru)
+country_event = {
+	id = wtt_pampa.12
+	title = wtt_pampa.12.t
+	desc = wtt_pampa.12.d
+	picture = GFX_report_event_tanks_vietnam
+	
+	is_triggered_only = yes
+	
+	#At Arms Men!
+	option = { 
+		name = wtt_pampa.12.a
+		ai_chance = { factor = 30 }
+		CHL = {
+			declare_war_on = {
+				target = PRU
+				type = take_state_focus
+				generator = { 303 } 
+			}
+			add_opinion_modifier = { target = PRU modifier = condemn_aggression }
+		}
+        INC = {
+			add_opinion_modifier = { target = CHL modifier = took_stand_for_us }
+		}
+	}
+}
+
+# Guillermo Billinghurst dies
+country_event = {
+	id = wtt_pampa.13
+	title = wtt_pampa.13.t
+	desc = wtt_pampa.13.d
+	picture = GFX_report_event_generic_funeral
+
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = INC
+		has_government = democratic
+		date > 1936.9.1
+		has_country_leader = { ruling_only = yes name = "Guillermo Billinghurst" }
+	}
+
+	mean_time_to_happen = {
+		days = 1060	# Died in 1939
+	}
+	
+	#ok I guess
+	option = {
+		name = wtt_pampa.13.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Waywa Inca Naná"
+			desc = "POLITICS_BELA_KUN_DESC"
+			picture = Portrait_Inca_Waywa_Nana.dds
+			expire = "1965.1.1"
+			ideology = socialism
+			traits = {
+				popular_figurehead2
+			}
+		}
+	}
+}
+
+### Reclaiming Peru
+
+country_event = { 
+	id = wtt_pampa.14
+	title = wtt_pampa.14.t
+	desc = wtt_pampa.14.d
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+
+	option = {
+		name = wtt_pampa.14.a # Claim
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 492
+					}
+					strength_ratio = {
+						tag = INC ratio > 1.5 # more than 150% the strength of Incas
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = PRU
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					owns_state = 492
+				}
+				AND = {
+					NOT = {
+						OR = {
+							tag = INC
+							is_in_faction_with = INC
+							is_puppet_of = INC
+						}
+					}
+				}
+			}
+			country_event = { id = wtt_pampa.15 days = 1 }
+		}
+	}
+	
+	option = {
+		name = wtt_pampa.14.b # Decline
+		ai_chance = {
+			factor = 10
+		}
+		news_event = { id = incnews.5 days = 1 }
+		492 = { remove_core_of = INC }	
+	}
+}
+
+country_event = { # Target
+	id = wtt_pampa.15
+	title = wtt_pampa.15.t
+	desc = wtt_pampa.15.d
+	picture = GFX_report_event_polish_tanks_01
+
+	is_triggered_only = yes
+	
+	option = { # Target Refuses
+		name = wtt_pampa.15.a
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.5
+				strength_ratio = { tag = INC ratio < 0.5 } #less than half the strength of Incas
+			}
+			modifier = {
+				factor = 0.25
+				strength_ratio = { tag = INC ratio < 0.25 } #less than 1/4 the strength of Incas
+			}
+			modifier = {
+				factor = 0.1
+				strength_ratio = { tag = INC ratio < 0.1 } #less than 10% the strength of Incas
+			}
+		}
+		effect_tooltip = {
+			492 = { add_core_of = INC }
+			INC = {
+				create_wargoal = {
+					type = take_core_state
+					target = ROOT
+				}
+			}
+		}
+		hidden_effect = {
+			INC = {
+				country_event = { id = wtt_pampa.16 days = 1 }
+			}
+		}
+	}
+	option = { # Target Accepts
+		name = wtt_pampa.15.b
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2
+				strength_ratio = { tag = INC ratio < 0.5 } #less than half the strength of Incas
+			}
+			modifier = {
+				factor = 4
+				strength_ratio = { tag = INC ratio < 0.25 } #less than 1/4 the strength of Incas
+			}
+			modifier = {
+				factor = 6
+				strength_ratio = { tag = INC ratio < 0.1 } #less than 10% the strength of Incas
+			}
+		}
+		INC = { transfer_state = 492 }
+		if = {
+			limit = {
+				NOT = {
+					any_state = {
+                    is_controlled_by = ROOT
+					}
+				}
+			}
+			INC = {
+				annex_country = { 
+					target = ROOT transfer_troops = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_state = {
+                    is_controlled_by = PRU
+					}
+				}
+			}
+			set_global_flag = inc_pru_annex
+		}
+		news_event = { id = incnews.6 days = 1 }
+	}
+}
+
+country_event = {
+	id = wtt_pampa.16
+	title = wtt_pampa.16.t
+	desc = wtt_pampa.16.d
+	picture = GFX_report_event_polish_tanks_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_pampa.16.a
+		create_wargoal = {
+			type = take_core_state
+			target = FROM
+			generator = { 492 }
+		}
+	}
+}
+
+### CLAIM QUITO ###
+
+country_event = {
+	id = wtt_pampa.17
+	title = wtt_pampa.17.t
+	desc = wtt_pampa.17.d
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+
+	option = {
+		name = wtt_pampa.14.a # Claim
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 305
+					}
+					strength_ratio = {
+						tag = INC ratio > 1.5 # more than 150% the strength of Incas
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = ECU
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					owns_state = 305
+				}
+				AND = {
+					NOT = {
+						OR = {
+							tag = INC
+							is_in_faction_with = INC
+							is_puppet_of = INC
+						}
+					}
+				}
+			}
+			country_event = { id = wtt_pampa.18 days = 1 }
+		}
+	}
+	
+	option = {
+		name = wtt_pampa.14.b # Decline
+		ai_chance = { factor = 10 }
+		news_event = { id = incnews.5 days = 1 }
+		305 = { remove_core_of = INC }
+	}
+}
+
+country_event = { # Target
+	id = wtt_pampa.18
+	title = wtt_pampa.15.t
+	desc = wtt_pampa.15.d
+	picture = GFX_report_event_polish_tanks_01
+
+	is_triggered_only = yes
+	
+	option = { # Target Refuses
+		name = wtt_pampa.15.a
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.5
+				strength_ratio = { tag = INC ratio < 0.5 } #less than half the strength of Incas
+			}
+			modifier = {
+				factor = 0.25
+				strength_ratio = { tag = INC ratio < 0.25 } #less than 1/4 the strength of Incas
+			}
+			modifier = {
+				factor = 0.1
+				strength_ratio = { tag = INC ratio < 0.1 } #less than 10% the strength of Incas
+			}
+		}
+		effect_tooltip = {
+			305 = { add_core_of = INC }
+			INC = {
+				create_wargoal = {
+					type = take_core_state
+					target = ROOT
+				}
+			}
+		}
+		hidden_effect = {
+			INC = {
+				country_event = { id = wtt_pampa.19 days = 1 }
+			}
+		}
+	}
+	option = { # Target Accepts
+		name = wtt_pampa.15.b
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2
+				strength_ratio = { tag = INC ratio < 0.5 } #less than half the strength of Incas
+			}
+			modifier = {
+				factor = 4
+				strength_ratio = { tag = INC ratio < 0.25 } #less than 1/4 the strength of Incas
+			}
+			modifier = {
+				factor = 6
+				strength_ratio = { tag = INC ratio < 0.1 } #less than 10% the strength of Incas
+			}
+		}
+		INC = {
+			annex_country = { 
+				target = ROOT transfer_troops = yes
+			}
+		}
+		news_event = { id = incnews.6 days = 1 }
+	}
+}
+
+country_event = {
+	id = wtt_pampa.19
+	title = wtt_pampa.16.t
+	desc = wtt_pampa.16.d
+	picture = GFX_report_event_polish_tanks_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_pampa.16.a
+		create_wargoal = {
+			type = take_core_state
+			target = FROM
+			generator = { 305 }
+		}
+	}
+}
+
+### CLAIM CHILI ###
+
+country_event = {
+	id = wtt_pampa.20
+	title = wtt_pampa.20.t
+	desc = wtt_pampa.20.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+
+	option = {
+		name = wtt_pampa.14.a # Claim
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 506				
+					}
+					strength_ratio = {
+						tag = INC ratio > 1.5 # more than 150% the strength of Incas
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = CHL
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				owns_state = 506
+				NOT = { tag = INC }
+			}
+			country_event = { id = wtt_pampa.21 days = 1 }
+		}
+	}
+	
+	option = {
+		name = wtt_pampa.14.b # Decline
+		ai_chance = { factor = 10 }
+		news_event = { id = incnews.5 days = 1 }
+		506 = { remove_core_of = INC }
+	}
+}
+
+country_event = {
+	id = wtt_pampa.21
+	title = wtt_pampa.15.t
+	desc = wtt_pampa.15.d
+	picture = GFX_report_event_polish_tanks_01
+
+	is_triggered_only = yes
+	
+	option = { # Target Refuses
+		name = wtt_pampa.15.a
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.5
+				strength_ratio = { tag = INC ratio < 0.5 } #less than half the strength of Incas
+			}
+			modifier = {
+				factor = 0.25
+				strength_ratio = { tag = INC ratio < 0.25 } #less than 1/4 the strength of Incas
+			}
+			modifier = {
+				factor = 0.1
+				strength_ratio = { tag = INC ratio < 0.1 } #less than 10% the strength of Incas
+			}
+		}
+		effect_tooltip = {
+			506 = { add_core_of = INC }
+			INC = {
+				create_wargoal = {
+					type = take_core_state
+					target = ROOT
+				}
+			}
+		}
+		hidden_effect = {
+			INC = {
+				country_event = { id = wtt_pampa.22 days = 1 }
+			}
+		}
+	}
+	option = { # Target Accepts
+		name = wtt_pampa.15.b
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2
+				strength_ratio = { tag = INC ratio < 0.5 } #less than half the strength of Incas
+			}
+			modifier = {
+				factor = 4
+				strength_ratio = { tag = INC ratio < 0.25 } #less than 1/4 the strength of Incas
+			}
+			modifier = {
+				factor = 6
+				strength_ratio = { tag = INC ratio < 0.1 } #less than 10% the strength of Incas
+			}
+		}
+		INC = { transfer_state = 506 }
+		if = {
+			limit = {
+				NOT = {
+					any_state = {
+                    is_controlled_by = ROOT
+					}
+				}
+			}
+			INC = {
+				annex_country = { 
+					target = ROOT transfer_troops = yes
+				}
+			}
+		}
+		INC = {
+		    news_event = { id = incnews.6 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = wtt_pampa.22
+	title = wtt_pampa.16.t
+	desc = wtt_pampa.16.d
+	picture = GFX_report_event_polish_tanks_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_pampa.16.a
+		create_wargoal = {
+			type = take_core_state
+			target = FROM
+			generator = { 506 }
+		}
+	}
+}
+
+### CLAIM BOLIVIA ###
+
+country_event = {
+	id = wtt_pampa.23
+	title = wtt_pampa.23.t
+	desc = wtt_pampa.23.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+
+	option = {
+		name = wtt_pampa.14.a # Claim
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 302				
+					}
+					strength_ratio = {
+						tag = INC ratio > 1.5 # more than 150% the strength of Incas
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = BOL
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				owns_state = 302
+				NOT = { tag = INC }
+			}
+			country_event = { id = wtt_pampa.24 days = 1 }
+		}
+	}
+	
+	option = {
+		name = wtt_pampa.14.b # Decline
+		ai_chance = { factor = 10 }
+		news_event = { id = incnews.5 days = 1 }
+		302 = { remove_core_of = INC }
+	}
+}
+
+country_event = {
+	id = wtt_pampa.24
+	title = wtt_pampa.15.t
+	desc = wtt_pampa.15.d
+	picture = GFX_report_event_polish_tanks_01
+
+	is_triggered_only = yes
+	
+	option = { # Target Refuses
+		name = wtt_pampa.15.a
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.5
+				strength_ratio = { tag = INC ratio < 0.5 } #less than half the strength of Incas
+			}
+			modifier = {
+				factor = 0.25
+				strength_ratio = { tag = INC ratio < 0.25 } #less than 1/4 the strength of Incas
+			}
+			modifier = {
+				factor = 0.1
+				strength_ratio = { tag = INC ratio < 0.1 } #less than 10% the strength of Incas
+			}
+		}
+		effect_tooltip = {
+			302 = { add_core_of = INC }
+			INC = {
+				create_wargoal = {
+					type = take_core_state
+					target = ROOT
+				}
+			}
+		}
+		hidden_effect = {
+			INC = {
+				country_event = { id = wtt_pampa.25 days = 1 }
+			}
+		}
+	}
+	option = { # Target Accepts
+		name = wtt_pampa.15.b
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2
+				strength_ratio = { tag = INC ratio < 0.5 } #less than half the strength of Incas
+			}
+			modifier = {
+				factor = 4
+				strength_ratio = { tag = INC ratio < 0.25 } #less than 1/4 the strength of Incas
+			}
+			modifier = {
+				factor = 6
+				strength_ratio = { tag = INC ratio < 0.1 } #less than 10% the strength of Incas
+			}
+		}
+		INC = { transfer_state = 302 }
+		if = {
+			limit = {
+				NOT = {
+					any_state = {
+                    is_controlled_by = ROOT
+					}
+				}
+			}
+			INC = {
+				annex_country = { 
+					target = ROOT transfer_troops = yes
+				}
+			}
+		}
+		INC = {
+		    news_event = { id = incnews.6 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = wtt_pampa.25
+	title = wtt_pampa.16.t
+	desc = wtt_pampa.16.d
+	picture = GFX_report_event_polish_tanks_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_pampa.16.a
+		create_wargoal = {
+			type = take_core_state
+			target = FROM
+			generator = { 302 }
+		}
+	}
+}
+
+### CLAIM ARGENTINA ###
+
+country_event = {
+	id = wtt_pampa.26
+	title = wtt_pampa.26.t
+	desc = wtt_pampa.26.d
+	picture = GFX_report_event_generic_bombers
+	
+	is_triggered_only = yes
+
+	option = {
+		name = wtt_pampa.14.a # Claim
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 508				
+					}
+					strength_ratio = {
+						tag = INC ratio > 1.5 # more than 150% the strength of Incas
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = ARG
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				owns_state = 508
+				NOT = { tag = INC }
+			}
+			country_event = { id = wtt_pampa.27 days = 1 }
+		}
+	}
+	
+	option = {
+		name = wtt_pampa.14.b # Decline
+		ai_chance = { factor = 10 }
+		news_event = { id = incnews.5 days = 1 }
+		508 = { remove_core_of = INC }
+	}
+}
+
+country_event = {
+	id = wtt_pampa.27
+	title = wtt_pampa.15.t
+	desc = wtt_pampa.15.d
+	picture = GFX_report_event_polish_tanks_01
+
+	is_triggered_only = yes
+	
+	option = { # Target Refuses
+		name = wtt_pampa.15.a
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.5
+				strength_ratio = { tag = INC ratio < 0.5 } #less than half the strength of Incas
+			}
+			modifier = {
+				factor = 0.25
+				strength_ratio = { tag = INC ratio < 0.25 } #less than 1/4 the strength of Incas
+			}
+			modifier = {
+				factor = 0.1
+				strength_ratio = { tag = INC ratio < 0.1 } #less than 10% the strength of Incas
+			}
+		}
+		effect_tooltip = {
+			508 = { add_core_of = INC }
+			INC = {
+				create_wargoal = {
+					type = take_core_state
+					target = ROOT
+				}
+			}
+		}
+		hidden_effect = {
+			INC = {
+				country_event = { id = wtt_pampa.28 days = 1 }
+			}
+		}
+	}
+	option = { # Target Accepts
+		name = wtt_pampa.15.b
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2
+				strength_ratio = { tag = INC ratio < 0.5 } #less than half the strength of Incas
+			}
+			modifier = {
+				factor = 4
+				strength_ratio = { tag = INC ratio < 0.25 } #less than 1/4 the strength of Incas
+			}
+			modifier = {
+				factor = 6
+				strength_ratio = { tag = INC ratio < 0.1 } #less than 10% the strength of Incas
+			}
+		}
+		INC = { transfer_state = 508 }
+		if = {
+			limit = {
+				NOT = {
+					any_state = {
+                    is_controlled_by = ROOT
+					}
+				}
+			}
+			INC = {
+				annex_country = { 
+					target = ROOT transfer_troops = yes
+				}
+			}
+		}
+		INC = {
+		    news_event = { id = incnews.6 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = wtt_pampa.28
+	title = wtt_pampa.16.t
+	desc = wtt_pampa.16.d
+	picture = GFX_report_event_polish_tanks_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_pampa.16.a
+		create_wargoal = {
+			type = take_core_state
+			target = FROM
+			generator = { 508 }
+		}
+	}
+}
+
+# Event spawning pro-Inca deserter unit
+country_event = {
+	id = wtt_pampa.29
+	title = wtt_pampa.29.t
+	desc = wtt_pampa.29.d
+	picture = GFX_report_event_german_troops
+
+	fire_only_once = no
+	
+	trigger = {
+		original_tag = INC
+		has_idea = INC_peru_defectors_1
+	}
+
+	mean_time_to_happen = {
+		days = 90
+	}
+	
+	# Good
+	option = {
+		name = excellent
+		if = {
+			limit = {
+				any_state = {
+					is_fully_controlled_by = ROOT
+					is_on_continent = south_america
+				}
+			}
+			random_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_on_continent = south_america
+				}
+				create_unit = {
+					division = "division_template = \"Catequil Inca Corps\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+					owner = INC
+				}
+			}
+		}
+		else = {
+			random_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				create_unit = {
+					division = "division_template = \"Catequil Inca Corps\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+					owner = INC
+				}
+			}
+		}
+	}
+}
+
+# Event informing Peru of pro-Inca deserters
+country_event = {
+	id = wtt_pampa.30
+	title = wtt_pampa.30.t
+	desc = wtt_pampa.30.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+	
+	# Damn them!
+	option = {
+		name = wtt_pampa.30.a
+		add_ideas = INC_peru_defectors_2
+	}
+}
+
+# Proclamation of Socialist Inca
+country_event = {
+	id = wtt_pampa.31
+	title = {
+		text = wtt_pampa.31.t
+		trigger = {
+			original_tag = INC
+			has_government = communism
+		}
+	}
+	title = {
+		text = wtt_pampa.31.t.2
+		trigger = {
+			original_tag = INC
+			has_government = neutrality
+		}
+	}
+	desc = {
+		text = wtt_pampa.31.d
+		trigger = {
+			original_tag = INC
+			has_government = communism
+		}
+	}
+	desc = {
+		text = wtt_pampa.31.d.2
+		trigger = {
+			original_tag = INC
+			has_government = neutrality
+		}
+	}
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	
+	# New
+	option = {
+		name = wtt_pampa.31.a
+		trigger = {
+			original_tag = INC
+			has_government = communism
+		}
+		ai_chance = { 
+			factor = 25 
+			modifier = {
+				factor = 0
+			}
+		}
+		set_cosmetic_tag = INC_EMPIRE_communism
+	}
+	
+	# New
+	option = {
+		name = wtt_pampa.31.a.2
+		trigger = {
+			original_tag = INC
+			has_government = neutrality
+		}
+		ai_chance = { 
+			factor = 25 
+			modifier = {
+				factor = 0
+			}
+		}
+		set_cosmetic_tag = INC_SA_neutrality
+	}
+	
+	# Same
+	option = {
+		name = wtt_pampa.31.b
+		trigger = {
+			original_tag = INC
+			has_government = communism
+		}
+		ai_chance = { 
+			factor = 15 
+			modifier = {
+				factor = 0
+			}
+		}
+        set_cosmetic_tag = INC_EMPIRE_2_communism
+	}
+	
+	# Nah
+	option = {
+		name = wtt_pampa.31.c
+		trigger = {
+			original_tag = INC
+		}
+		ai_chance = { 
+			factor = 10 
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+}

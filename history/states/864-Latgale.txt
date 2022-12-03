@@ -1,0 +1,33 @@
+
+state={
+	resources={
+		oil=6.000
+	}
+	id=864
+	name="Bahrain"
+	history={
+		add_core_of = QAT
+		owner = QAT
+		victory_points = {
+			1086 1 
+		}
+		buildings = {
+			infrastructure = 1
+			1086 = {
+				naval_base = 1
+
+			}
+
+		}
+
+	}
+	
+
+	provinces={
+		1086 
+	}
+	manpower=17975
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

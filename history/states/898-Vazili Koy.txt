@@ -1,0 +1,18 @@
+state={
+	id=898
+	name="Tsarevo"
+	manpower = 9800
+	state_category=wasteland
+	provinces={ 9902 }
+	history={
+	victory_points = {
+			9902 1
+		}
+		owner=BUL
+		add_core_of=TUR
+		add_core_of=BUL
+		buildings={
+			infrastructure = 2
+		}
+	}
+}

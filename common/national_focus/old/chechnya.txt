@@ -1,0 +1,310 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = chechnya_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = CIN
+		}
+	}
+	
+	default = no
+
+
+
+	focus = {
+		id = CIN_war_tactics
+		icon = GFX_goal_generic_national_unity
+		x = -5
+		y = 0
+		cost = 2
+		ai_will_do = {
+			factor = 400
+		}
+		
+		completion_reward = {
+		add_political_power = 75
+		add_stability = 0.05
+		add_war_support = 0.10
+		add_ideas = CIN_guerilla_tactics
+		}
+		
+	}
+	
+	focus = {
+		id = CIN_army_reform
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = CIN_war_tactics }
+		x = -2
+		y = 1
+		relative_position_id = CIN_war_tactics
+		cost = 5
+		ai_will_do = {
+			factor = 400
+		}
+		
+		completion_reward = {
+		army_experience = 10
+		swap_ideas = { remove_idea = CIN_irregular_military1 add_idea = CIN_irregular_military2 }
+		}
+		
+	}
+	focus = {
+		id = CIN_mountanieer_people
+		icon = GFX_focus_GRE_a_land_of_mountains
+		prerequisite = { focus = CIN_army_reform }
+		x = -1
+		y = 1
+		relative_position_id = CIN_army_reform
+		cost = 5
+		ai_will_do = {
+			factor = 300
+		}
+		
+		completion_reward = {
+		army_experience = 10
+		add_ideas = CIN_mountain_warriors 
+		}
+		
+	}
+	focus = {
+		id = CIN_organize_military
+		icon = GFX_focus_generic_women_in_military
+		prerequisite = { focus = CIN_army_reform }
+		x = 1
+		y = 1
+		relative_position_id = CIN_army_reform
+		cost = 5
+		ai_will_do = {
+			factor = 400
+		}
+		
+		completion_reward = {
+		army_experience = 10
+		swap_ideas = { remove_idea = CIN_irregular_military2 add_idea = CIN_irregular_military3 }
+		}
+		
+	}
+	
+	focus = {
+		id = CIN_kick_start_industry
+		icon = GFX_focus_SOV_merge_plants
+		prerequisite = { focus = CIN_war_tactics }
+		x = 2
+		y = 1
+		relative_position_id = CIN_war_tactics
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		
+	}
+	focus = {
+		id = CIN_grozny_rifle_factory
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = CIN_kick_start_industry }
+		available = { owns_state = 873 }
+		x = 1
+		y =1
+		relative_position_id = CIN_kick_start_industry
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		
+			873 = {
+				
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		
+	}
+	
+	focus = {
+		id = CIN_expand_agriculture_industry
+		icon = GFX_focus_SOV_breadbasket_of_the_union
+		prerequisite = { focus = CIN_kick_start_industry }
+		
+		x = -1
+		y = 1
+		relative_position_id = CIN_kick_start_industry
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			random_owned_controlled_state = {
+				
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = state_city
+					level = 1
+					instant_build = yes
+				}
+			
+			}
+			random_owned_controlled_state = {
+				
+				add_extra_state_shared_building_slots = 1
+				
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		
+	}
+	
+	focus = {
+		id = CIN_secure_the_new_nation
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = CIN_expand_agriculture_industry  }
+		prerequisite = { focus = CIN_organize_military }	
+		prerequisite = { focus = CIN_grozny_rifle_factory }
+		prerequisite = { focus = CIN_mountanieer_people }
+		available = { has_war = no }
+		x = -1
+		y = 1
+		relative_position_id = CIN_expand_agriculture_industry
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		add_stability = 0.05
+		add_political_power = 120
+		SOV = { 
+				add_opinion_modifier = { target = CIN modifier = embargo } 
+			}
+			CIN = { 
+				add_opinion_modifier = { target = SOV modifier = embargo } 
+			}
+		
+		}
+		
+		
+	}
+	
+	focus = {
+		id = CIN_rebuild_the_nation
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = CIN_secure_the_new_nation }
+		
+		x = -1
+		y = 2
+		relative_position_id = CIN_expand_agriculture_industry
+		cost = 2
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		add_timed_idea = { idea = GER_rebuild_the_nation days = 365 }
+		}
+		
+		
+	}
+	
+	focus = {
+		id = CIN_functioning_state
+		icon = GFX_focus_SOV_organize_wreckers
+		prerequisite = { focus = CIN_rebuild_the_nation }
+		
+		x = -1
+		y = 3
+		relative_position_id = CIN_expand_agriculture_industry
+		cost = 1
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		load_focus_tree = generic_focus
+		}
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	}

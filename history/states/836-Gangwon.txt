@@ -1,0 +1,31 @@
+state={
+	id=836
+	name="Gangwon"
+	provinces={
+		1148 4004 7021 11912 11958 12011 
+	}
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 2
+			
+			11958 = {
+				bunker = 2
+
+			}
+			4004 = {
+				bunker = 2
+
+			}
+
+		}
+		
+		
+		add_core_of = KOR
+		add_core_of = KPA
+
+	}
+	manpower=1850000
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

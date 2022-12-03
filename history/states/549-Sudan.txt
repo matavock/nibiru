@@ -1,0 +1,26 @@
+
+state={
+	id=549
+	name="Nyala"
+
+	history={
+		victory_points = {
+			8052 2 
+		}
+		owner = SUD
+		add_core_of = SUD
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		1914 1960 2016 4918 5060 8052 8084 10739 10795 10827 10851 10857 12744 
+	}
+	manpower=2094293
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}
